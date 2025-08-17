@@ -8,6 +8,7 @@ It focuses on long-term trends in extremist crime (e.g., left- vs. right-wing mo
 ---
 
 ## ✨ Features
+
 - **Data extraction pipeline** (PDF → structured data; WIP)
 - **Clean JSON data model** optimized for time-series comparisons
 - **Interactive charts** with **Tremor** (Line, Bar, Area, Donut, KPI cards)
@@ -18,6 +19,7 @@ It focuses on long-term trends in extremist crime (e.g., left- vs. right-wing mo
 ---
 
 ## 🧱 Tech Stack
+
 - **Framework:** Next.js (App Router)
 - **UI:** Tailwind CSS + **shadcn/ui** (Radix-based, accessible components)
 - **Charts:** **Tremor** (fast to a polished dashboard)
