@@ -21,7 +21,7 @@ It focuses on long-term trends in extremist crime (e.g., left- vs. right-wing mo
 ## 🧱 Tech Stack
 
 - **Framework:** Next.js (App Router)
-- **UI:** Tailwind CSS + **shadcn/ui** (Radix-based, accessible components)
+- **UI:** Tailwind CSS + **@chainlift/liftkit** (Radix-based, accessible components)
 - **Charts:** **Tremor** (fast to a polished dashboard)
 - **Data:** JSON (upgradeable to a DB later), PDF parsing via Python (planned)
 - **TypeScript**, ESLint, Prettier
