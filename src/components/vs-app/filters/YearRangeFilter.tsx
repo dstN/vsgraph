@@ -2,7 +2,7 @@
 
 import { useMemo } from 'react';
 import Button from '@/components/button';
-import { Select, SelectTrigger, SelectMenu, SelectOption } from '@/components/select';
+import { Select, SelectTrigger, SelectMenu, SelectOption } from '@ui/select';
 
 type Props = {
 	years: number[];
@@ -20,7 +20,7 @@ export default function YearRangeFilter({ years, from, to, onChange }: Props) {
 		[years]
 	);
 
-	const isLocked = items.length <= 1; // nur 1 Jahr ⇒ UI deaktivieren
+	const isLocked = items.length <= 1; // if only one year exists, disable UI
 
 	return (
 		<div className="flex flex-wrap items-end gap-4">

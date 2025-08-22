@@ -20,7 +20,9 @@
 			}
 		],
 		"paths": {
-			"@/*": ["./src/*"]
+			"@/*": ["./src/*"],
+			"@app/*": ["./src/components/vs-app/*"], // vs-app specific
+			"@ui/*": ["./src/components/*"] // LiftKit
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
