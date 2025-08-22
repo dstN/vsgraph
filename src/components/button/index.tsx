@@ -1,25 +1,25 @@
-'use client';
+"use client";
 
-import { useMemo } from 'react';
-import { propsToDataAttrs } from '@/lib/utilities';
-import { getOnToken } from '@/lib/colorUtils';
-import { IconName } from 'lucide-react/dynamic';
-import '@/components/button/button.css';
-import StateLayer from '@/components/state-layer';
-import { LkStateLayerProps } from '@/components/state-layer';
-import Icon from '@/components/icon';
+import { useMemo } from "react";
+import { propsToDataAttrs } from "@/lib/utilities";
+import { getOnToken } from "@/lib/colorUtils";
+import { IconName } from "lucide-react/dynamic";
+import "@/components/button/button.css";
+import StateLayer from "@/components/state-layer";
+import { LkStateLayerProps } from "@/components/state-layer";
+import Icon from "@/components/icon";
 
 export interface LkButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-	label?: string;
-	variant?: 'fill' | 'outline' | 'text';
-	color?: LkColorWithOnToken;
-	size?: 'sm' | 'md' | 'lg';
-	material?: string;
-	startIcon?: IconName;
-	endIcon?: IconName;
-	opticIconShift?: boolean;
-	modifiers?: string;
-	stateLayerOverride?: LkStateLayerProps; // Optional override for state layer properties
+  label?: string;
+  variant?: "fill" | "outline" | "text";
+  color?: LkColorWithOnToken;
+  size?: "sm" | "md" | "lg";
+  material?: string;
+  startIcon?: IconName;
+  endIcon?: IconName;
+  opticIconShift?: boolean;
+  modifiers?: string;
+  stateLayerOverride?: LkStateLayerProps; // Optional override for state layer properties
 }
 
 /**
@@ -50,60 +50,81 @@ export interface LkButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElem
  * />
  * ```
  */
-export default function Button({ label = 'Button', variant = 'fill', color = 'primary', size = 'md', startIcon, endIcon, opticIconShift = true, modifiers, stateLayerOverride, ...restProps }: LkButtonProps) {
-	const lkButtonAttrs = useMemo(() => propsToDataAttrs({ variant, color, size, startIcon, endIcon, opticIconShift }, 'button'), [variant, color, size, startIcon, endIcon, opticIconShift]);
+export default function Button({
+  label = "Button",
+  variant = "fill",
+  color = "primary",
+  size = "md",
+  startIcon,
+  endIcon,
+  opticIconShift = true,
+  modifiers,
+  stateLayerOverride,
+  ...restProps
+}: LkButtonProps) {
+  const lkButtonAttrs = useMemo(
+    () => propsToDataAttrs({ variant, color, size, startIcon, endIcon, opticIconShift }, "button"),
+    [variant, color, size, startIcon, endIcon, opticIconShift]
+  );
 
-	const onColorToken = getOnToken(color) as LkColor;
+  const onColorToken = getOnToken(color) as LkColor;
 
-	// Define different base color classes based on variant
+  // Define different base color classes based on variant
 
-	let baseButtonClasses = '';
+  let baseButtonClasses = "";
 
-	switch (variant) {
-		case 'fill':
-			baseButtonClasses = `bg-${color} color-${onColorToken}`;
-			break;
-		case 'outline':
-		case 'text':
-			baseButtonClasses = `color-${color}`;
-			break;
-		default:
-			baseButtonClasses = `bg-${color} color-${onColorToken}`;
-			break;
-	}
-	if (modifiers) {
-		baseButtonClasses += ` ${modifiers}`;
-	}
+  switch (variant) {
+    case "fill":
+      baseButtonClasses = `bg-${color} color-${onColorToken}`;
+      break;
+    case "outline":
+    case "text":
+      baseButtonClasses = `color-${color}`;
+      break;
+    default:
+      baseButtonClasses = `bg-${color} color-${onColorToken}`;
+      break;
+  }
+  if (modifiers) {
+    baseButtonClasses += ` ${modifiers}`;
+  }
 
-	/**Determine state layer props dynamically */
-	function getLocalStateLayerProps() {
-		if (stateLayerOverride) {
-			return stateLayerOverride;
-		} else {
-			return {
-				bgColor: variant === 'fill' ? onColorToken : color,
-			};
-		}
-	}
+  /**Determine state layer props dynamically */
+  function getLocalStateLayerProps() {
+    if (stateLayerOverride) {
+      return stateLayerOverride;
+    } else {
+      return {
+        bgColor: variant === "fill" ? onColorToken : color
+      }
+    
+    }
+  }
 
-	const localStateLayerProps: LkStateLayerProps = getLocalStateLayerProps();
+  const localStateLayerProps: LkStateLayerProps = getLocalStateLayerProps();
 
-	return (
-		<button {...lkButtonAttrs} {...restProps} type="button" data-lk-component="button" className={`${baseButtonClasses} ${modifiers || ''}`}>
-			<div data-lk-button-content-wrap="true">
-				{startIcon && (
-					<div data-lk-icon-position="start">
-						<Icon name={startIcon} color={variant === 'fill' ? onColorToken : color} data-lk-icon-position="start"></Icon>
-					</div>
-				)}
-				<span data-lk-button-child="button-text">{label ?? 'Button'}</span>
-				{endIcon && (
-					<div data-lk-icon-position="end">
-						<Icon name={endIcon} color={variant === 'fill' ? onColorToken : color} data-lk-icon-position="end"></Icon>
-					</div>
-				)}
-			</div>
-			<StateLayer {...localStateLayerProps} />
-		</button>
-	);
+  return (
+    <button
+      {...lkButtonAttrs}
+      {...restProps}
+      type="button"
+      data-lk-component="button"
+      className={`${baseButtonClasses} ${modifiers || ""}`}
+    >
+      <div data-lk-button-content-wrap="true">
+        {startIcon && (
+          <div data-lk-icon-position="start">
+            <Icon name={startIcon} color={variant === "fill" ? onColorToken : color} data-lk-icon-position="start"></Icon>
+          </div>
+        )}
+        <span data-lk-button-child="button-text">{label ?? "Button"}</span>
+        {endIcon && (
+          <div data-lk-icon-position="end">
+            <Icon name={endIcon} color={variant === "fill" ? onColorToken : color} data-lk-icon-position="end"></Icon>
+          </div>
+        )}
+      </div>
+      <StateLayer {...localStateLayerProps}/>
+    </button>
+  );
 }

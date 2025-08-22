@@ -1,6 +1,6 @@
+@import url('@/lib/css/index.css');
 @import 'tailwindcss';
 @plugin "@tailwindcss/forms";
-@import '../lib/css/index.css';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -127,4 +127,21 @@
 			transform: translateX(100%);
 		}
 	}
+}
+
+/* Glassmorphism helper (light) */
+.glass-card {
+	border-radius: 1rem;
+	border: 1px solid rgb(0 0 0 / 0.06);
+	background: rgb(255 255 255 / 0.28);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Dark mode override */
+.dark .glass-card {
+	border-color: rgb(255 255 255 / 0.08);
+	background: rgb(16 16 20 / 0.4);
+	box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
 }

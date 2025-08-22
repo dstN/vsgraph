@@ -31,12 +31,13 @@
     "@radix-ui/react-toggle-group": "^1.1.11",
     "@radix-ui/react-tooltip": "^1.2.8",
     "@remixicon/react": "^4.6.0",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "geist": "^1.4.2",
-    "lucide-react": "^0.540.0",
-    "next": "15.4.6",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "lucide-react": "^0.511.0",
+    "next": "15.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "recharts": "^3.1.2",
     "tailwind-merge": "^3.3.1",
     "tailwind-variants": "^2.1.0"
@@ -45,13 +46,12 @@
     "@chainlift/liftkit": "^0.2.0",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/forms": "^0.5.10",
-    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.4.6",
-    "tailwindcss": "^4",
+    "eslint-config-next": "15.3.1",
+    "shadcn": "^2.7.0",
     "typescript": "^5"
   }
 }
