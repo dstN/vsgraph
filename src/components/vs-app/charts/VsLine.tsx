@@ -1,74 +1,47 @@
 'use client';
 
-import { ResponsiveContainer, LineChart as RLineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend } from 'recharts';
 import { useMemo } from 'react';
+import { ResponsiveContainer, LineChart as RLineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend } from 'recharts';
 
-type NumberLike = number | string;
+type NumLike = number | string;
 
-export type VsLineProps<T extends Record<string, NumberLike>> = {
+export type VsLineProps<T extends Record<string, NumLike>> = {
 	data: T[];
-	index: keyof T; // x-axis key (e.g., "year")
-	categories: (keyof T)[]; // series keys (e.g., ["pmkLeft", "pmkRight"])
-	colors?: string[]; // CSS colors (e.g., "#3B82F6" or "var(--chart-1)")
+	index: keyof T; // x-axis key (e.g. "year")
+	categories: (keyof T)[]; // series keys (e.g. ["pmkLeft","pmkRight"])
+	colors?: string[]; // CSS colors; defaults use Tailwind-ish hues
 	autoMinValue?: boolean;
 	minValue?: number;
 	maxValue?: number;
-	valueFormatter?: (v: NumberLike) => string;
-	height?: number;
-	showGrid?: boolean;
+	valueFormatter?: (v: NumLike) => string;
+	height?: number; // parent-controlled height
 	showLegend?: boolean;
+	showGrid?: boolean;
 	showDots?: boolean;
 };
 
-const FALLBACK_COLORS = ['#3B82F6', '#10B981', '#F59E0B', '#8B5CF6', '#06B6D4'];
+const DEFAULT_COLORS = [
+	'#3B82F6', // blue-500
+	'#10B981', // emerald-500
+	'#F59E0B', // amber-500
+	'#8B5CF6', // violet-500
+	'#06B6D4', // cyan-500
+];
 
-// read CSS variable from :root if available
-function readCssVar(name: string): string | null {
-	if (typeof window === 'undefined') return null;
-	const v = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
-	return v || null;
-}
+export default function VsLine<T extends Record<string, NumLike>>({ data, index, categories, colors = DEFAULT_COLORS, autoMinValue = true, minValue, maxValue, valueFormatter = (v) => new Intl.NumberFormat('de-DE').format(Number(v)), height = 320, showLegend = true, showGrid = true, showDots = false }: VsLineProps<T>) {
+	const idx = String(index);
+	const series = useMemo(() => categories.map((c, i) => ({ key: String(c), color: colors[i % colors.length] })), [categories, colors]);
 
-// pick --chart-1..5 if defined, otherwise fallback hex palette
-function usePreferredColors(): string[] {
-	return useMemo(() => {
-		const vars = ['--chart-1', '--chart-2', '--chart-3', '--chart-4', '--chart-5'].map((v) => readCssVar(v)).filter((v): v is string => Boolean(v));
-		return vars.length ? vars : FALLBACK_COLORS;
-	}, []);
-}
-
-// strictly typed Y domain
-function getYAxisDomain(autoMinValue: boolean, minValue?: number, maxValue?: number): readonly [number | 'auto', number | 'auto'] {
-	const minDomain: number | 'auto' = autoMinValue ? 'auto' : minValue ?? 0;
-	const maxDomain: number | 'auto' = maxValue ?? 'auto';
-	return [minDomain, maxDomain] as const;
-}
-
-export default function VsLine<T extends Record<string, NumberLike>>({ data, index, categories, colors, autoMinValue = true, minValue, maxValue, valueFormatter = (v) => new Intl.NumberFormat('de-DE').format(Number(v)), height = 320, showGrid = true, showLegend = true, showDots = false }: VsLineProps<T>) {
-	const themePalette = usePreferredColors();
-	const palette = colors ?? themePalette;
-
-	// map categories to colors (cyclic)
-	const series = useMemo(
-		() =>
-			categories.map((c, i) => ({
-				key: String(c),
-				color: palette[i % palette.length],
-			})),
-		[categories, palette]
-	);
-
-	const [yMin, yMax] = getYAxisDomain(autoMinValue, minValue, maxValue);
-	const axisDomain: [number | 'auto', number | 'auto'] = [yMin, yMax];
+	const domain: [number | 'auto', number | 'auto'] = [autoMinValue ? 'auto' : minValue ?? 0, maxValue ?? 'auto'];
 
 	return (
 		<div style={{ width: '100%', height }}>
 			<ResponsiveContainer>
 				<RLineChart data={data} margin={{ top: 8, right: 16, bottom: 8, left: 8 }}>
 					{showGrid && <CartesianGrid strokeDasharray="4 4" />}
-					<XAxis dataKey={String(index)} />
-					<YAxis domain={axisDomain} tickFormatter={(v: number | string) => valueFormatter(v)} width={56} />
-					<Tooltip formatter={(value: number | string) => valueFormatter(value)} labelFormatter={(l: number | string) => String(l)} />
+					<XAxis dataKey={idx} />
+					<YAxis domain={domain} tickFormatter={(v) => valueFormatter(v)} width={56} />
+					<Tooltip formatter={(v) => valueFormatter(v as number)} labelFormatter={(l) => String(l)} />
 					{showLegend && <Legend />}
 					{series.map(({ key, color }) => (
 						<Line key={key} type="monotone" dataKey={key} stroke={color} strokeWidth={2} dot={showDots} isAnimationActive={false} />
