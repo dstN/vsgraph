@@ -9,7 +9,7 @@ export type VsLineProps<T extends Record<string, NumLike>> = {
 	data: T[];
 	index: keyof T; // x-axis key (e.g. "year")
 	categories: (keyof T)[]; // series keys (e.g. ["pmkLeft","pmkRight"])
-	colors?: string[]; // CSS colors; defaults use Tailwind-ish hues
+	colors?: string[]; // series stroke colors
 	autoMinValue?: boolean;
 	minValue?: number;
 	maxValue?: number;
@@ -20,13 +20,7 @@ export type VsLineProps<T extends Record<string, NumLike>> = {
 	showDots?: boolean;
 };
 
-const DEFAULT_COLORS = [
-	'#3B82F6', // blue-500
-	'#10B981', // emerald-500
-	'#F59E0B', // amber-500
-	'#8B5CF6', // violet-500
-	'#06B6D4', // cyan-500
-];
+const DEFAULT_COLORS = ['var(--chart-1)', 'var(--chart-2)', 'var(--chart-3)', 'var(--chart-4)', 'var(--chart-5)'];
 
 export default function VsLine<T extends Record<string, NumLike>>({ data, index, categories, colors = DEFAULT_COLORS, autoMinValue = true, minValue, maxValue, valueFormatter = (v) => new Intl.NumberFormat('de-DE').format(Number(v)), height = 320, showLegend = true, showGrid = true, showDots = false }: VsLineProps<T>) {
 	const idx = String(index);
@@ -38,11 +32,25 @@ export default function VsLine<T extends Record<string, NumLike>>({ data, index,
 		<div style={{ width: '100%', height }}>
 			<ResponsiveContainer>
 				<RLineChart data={data} margin={{ top: 8, right: 16, bottom: 8, left: 8 }}>
-					{showGrid && <CartesianGrid strokeDasharray="4 4" />}
-					<XAxis dataKey={idx} />
-					<YAxis domain={domain} tickFormatter={(v) => valueFormatter(v)} width={56} />
-					<Tooltip formatter={(v) => valueFormatter(v as number)} labelFormatter={(l) => String(l)} />
-					{showLegend && <Legend />}
+					{showGrid && <CartesianGrid stroke="var(--chart-grid)" strokeDasharray="4 4" />}
+
+					<XAxis dataKey={idx} stroke="var(--chart-axis)" tick={{ fill: 'var(--chart-legend-fg)' }} axisLine={{ stroke: 'var(--chart-axis)' }} tickLine={{ stroke: 'var(--chart-axis)' }} />
+					<YAxis domain={domain} tickFormatter={(v) => valueFormatter(v)} width={56} stroke="var(--chart-axis)" tick={{ fill: 'var(--chart-legend-fg)' }} axisLine={{ stroke: 'var(--chart-axis)' }} tickLine={{ stroke: 'var(--chart-axis)' }} />
+
+					<Tooltip
+						formatter={(v) => valueFormatter(v as number)}
+						labelFormatter={(l) => String(l)}
+						contentStyle={{
+							backgroundColor: 'var(--chart-tooltip-bg)',
+							borderColor: 'var(--chart-axis)',
+							color: 'var(--chart-tooltip-fg)',
+						}}
+						labelStyle={{ color: 'var(--chart-tooltip-fg)' }}
+						wrapperStyle={{ outline: 'none' }}
+					/>
+
+					{showLegend && <Legend wrapperStyle={{ color: 'var(--chart-legend-fg)' }} />}
+
 					{series.map(({ key, color }) => (
 						<Line key={key} type="monotone" dataKey={key} stroke={color} strokeWidth={2} dot={showDots} isAnimationActive={false} />
 					))}

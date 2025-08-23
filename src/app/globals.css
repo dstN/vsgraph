@@ -4,12 +4,78 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Make .dark control LiftKit tokens instead of prefers-color-scheme */
+/* Place this AFTER the LiftKit import, so it overrides its :root and @media rules */
+
+/* Keep browser native widgets consistent with our toggle */
+html:not(.dark) {
+	color-scheme: light;
+}
+html.dark {
+	color-scheme: dark;
+}
+
+/* Minimal core set that drives page bg, text and borders.
+   You can extend this list later if needed (primary, success, etc.). */
+html:not(.dark) {
+	--lk-background: var(--light__background_lkv);
+	--lk-onbackground: var(--light__onbackground_lkv);
+
+	--lk-surface: var(--light__surface_lkv);
+	--lk-onsurface: var(--light__onsurface_lkv);
+
+	--lk-outline: var(--light__outline_lkv);
+	--lk-outlinevariant: var(--light__outlinevariant_lkv);
+}
+
+html.dark {
+	--lk-background: var(--dark__background_lkv);
+	--lk-onbackground: var(--dark__onbackground_lkv);
+
+	--lk-surface: var(--dark__surface_lkv);
+	--lk-onsurface: var(--dark__onsurface_lkv);
+
+	--lk-outline: var(--dark__outline_lkv);
+	--lk-outlinevariant: var(--dark__outlinevariant_lkv);
+}
+
+html:not(.dark) {
+	--lk-primary: var(--light__primary_lkv);
+	--lk-onprimary: var(--light__onprimary_lkv);
+	--lk-secondary: var(--light__secondary_lkv);
+	--lk-onsecondary: var(--light__onsecondary_lkv);
+	--lk-tertiary: var(--light__tertiary_lkv);
+	--lk-ontertiary: var(--light__ontertiary_lkv);
+}
+html.dark {
+	--lk-primary: var(--dark__primary_lkv);
+	--lk-onprimary: var(--dark__onprimary_lkv);
+	--lk-secondary: var(--dark__secondary_lkv);
+	--lk-onsecondary: var(--dark__onsecondary_lkv);
+	--lk-tertiary: var(--dark__tertiary_lkv);
+	--lk-ontertiary: var(--dark__ontertiary_lkv);
+}
+
 @theme inline {
-	--chart-1: oklch(0.63 0.2 255); /* blau */
-	--chart-2: oklch(0.72 0.13 155); /* grün */
-	--chart-3: oklch(0.75 0.17 70); /* orange */
-	--chart-4: oklch(0.62 0.18 305); /* violett */
-	--chart-5: oklch(0.71 0.16 195); /* cyan */
+	/* keep your chart tokens here too */
+	--chart-1: oklch(0.63 0.2 255);
+	--chart-2: oklch(0.72 0.13 155);
+	--chart-3: oklch(0.75 0.17 70);
+	--chart-4: oklch(0.62 0.18 305);
+	--chart-5: oklch(0.71 0.16 195);
+}
+
+:root {
+	/* axes & grid */
+	--chart-axis: var(--lk-outline);
+	--chart-grid: var(--lk-outlinevariant);
+
+	/* legend & text inside chart UI */
+	--chart-legend-fg: var(--lk-onsurface);
+
+	/* tooltip surface */
+	--chart-tooltip-bg: var(--lk-surface);
+	--chart-tooltip-fg: var(--lk-onsurface);
 }
 
 @theme {
@@ -127,21 +193,4 @@
 			transform: translateX(100%);
 		}
 	}
-}
-
-/* Glassmorphism helper (light) */
-.glass-card {
-	border-radius: 1rem;
-	border: 1px solid rgb(0 0 0 / 0.06);
-	background: rgb(255 255 255 / 0.28);
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
-	box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
-}
-
-/* Dark mode override */
-.dark .glass-card {
-	border-color: rgb(255 255 255 / 0.08);
-	background: rgb(16 16 20 / 0.4);
-	box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
 }
