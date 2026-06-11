@@ -19,7 +19,7 @@ export default function KontaktPage() {
 
     setStatus("loading");
     try {
-      const response = await fetch("https://vsgraph.de/phpmailer/phpmailer.php", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
