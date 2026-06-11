@@ -1,0 +1,460 @@
+/* ═══════════════════════════════════════════════════════
+   globals.css – VSGraph Design System
+   ═══════════════════════════════════════════════════════
+   Apple-like, barrierefreies Design mit Dark/Light Mode.
+   Vanilla CSS mit Custom Properties, kein Tailwind.
+   ═══════════════════════════════════════════════════════ */
+
+/* ── CSS Layers (Spezifitäts-Kontrolle) ─────────────── */
+@layer reset, fonts, tokens, base, components, utilities;
+
+/* ── Fonts ──────────────────────────────────────────── */
+@layer fonts {
+  @font-face {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/lexend-400.woff2') format('woff2'),
+         url('/fonts/lexend-400.woff') format('woff'),
+         url('/fonts/lexend-400.ttf') format('truetype');
+  }
+}
+
+/* ── Reset ──────────────────────────────────────────── */
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    min-height: 100dvh;
+    line-height: 1.6;
+  }
+
+  img,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  button {
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+/* ── Design Tokens ──────────────────────────────────── */
+/* Theme wird über data-theme="light|dark" auf <html> gesteuert.
+   ThemeToggle.tsx setzt dieses Attribut per JS.
+   Blocking-Script in layout.tsx verhindert Flash. */
+
+@layer tokens {
+  /* ── Light Mode (Default) ──────────────────────────── */
+  :root {
+    color-scheme: light;
+
+    /* ── Surfaces ── */
+    --color-bg-primary: #fafafa;
+    --color-bg-secondary: #f0f0f0;
+    --color-bg-card: #ffffff;
+    --color-bg-card-hover: #f7f7f8;
+    --color-bg-pill: #f0f0f0;
+    --color-bg-pill-active: #1a1a1a;
+    --color-bg-tooltip: #1a1a1a;
+
+    /* ── Text ── */
+    --color-text-primary: #1a1a1a;
+    --color-text-secondary: #555555;
+    --color-text-muted: #8e8e93;
+    --color-text-pill-active: #ffffff;
+    --color-text-tooltip: #f5f5f5;
+    --color-text-accent: #4361ee;
+
+    /* ── Borders ── */
+    --color-border: #e5e5ea;
+    --color-border-hover: #c7c7cc;
+
+    /* ── PMK-Bereich Farben ── */
+    --color-pmk-rechts: #4361ee;
+    --color-pmk-links: #e63946;
+    --color-pmk-religioes: #2a9d8f;
+    --color-pmk-auslaendisch: #7209b7;
+    --color-pmk-sonstige: #868e96;
+
+    /* ── Trend-Farben ── */
+    --color-trend-up: #e63946;
+    --color-trend-down: #2a9d8f;
+    --color-trend-stable: #868e96;
+
+    /* ── Shadows ── */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-card-hover: 0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
+    --shadow-tooltip: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+    /* ── Spacing (8px Grid) ── */
+    --space-1: 0.25rem;   /* 4px */
+    --space-2: 0.5rem;    /* 8px */
+    --space-3: 0.75rem;   /* 12px */
+    --space-4: 1rem;      /* 16px */
+    --space-5: 1.25rem;   /* 20px */
+    --space-6: 1.5rem;    /* 24px */
+    --space-8: 2rem;      /* 32px */
+    --space-10: 2.5rem;   /* 40px */
+    --space-12: 3rem;     /* 48px */
+    --space-16: 4rem;     /* 64px */
+    --space-20: 5rem;     /* 80px */
+
+    /* ── Typography ── */
+    --font-family: "Lexend", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-size-xs: 0.75rem;    /* 12px */
+    --font-size-sm: 0.875rem;   /* 14px */
+    --font-size-base: 1rem;     /* 16px */
+    --font-size-lg: 1.125rem;   /* 18px */
+    --font-size-xl: 1.25rem;    /* 20px */
+    --font-size-2xl: 1.5rem;    /* 24px */
+    --font-size-3xl: 1.875rem;  /* 30px */
+    --font-size-4xl: 2.25rem;   /* 36px */
+    --font-size-kpi: clamp(1.5rem, 4vw, 2.5rem);
+    --font-size-hero: clamp(1.75rem, 3.5vw, 3rem);
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.6;
+
+    --letter-spacing-tight: -0.02em;
+    --letter-spacing-normal: 0;
+    --letter-spacing-wide: 0.02em;
+
+    /* ── Borders & Radii ── */
+    --radius-sm: 0.5rem;    /* 8px */
+    --radius-md: 0.75rem;   /* 12px */
+    --radius-lg: 1rem;      /* 16px */
+    --radius-xl: 1.25rem;   /* 20px */
+    --radius-pill: 9999px;
+
+    /* ── Transitions ── */
+    --transition-fast: 120ms ease;
+    --transition-normal: 200ms ease;
+    --transition-slow: 350ms ease;
+
+    /* ── Layout ── */
+    --max-width: 72rem;     /* 1152px */
+    --content-padding: var(--space-6);
+  }
+
+  /* ── Dark Mode Overrides ─────────────────────────────── */
+  [data-theme="dark"] {
+    color-scheme: dark;
+
+    --color-bg-primary: #0a0a0a;
+    --color-bg-secondary: #111111;
+    --color-bg-card: #161616;
+    --color-bg-card-hover: #1c1c1e;
+    --color-bg-pill: #1c1c1e;
+    --color-bg-pill-active: #f5f5f5;
+    --color-bg-tooltip: #2a2a2e;
+
+    --color-text-primary: #f5f5f5;
+    --color-text-secondary: #a1a1aa;
+    --color-text-muted: #636366;
+    --color-text-pill-active: #0a0a0a;
+    --color-text-tooltip: #f5f5f5;
+    --color-text-accent: #748ffc;
+
+    --color-border: #2c2c2e;
+    --color-border-hover: #3a3a3c;
+
+    --color-pmk-rechts: #748ffc;
+    --color-pmk-links: #ff6b6b;
+    --color-pmk-religioes: #63e6be;
+    --color-pmk-auslaendisch: #cc5de8;
+    --color-pmk-sonstige: #adb5bd;
+
+    --color-trend-up: #ff6b6b;
+    --color-trend-down: #63e6be;
+    --color-trend-stable: #adb5bd;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.25);
+    --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Mobile override */
+  @media (max-width: 640px) {
+    :root {
+      --content-padding: var(--space-4);
+    }
+  }
+}
+
+/* ── Base Styles ────────────────────────────────────── */
+@layer base {
+  body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+    transition:
+      background-color var(--transition-slow),
+      color var(--transition-slow);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-tight);
+    color: var(--color-text-primary);
+  }
+
+  h1 { font-size: var(--font-size-hero); }
+  h2 { font-size: var(--font-size-3xl); }
+  h3 { font-size: var(--font-size-2xl); }
+  h4 { font-size: var(--font-size-xl); }
+
+  p {
+    color: var(--color-text-secondary);
+    max-width: 65ch;
+  }
+
+  ::selection {
+    background-color: var(--color-text-accent);
+    color: white;
+  }
+
+  /* Barrierefreiheit: Focus Styles */
+  :focus-visible {
+    outline: 2px solid var(--color-text-accent);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+
+  /* Reduzierte Animationen respektieren */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ── Utility-Klassen ────────────────────────────────── */
+@layer utilities {
+  .container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding-inline: var(--content-padding);
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .text-muted {
+    color: var(--color-text-muted);
+  }
+}
+
+/* ── Page Components ────────────────────────────────── */
+@layer components {
+
+  /* ── Header ── */
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: color-mix(in srgb, var(--color-bg-primary) 85%, transparent);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .headerInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.5rem;
+  }
+
+  .headerLogo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .headerLogoIcon {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-accent);
+  }
+
+  .headerLogoText {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-tight);
+  }
+
+  .headerNav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+  }
+
+  .headerNavLink {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-secondary);
+    transition: color var(--transition-fast);
+  }
+
+  .headerNavLink:hover {
+    color: var(--color-text-primary);
+  }
+
+  /* ── Hero ── */
+  .hero {
+    padding-block: var(--space-20) var(--space-12);
+    text-align: center;
+  }
+
+  .heroBadge {
+    display: inline-block;
+    padding: var(--space-1) var(--space-4);
+    border-radius: var(--radius-pill);
+    background: var(--color-bg-pill);
+    border: 1px solid var(--color-border);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-6);
+  }
+
+  .heroTitle {
+    font-size: var(--font-size-hero);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-tight);
+    margin-bottom: var(--space-6);
+  }
+
+  .heroTitleAccent {
+    background: linear-gradient(135deg, var(--color-pmk-rechts), var(--color-pmk-religioes));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .heroSubtitle {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    max-width: 52ch;
+    margin-inline: auto;
+    line-height: var(--line-height-normal);
+  }
+
+  /* ── About ── */
+  .about {
+    padding-block: var(--space-16);
+    background: var(--color-bg-secondary);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .aboutTitle {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-8);
+  }
+
+  .aboutGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .aboutCard {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    box-shadow: var(--shadow-card);
+  }
+
+  .aboutCard h3 {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-3);
+  }
+
+  .aboutCard p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-normal);
+  }
+
+  /* ── Footer ── */
+  .footer {
+    padding-block: var(--space-8);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .footerInner {
+    text-align: center;
+  }
+
+  .footerText {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+  }
+
+  /* ── Utilities ── */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}

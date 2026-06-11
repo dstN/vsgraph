@@ -1,0 +1,31 @@
+/* ═══════════════════════════════════════════════════════
+   theme-toggle.css – Dark/Light Switcher
+   ═══════════════════════════════════════════════════════ */
+
+.themeToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.themeToggle:hover {
+  background: var(--color-bg-pill);
+  color: var(--color-text-primary);
+}
+
+.themeToggle:focus-visible {
+  outline: 2px solid var(--color-text-accent);
+  outline-offset: 2px;
+}
+
+.themeTogglePlaceholder {
+  width: 36px;
+  height: 36px;
+}

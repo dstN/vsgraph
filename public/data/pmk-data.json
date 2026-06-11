@@ -1,0 +1,5475 @@
+[
+  {
+    "jahr": 1999,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 51400,
+      "davon_gewaltorientiert": 9000
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 1,
+        "versuchte_toetungsdelikte": 13,
+        "koerperverletzungen": 630,
+        "brandstiftungen": 35,
+        "herbeifuehren_einer_sprengstoffexplosion": 2,
+        "landfriedensbruch": 65,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 0,
+        "freiheitsberaubung": 0,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": 0,
+        "widerstandsdelikte": 0,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 746
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 373,
+        "noetigung_bedrohung": 220,
+        "propagandadelikte": 6719,
+        "stoerung_der_totenruhe": 47,
+        "andere_straftaten": 1932,
+        "gesamt_sonstige_straftaten": 9291
+      },
+      "straftaten_insgesamt": 10037
+    }
+  },
+  {
+    "jahr": 1999,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 34200,
+      "davon_gewaltorientiert": 7000
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 0,
+        "koerperverletzungen": 215,
+        "brandstiftungen": 68,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 269,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 19,
+        "freiheitsberaubung": 0,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": 0,
+        "widerstandsdelikte": 140,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 711
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1246,
+        "noetigung_bedrohung": 73,
+        "propagandadelikte": 0,
+        "stoerung_der_totenruhe": 0,
+        "andere_straftaten": 1025,
+        "gesamt_sonstige_straftaten": 2344
+      },
+      "straftaten_insgesamt": 3055
+    }
+  },
+  {
+    "jahr": 1999,
+    "phaenomenbereich": "pmk_auslaender",
+    "personenpotenzial": {
+      "absolut_gesamt": 59700,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 1,
+        "versuchte_toetungsdelikte": 7,
+        "koerperverletzungen": 83,
+        "brandstiftungen": 101,
+        "herbeifuehren_einer_sprengstoffexplosion": 3,
+        "landfriedensbruch": 103,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 0,
+        "freiheitsberaubung": 20,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": 73,
+        "widerstandsdelikte": 0,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 391
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 317,
+        "noetigung_bedrohung": 303,
+        "propagandadelikte": 0,
+        "stoerung_der_totenruhe": 0,
+        "andere_straftaten": 1525,
+        "gesamt_sonstige_straftaten": 2145
+      },
+      "straftaten_insgesamt": 2536
+    }
+  },
+  {
+    "jahr": 1999,
+    "phaenomenbereich": "pmk_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 1999,
+    "phaenomenbereich": "pmk_auslaender_ohne_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 1999,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": null,
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2000,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 50900,
+      "davon_gewaltorientiert": 9700
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 2,
+        "versuchte_toetungsdelikte": 15,
+        "koerperverletzungen": 874,
+        "brandstiftungen": 41,
+        "herbeifuehren_einer_sprengstoffexplosion": 7,
+        "landfriedensbruch": 59,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 0,
+        "freiheitsberaubung": 0,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": 0,
+        "widerstandsdelikte": 0,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 998
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 704,
+        "noetigung_bedrohung": 320,
+        "propagandadelikte": 10435,
+        "stoerung_der_totenruhe": 56,
+        "andere_straftaten": 3438,
+        "gesamt_sonstige_straftaten": 14953
+      },
+      "straftaten_insgesamt": 15951
+    }
+  },
+  {
+    "jahr": 2000,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 33500,
+      "davon_gewaltorientiert": 7000
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 4,
+        "koerperverletzungen": 260,
+        "brandstiftungen": 58,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 321,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 44,
+        "freiheitsberaubung": 0,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": 0,
+        "widerstandsdelikte": 139,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 827
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1292,
+        "noetigung_bedrohung": 75,
+        "propagandadelikte": 0,
+        "stoerung_der_totenruhe": 0,
+        "andere_straftaten": 979,
+        "gesamt_sonstige_straftaten": 2346
+      },
+      "straftaten_insgesamt": 3173
+    }
+  },
+  {
+    "jahr": 2000,
+    "phaenomenbereich": "pmk_auslaender",
+    "personenpotenzial": {
+      "absolut_gesamt": 58800,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 1,
+        "versuchte_toetungsdelikte": 0,
+        "koerperverletzungen": 40,
+        "brandstiftungen": 8,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 28,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 0,
+        "freiheitsberaubung": 4,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": 35,
+        "widerstandsdelikte": 0,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 116
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 89,
+        "noetigung_bedrohung": 61,
+        "propagandadelikte": 0,
+        "stoerung_der_totenruhe": 0,
+        "andere_straftaten": 525,
+        "gesamt_sonstige_straftaten": 675
+      },
+      "straftaten_insgesamt": 791
+    }
+  },
+  {
+    "jahr": 2000,
+    "phaenomenbereich": "pmk_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2000,
+    "phaenomenbereich": "pmk_auslaender_ohne_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2000,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": null,
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2001,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 49700,
+      "davon_gewaltorientiert": 10400
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 9,
+        "koerperverletzungen": 626,
+        "brandstiftungen": 16,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 34,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 3,
+        "freiheitsberaubung": 0,
+        "raub": 7,
+        "erpressung": 3,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 10,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 709
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 251,
+        "noetigung_bedrohung": 190,
+        "propagandadelikte": 6336,
+        "stoerung_der_totenruhe": 30,
+        "andere_straftaten": 2538,
+        "gesamt_sonstige_straftaten": 9345
+      },
+      "straftaten_insgesamt": 10054
+    }
+  },
+  {
+    "jahr": 2001,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 32900,
+      "davon_gewaltorientiert": 7000
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 1,
+        "versuchte_toetungsdelikte": 1,
+        "koerperverletzungen": 194,
+        "brandstiftungen": 41,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 310,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 52,
+        "freiheitsberaubung": 0,
+        "raub": 5,
+        "erpressung": 0,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 145,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 750
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 671,
+        "noetigung_bedrohung": 45,
+        "propagandadelikte": 0,
+        "stoerung_der_totenruhe": 0,
+        "andere_straftaten": 429,
+        "gesamt_sonstige_straftaten": 1145
+      },
+      "straftaten_insgesamt": 1895
+    }
+  },
+  {
+    "jahr": 2001,
+    "phaenomenbereich": "pmk_auslaender",
+    "personenpotenzial": {
+      "absolut_gesamt": 59100,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 0,
+        "koerperverletzungen": 30,
+        "brandstiftungen": 2,
+        "herbeifuehren_einer_sprengstoffexplosion": 2,
+        "landfriedensbruch": 14,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 4,
+        "freiheitsberaubung": 1,
+        "raub": 2,
+        "erpressung": 20,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 9,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 84
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 40,
+        "noetigung_bedrohung": 34,
+        "propagandadelikte": 0,
+        "stoerung_der_totenruhe": 0,
+        "andere_straftaten": 353,
+        "gesamt_sonstige_straftaten": 427
+      },
+      "straftaten_insgesamt": 511
+    }
+  },
+  {
+    "jahr": 2001,
+    "phaenomenbereich": "pmk_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2001,
+    "phaenomenbereich": "pmk_auslaender_ohne_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 27150,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2001,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": null,
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 102
+    }
+  },
+  {
+    "jahr": 2002,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 45000,
+      "davon_gewaltorientiert": 10700
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 8,
+        "koerperverletzungen": 646,
+        "brandstiftungen": 26,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 32,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 11,
+        "freiheitsberaubung": 1,
+        "raub": 6,
+        "erpressung": 5,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 36,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 772
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 178,
+        "noetigung_bedrohung": 115,
+        "propagandadelikte": 7294,
+        "stoerung_der_totenruhe": 30,
+        "andere_straftaten": 2513,
+        "gesamt_sonstige_straftaten": 10130
+      },
+      "straftaten_insgesamt": 10902
+    }
+  },
+  {
+    "jahr": 2002,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 31100,
+      "davon_gewaltorientiert": 5500
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 0,
+        "koerperverletzungen": 152,
+        "brandstiftungen": 35,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 124,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 16,
+        "freiheitsberaubung": 1,
+        "raub": 6,
+        "erpressung": 0,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 51,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 385
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 410,
+        "noetigung_bedrohung": 11,
+        "propagandadelikte": 0,
+        "stoerung_der_totenruhe": 0,
+        "andere_straftaten": 331,
+        "gesamt_sonstige_straftaten": 752
+      },
+      "straftaten_insgesamt": 1137
+    }
+  },
+  {
+    "jahr": 2002,
+    "phaenomenbereich": "pmk_auslaender",
+    "personenpotenzial": {
+      "absolut_gesamt": 57350,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 4,
+        "koerperverletzungen": 20,
+        "brandstiftungen": 2,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 7,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 1,
+        "freiheitsberaubung": 8,
+        "raub": 2,
+        "erpressung": 16,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 1,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 61
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 22,
+        "noetigung_bedrohung": 23,
+        "propagandadelikte": 0,
+        "stoerung_der_totenruhe": 0,
+        "andere_straftaten": 467,
+        "gesamt_sonstige_straftaten": 512
+      },
+      "straftaten_insgesamt": 573
+    }
+  },
+  {
+    "jahr": 2002,
+    "phaenomenbereich": "pmk_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2002,
+    "phaenomenbereich": "pmk_auslaender_ohne_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 26750,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2002,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": null,
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 146
+    }
+  },
+  {
+    "jahr": 2003,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 41500,
+      "davon_gewaltorientiert": 10000
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 7,
+        "koerperverletzungen": 637,
+        "brandstiftungen": 24,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 28,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 2,
+        "freiheitsberaubung": 2,
+        "raub": 12,
+        "erpressung": 2,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 45,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 759
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 225,
+        "noetigung_bedrohung": 93,
+        "propagandadelikte": 7551,
+        "stoerung_der_totenruhe": 26,
+        "andere_straftaten": 2138,
+        "gesamt_sonstige_straftaten": 10033
+      },
+      "straftaten_insgesamt": 10792
+    }
+  },
+  {
+    "jahr": 2003,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 31300,
+      "davon_gewaltorientiert": 5400
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 1,
+        "koerperverletzungen": 192,
+        "brandstiftungen": 36,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 118,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 29,
+        "freiheitsberaubung": 0,
+        "raub": 5,
+        "erpressung": 0,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 102,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 483
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 510,
+        "noetigung_bedrohung": 35,
+        "propagandadelikte": 0,
+        "stoerung_der_totenruhe": 0,
+        "andere_straftaten": 431,
+        "gesamt_sonstige_straftaten": 976
+      },
+      "straftaten_insgesamt": 1459
+    }
+  },
+  {
+    "jahr": 2003,
+    "phaenomenbereich": "pmk_auslaender",
+    "personenpotenzial": {
+      "absolut_gesamt": 57300,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 0,
+        "koerperverletzungen": 32,
+        "brandstiftungen": 4,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 9,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 6,
+        "freiheitsberaubung": 4,
+        "raub": 2,
+        "erpressung": 20,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 9,
+        "sexualdelikte": 1,
+        "gesamt_gewalttaten": 88
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 28,
+        "noetigung_bedrohung": 17,
+        "propagandadelikte": 0,
+        "stoerung_der_totenruhe": 0,
+        "andere_straftaten": 1340,
+        "gesamt_sonstige_straftaten": 1385
+      },
+      "straftaten_insgesamt": 1473
+    }
+  },
+  {
+    "jahr": 2003,
+    "phaenomenbereich": "pmk_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2003,
+    "phaenomenbereich": "pmk_auslaender_ohne_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 26350,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2003,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": null,
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 179
+    }
+  },
+  {
+    "jahr": 2004,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 40700,
+      "davon_gewaltorientiert": 10000
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 6,
+        "koerperverletzungen": 640,
+        "brandstiftungen": 37,
+        "herbeifuehren_einer_sprengstoffexplosion": 2,
+        "landfriedensbruch": 25,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 6,
+        "freiheitsberaubung": 2,
+        "raub": 9,
+        "erpressung": 5,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 44,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 776
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 243,
+        "noetigung_bedrohung": 97,
+        "propagandadelikte": 8337,
+        "stoerung_der_totenruhe": 20,
+        "andere_straftaten": 2578,
+        "gesamt_sonstige_straftaten": 11275
+      },
+      "straftaten_insgesamt": 12051
+    }
+  },
+  {
+    "jahr": 2004,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 30800,
+      "davon_gewaltorientiert": 5500
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 0,
+        "koerperverletzungen": 226,
+        "brandstiftungen": 31,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 144,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 19,
+        "freiheitsberaubung": 0,
+        "raub": 12,
+        "erpressung": 1,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 88,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 521
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 490,
+        "noetigung_bedrohung": 19,
+        "propagandadelikte": 0,
+        "stoerung_der_totenruhe": 0,
+        "andere_straftaten": 410,
+        "gesamt_sonstige_straftaten": 919
+      },
+      "straftaten_insgesamt": 1440
+    }
+  },
+  {
+    "jahr": 2004,
+    "phaenomenbereich": "pmk_auslaender",
+    "personenpotenzial": {
+      "absolut_gesamt": 57520,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 4,
+        "versuchte_toetungsdelikte": 0,
+        "koerperverletzungen": 24,
+        "brandstiftungen": 0,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 4,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 0,
+        "freiheitsberaubung": 1,
+        "raub": 2,
+        "erpressung": 17,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 9,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 61
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 31,
+        "noetigung_bedrohung": 28,
+        "propagandadelikte": 0,
+        "stoerung_der_totenruhe": 0,
+        "andere_straftaten": 341,
+        "gesamt_sonstige_straftaten": 400
+      },
+      "straftaten_insgesamt": 461
+    }
+  },
+  {
+    "jahr": 2004,
+    "phaenomenbereich": "pmk_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2004,
+    "phaenomenbereich": "pmk_auslaender_ohne_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 25720,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2004,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": null,
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 231
+    }
+  },
+  {
+    "jahr": 2005,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 39000,
+      "davon_gewaltorientiert": 10400
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 2,
+        "koerperverletzungen": 816,
+        "brandstiftungen": 14,
+        "herbeifuehren_einer_sprengstoffexplosion": 3,
+        "landfriedensbruch": 39,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 9,
+        "freiheitsberaubung": 0,
+        "raub": 23,
+        "erpressung": 6,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 46,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 958
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 445,
+        "noetigung_bedrohung": 90,
+        "propagandadelikte": 10881,
+        "stoerung_der_totenruhe": 30,
+        "andere_straftaten": 2957,
+        "gesamt_sonstige_straftaten": 14403
+      },
+      "straftaten_insgesamt": 15361
+    }
+  },
+  {
+    "jahr": 2005,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 30600,
+      "davon_gewaltorientiert": 5500
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 1,
+        "koerperverletzungen": 391,
+        "brandstiftungen": 29,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 298,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 53,
+        "freiheitsberaubung": 0,
+        "raub": 13,
+        "erpressung": 1,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 110,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 896
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 713,
+        "noetigung_bedrohung": 42,
+        "propagandadelikte": 0,
+        "stoerung_der_totenruhe": 0,
+        "andere_straftaten": 654,
+        "gesamt_sonstige_straftaten": 1409
+      },
+      "straftaten_insgesamt": 2305
+    }
+  },
+  {
+    "jahr": 2005,
+    "phaenomenbereich": "pmk_auslaender",
+    "personenpotenzial": {
+      "absolut_gesamt": 25320,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 0,
+        "koerperverletzungen": 24,
+        "brandstiftungen": 3,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 2,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 4,
+        "freiheitsberaubung": 0,
+        "raub": 1,
+        "erpressung": 11,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 2,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 47
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 23,
+        "noetigung_bedrohung": 20,
+        "propagandadelikte": 0,
+        "stoerung_der_totenruhe": 0,
+        "andere_straftaten": 554,
+        "gesamt_sonstige_straftaten": 597
+      },
+      "straftaten_insgesamt": 644
+    }
+  },
+  {
+    "jahr": 2005,
+    "phaenomenbereich": "pmk_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 32100,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2005,
+    "phaenomenbereich": "pmk_auslaender_ohne_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 25320,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2005,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": null,
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 191
+    }
+  },
+  {
+    "jahr": 2006,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 38600,
+      "davon_gewaltorientiert": 10400
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 0,
+        "koerperverletzungen": 919,
+        "brandstiftungen": 18,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 33,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 6,
+        "freiheitsberaubung": 0,
+        "raub": 13,
+        "erpressung": 7,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 50,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 1047
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 391,
+        "noetigung_bedrohung": 150,
+        "propagandadelikte": 12627,
+        "stoerung_der_totenruhe": 14,
+        "andere_straftaten": 3368,
+        "gesamt_sonstige_straftaten": 16550
+      },
+      "straftaten_insgesamt": 17597
+    }
+  },
+  {
+    "jahr": 2006,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 30700,
+      "davon_gewaltorientiert": 6000
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 1,
+        "koerperverletzungen": 444,
+        "brandstiftungen": 42,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 195,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 41,
+        "freiheitsberaubung": 0,
+        "raub": 22,
+        "erpressung": 1,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 115,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 862
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 754,
+        "noetigung_bedrohung": 44,
+        "propagandadelikte": 0,
+        "stoerung_der_totenruhe": 0,
+        "andere_straftaten": 709,
+        "gesamt_sonstige_straftaten": 1507
+      },
+      "straftaten_insgesamt": 2369
+    }
+  },
+  {
+    "jahr": 2006,
+    "phaenomenbereich": "pmk_auslaender",
+    "personenpotenzial": {
+      "absolut_gesamt": 25250,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 0,
+        "koerperverletzungen": 45,
+        "brandstiftungen": 16,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 8,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": 6,
+        "freiheitsberaubung": 0,
+        "raub": 1,
+        "erpressung": 11,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 7,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 95
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 38,
+        "noetigung_bedrohung": 34,
+        "propagandadelikte": 0,
+        "stoerung_der_totenruhe": 0,
+        "andere_straftaten": 310,
+        "gesamt_sonstige_straftaten": 382
+      },
+      "straftaten_insgesamt": 477
+    }
+  },
+  {
+    "jahr": 2006,
+    "phaenomenbereich": "pmk_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 32150,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2006,
+    "phaenomenbereich": "pmk_auslaender_ohne_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 25250,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2006,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": null,
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 168
+    }
+  },
+  {
+    "jahr": 2007,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 31000,
+      "davon_gewaltorientiert": 10000
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 1,
+        "koerperverletzungen": 845,
+        "brandstiftungen": 24,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 37,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 7,
+        "freiheitsberaubung": 0,
+        "raub": 11,
+        "erpressung": 4,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 50,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 980
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 821,
+        "noetigung_bedrohung": 146,
+        "propagandadelikte": 11935,
+        "stoerung_der_totenruhe": 18,
+        "andere_straftaten_insbesondere_volksverhetzung": 3276,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": 16196
+      },
+      "straftaten_insgesamt": 17176
+    }
+  },
+  {
+    "jahr": 2007,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 30800,
+      "davon_gewaltorientiert": 6300
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 1,
+        "koerperverletzungen": 384,
+        "brandstiftungen": 51,
+        "herbeifuehren_einer_sprengstoffexplosion": 2,
+        "landfriedensbruch": 215,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 40,
+        "freiheitsberaubung": 0,
+        "raub": 14,
+        "erpressung": 2,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 124,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 833
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1142,
+        "noetigung_bedrohung": 52,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 738,
+        "gesamt_sonstige_straftaten": 1932
+      },
+      "straftaten_insgesamt": 2765
+    }
+  },
+  {
+    "jahr": 2007,
+    "phaenomenbereich": "pmk_auslaender",
+    "personenpotenzial": {
+      "absolut_gesamt": 25250,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 2,
+        "koerperverletzungen": 54,
+        "brandstiftungen": 17,
+        "herbeifuehren_einer_sprengstoffexplosion": 2,
+        "landfriedensbruch": 23,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 1,
+        "freiheitsberaubung": 0,
+        "raub": 3,
+        "erpressung": 5,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 1,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 108
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 107,
+        "noetigung_bedrohung": 25,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 507,
+        "gesamt_sonstige_straftaten": 639
+      },
+      "straftaten_insgesamt": 747
+    }
+  },
+  {
+    "jahr": 2007,
+    "phaenomenbereich": "pmk_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 33170,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2007,
+    "phaenomenbereich": "pmk_auslaender_ohne_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 25250,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2007,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": null,
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 121
+    }
+  },
+  {
+    "jahr": 2008,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 30000,
+      "davon_gewaltorientiert": 9500,
+      "bedrohungslage_notiz": "die zahl rechtsextremistischer straf und gewalttaten ist im jahr 2008 gestiegen damit wurde seit einfuehrung des definitionssystems pmk im jahr 2001 der hoechste wert rechtsextremistischer kriminalitaet verzeichnet im bereich des rechtsextremistischen personenpotenzials war ein leichter rueckgang zu verzeichnen"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 2,
+        "versuchte_toetungsdelikte": 4,
+        "koerperverletzungen": 893,
+        "brandstiftungen": 29,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 46,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 4,
+        "freiheitsberaubung": 1,
+        "raub": 10,
+        "erpressung": 6,
+        "widerstandsdelikte": 47,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 1042
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1197,
+        "noetigung_bedrohung": 144,
+        "propagandadelikte": 14262,
+        "stoerung_der_totenruhe": 32,
+        "andere_straftaten_insbesondere_volksverhetzung": 3217,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": 18852
+      },
+      "straftaten_insgesamt": 19894
+    }
+  },
+  {
+    "jahr": 2008,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 31200,
+      "davon_gewaltorientiert": 6300,
+      "bedrohungslage_notiz": "damit stieg die zahl der politisch links motivierten straftaten mit extremistischem hintergrund um 13 prozent die der gewalttaten ging um 158 prozent zurueck"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 3,
+        "koerperverletzungen": 359,
+        "brandstiftungen": 62,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 149,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 24,
+        "freiheitsberaubung": 0,
+        "raub": 13,
+        "erpressung": 2,
+        "widerstandsdelikte": 89,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 701
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1468,
+        "noetigung_bedrohung": 57,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 898,
+        "gesamt_sonstige_straftaten": 2423
+      },
+      "straftaten_insgesamt": 3124
+    }
+  },
+  {
+    "jahr": 2008,
+    "phaenomenbereich": "pmk_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 34720,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2008,
+    "phaenomenbereich": "pmk_auslaender_ohne_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 24750,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": "damit stieg die zahl der straftaten im bereich politisch motivierter auslaenderkriminalitaet mit extremistischem hintergrund um 756 prozent die zahl der gewalttaten in diesem bereich stieg um 46 prozent"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 3,
+        "koerperverletzungen": 63,
+        "brandstiftungen": 11,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 12,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 2,
+        "freiheitsberaubung": 1,
+        "raub": 3,
+        "erpressung": 11,
+        "widerstandsdelikte": 7,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 113
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 205,
+        "noetigung_bedrohung": 27,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 967,
+        "gesamt_sonstige_straftaten": 1199
+      },
+      "straftaten_insgesamt": 1312
+    }
+  },
+  {
+    "jahr": 2008,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": null,
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 275
+    }
+  },
+  {
+    "jahr": 2009,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 26600,
+      "davon_gewaltorientiert": 9000,
+      "bedrohungslage_notiz": "die zahl rechtsextremistischer straf und gewalttaten bewegte sich trotz der im jahr 2009 zu verzeichnenden abnahme auf hohem niveau im bereich des rechtsextremistischen personenpotenzials war erneut ein rueckgang zu verzeichnen"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 1,
+        "versuchte_toetungsdelikte": 5,
+        "koerperverletzungen": 738,
+        "brandstiftungen": 18,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 44,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 4,
+        "freiheitsberaubung": 3,
+        "raub": 16,
+        "erpressung": 5,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 57,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 891
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1453,
+        "noetigung_bedrohung": 146,
+        "propagandadelikte": 13280,
+        "stoerung_der_totenruhe": 24,
+        "andere_straftaten_insbesondere_volksverhetzung": 2956,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": 17859
+      },
+      "straftaten_insgesamt": 18750
+    }
+  },
+  {
+    "jahr": 2009,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 31600,
+      "davon_gewaltorientiert": 6600,
+      "bedrohungslage_notiz": "damit stieg die zahl der politisch links motivierten straftaten mit extremistischem hintergrund um 515 prozent die der gewalttaten um 591 prozent"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 7,
+        "koerperverletzungen": 502,
+        "brandstiftungen": 113,
+        "herbeifuehren_einer_sprengstoffexplosion": 4,
+        "landfriedensbruch": 271,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 18,
+        "freiheitsberaubung": 2,
+        "raub": 23,
+        "erpressung": 2,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 173,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 1115
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 2091,
+        "noetigung_bedrohung": 56,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 1472,
+        "gesamt_sonstige_straftaten": 3619
+      },
+      "straftaten_insgesamt": 4734
+    }
+  },
+  {
+    "jahr": 2009,
+    "phaenomenbereich": "pmk_auslaender_ohne_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 24710,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": "damit ging die zahl der straftaten im bereich politisch motivierter auslaenderkriminalitaet mit extremistischem hintergrund um 461 prozent und die zahl der gewalttaten in diesem bereich um 97 prozent zurueck"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 0,
+        "koerperverletzungen": 56,
+        "brandstiftungen": 7,
+        "herbeifuehren_einer_sprengstoffexplosion": 2,
+        "landfriedensbruch": 16,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 2,
+        "freiheitsberaubung": 1,
+        "raub": 8,
+        "erpressung": 6,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 4,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 102
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 162,
+        "noetigung_bedrohung": 41,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 402,
+        "gesamt_sonstige_straftaten": 605
+      },
+      "straftaten_insgesamt": 707
+    }
+  },
+  {
+    "jahr": 2009,
+    "phaenomenbereich": "pmk_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 36270,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": "deutschland liegt weiterhin im unmittelbaren fokus islamistisch terroristischer gruppierungen"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2009,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": null,
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 761
+    }
+  },
+  {
+    "jahr": 2010,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 25000,
+      "davon_gewaltorientiert": 9500,
+      "bedrohungslage_notiz": "die zahl rechtsextremistischer straf und gewalttaten ging 2010 zurueck insbesondere im bereich der propagandadelikte das rechtsextremistische personenpotenzial war 2010 erneut leicht ruecklaeufig"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 6,
+        "koerperverletzungen": 638,
+        "brandstiftungen": 29,
+        "herbeifuehren_einer_sprengstoffexplosion": 2,
+        "landfriedensbruch": 25,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 4,
+        "freiheitsberaubung": 0,
+        "raub": 7,
+        "erpressung": 3,
+        "widerstandsdelikte": 48,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 762
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1335,
+        "noetigung_bedrohung": 127,
+        "propagandadelikte": 11384,
+        "stoerung_der_totenruhe": 18,
+        "andere_straftaten_insbesondere_volksverhetzung": 2279,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": 15143
+      },
+      "straftaten_insgesamt": 15905
+    }
+  },
+  {
+    "jahr": 2010,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 32200,
+      "davon_gewaltorientiert": 6800,
+      "bedrohungslage_notiz": "struktur und erscheinungsbild des organisierten linksextremismus haben sich im jahr 2010 nicht wesentlich veraendert wenngleich das gesamtpotenzial wie bereits im vorjahr leicht angestiegen ist"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 4,
+        "koerperverletzungen": 541,
+        "brandstiftungen": 81,
+        "herbeifuehren_einer_sprengstoffexplosion": 5,
+        "landfriedensbruch": 148,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 34,
+        "freiheitsberaubung": 0,
+        "raub": 15,
+        "erpressung": 4,
+        "widerstandsdelikte": 112,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 944
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1640,
+        "noetigung_bedrohung": 62,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 1101,
+        "gesamt_sonstige_straftaten": 2803
+      },
+      "straftaten_insgesamt": 3747
+    }
+  },
+  {
+    "jahr": 2010,
+    "phaenomenbereich": "pmk_auslaender_ohne_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 24910,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": "damit stieg die zahl der straftaten im bereich politisch motivierter auslaenderkriminalitaet mit extremistischem hintergrund um 117 prozent und die zahl der gewalttaten in diesem bereich um 275 prozent an"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 2,
+        "koerperverletzungen": 77,
+        "brandstiftungen": 7,
+        "herbeifuehren_einer_sprengstoffexplosion": 2,
+        "landfriedensbruch": 31,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 1,
+        "freiheitsberaubung": 1,
+        "raub": 1,
+        "erpressung": 3,
+        "widerstandsdelikte": 5,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 130
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 119,
+        "noetigung_bedrohung": 10,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 531,
+        "gesamt_sonstige_straftaten": 660
+      },
+      "straftaten_insgesamt": 790
+    }
+  },
+  {
+    "jahr": 2010,
+    "phaenomenbereich": "pmk_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 37470,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": "zum jahreswechsel 2010 2011 gingen die sicherheitsbehoerden fuer das gebiet der bundesrepublik weiterhin von einer intensiven gefaehrdung durch den islamistischen terrorismus aus"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2010,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": null,
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 369
+    }
+  },
+  {
+    "jahr": 2011,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 22400,
+      "davon_gewaltorientiert": 9500,
+      "bedrohungslage_notiz": "das rechtsextremistische personenpotenzial ist 2011 erneut gesunken grund hierfuer sind insbesondere die anhaltenden erheblichen mitgliederverluste der deutschen volksunion dvu"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 5,
+        "koerperverletzungen": 640,
+        "brandstiftungen": 20,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 27,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 6,
+        "freiheitsberaubung": 2,
+        "raub": 12,
+        "erpressung": 4,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 39,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 755
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1377,
+        "noetigung_bedrohung": 128,
+        "propagandadelikte": 11401,
+        "stoerung_der_totenruhe": 17,
+        "andere_straftaten_insbesondere_volksverhetzung": 2464,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": 15387
+      },
+      "straftaten_insgesamt": 16142
+    }
+  },
+  {
+    "jahr": 2011,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 31800,
+      "davon_gewaltorientiert": 7100,
+      "bedrohungslage_notiz": "struktur und erscheinungsbild des organisierten linksextremismus haben sich im jahr 2011 nicht wesentlich veraendert wenngleich das gesamtpotenzial gegenueber dem vorjahr leicht gesunken ist"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 3,
+        "koerperverletzungen": 583,
+        "brandstiftungen": 82,
+        "herbeifuehren_einer_sprengstoffexplosion": 6,
+        "landfriedensbruch": 272,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 59,
+        "freiheitsberaubung": 1,
+        "raub": 13,
+        "erpressung": 3,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 135,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 1157
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1889,
+        "noetigung_bedrohung": 40,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 1416,
+        "gesamt_sonstige_straftaten": 3345
+      },
+      "straftaten_insgesamt": 4502
+    }
+  },
+  {
+    "jahr": 2011,
+    "phaenomenbereich": "pmk_auslaender_ohne_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 26410,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": "die aktivitaeten der in deutschland agierenden nichtislamistischen extremistischen auslaenderorganisationen wurden auch 2011 im wesentlichen durch aktuelle politische entwicklungen und ereignisse in den jeweiligen herkunftslaendern bestimmt"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 1,
+        "versuchte_toetungsdelikte": 2,
+        "koerperverletzungen": 109,
+        "brandstiftungen": 4,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 48,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 2,
+        "freiheitsberaubung": 0,
+        "raub": 5,
+        "erpressung": 5,
+        "widerstandsdelikte": 14,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 191
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 102,
+        "noetigung_bedrohung": 23,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 414,
+        "gesamt_sonstige_straftaten": 539
+      },
+      "straftaten_insgesamt": 730
+    }
+  },
+  {
+    "jahr": 2011,
+    "phaenomenbereich": "pmk_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 38080,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": "bei dem ersten vollendeten islamistisch motivierten terroristischen anschlag auf deutschem boden toetete am 2 maerz 2011 ein kosovarisch serbischer staatsangehoeriger am flughafen frankfurt am main hessen zwei us amerikanische soldaten"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2011,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": null,
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 236
+    }
+  },
+  {
+    "jahr": 2012,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 22150,
+      "davon_gewaltorientiert": 9600,
+      "bedrohungslage_notiz": "das rechtsextremistische personenpotenzial ist 2012 insbesondere aufgrund der weiter anhaltenden mitgliederverluste im parteienspektrum erneut gesunken"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 6,
+        "koerperverletzungen": 690,
+        "brandstiftungen": 21,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 10,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 6,
+        "freiheitsberaubung": 0,
+        "raub": 9,
+        "erpressung": 8,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 51,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 802
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1151,
+        "noetigung_bedrohung": 153,
+        "propagandadelikte": 12219,
+        "stoerung_der_totenruhe": 11,
+        "andere_straftaten_insbesondere_volksverhetzung": 2798,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": 16332
+      },
+      "straftaten_insgesamt": 17134
+    }
+  },
+  {
+    "jahr": 2012,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 29400,
+      "davon_gewaltorientiert": 7100,
+      "bedrohungslage_notiz": "die zahl der linksextremistisch motivierten straftaten ging um 283 prozent zurueck ebenso ruecklaeufig war die zahl der linksextremistisch motivierten gewalttaten"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 8,
+        "koerperverletzungen": 471,
+        "brandstiftungen": 56,
+        "herbeifuehren_einer_sprengstoffexplosion": 2,
+        "landfriedensbruch": 169,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 22,
+        "freiheitsberaubung": 0,
+        "raub": 16,
+        "erpressung": 4,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 128,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 876
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1483,
+        "noetigung_bedrohung": 48,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 822,
+        "gesamt_sonstige_straftaten": 2353
+      },
+      "straftaten_insgesamt": 3229
+    }
+  },
+  {
+    "jahr": 2012,
+    "phaenomenbereich": "pmk_auslaender_ohne_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 28810,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": "damit sank die zahl der straftaten im bereich politisch motivierter auslaenderkriminalitaet mit extremistischem hintergrund um 153 prozent die zahl der gewalttaten in diesem bereich sank um 387 prozent"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 1,
+        "koerperverletzungen": 52,
+        "brandstiftungen": 5,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 34,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 1,
+        "freiheitsberaubung": 3,
+        "raub": 2,
+        "erpressung": 8,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": 11,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 117
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 87,
+        "noetigung_bedrohung": 35,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 379,
+        "gesamt_sonstige_straftaten": 501
+      },
+      "straftaten_insgesamt": 618
+    }
+  },
+  {
+    "jahr": 2012,
+    "phaenomenbereich": "pmk_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 42550,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": "deutschland steht weiter im fadenkreuz des islamistischen terrorismus nach wie vor ist es besonders der politische salafismus der die sicherheit des landes gefaehrdet"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2012,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": null,
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "raub_erpressungen": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 284
+    }
+  },
+  {
+    "jahr": 2013,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 21700,
+      "davon_gewaltorientiert": 9600,
+      "bedrohungslage_notiz": "die zahl der gewaltbereiten rechtsextremisten ist mit 9600 gegenueber dem vorjahr unveraendert geblieben das bedeutet annaehernd jeder zweite rechtsextremist ist gewaltbereit"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 4,
+        "koerperverletzungen": 704,
+        "brandstiftungen": 11,
+        "herbeifuehren_einer_sprengstoffexplosion": 2,
+        "landfriedensbruch": 10,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 2,
+        "freiheitsberaubung": 1,
+        "raub": 7,
+        "erpressung": 3,
+        "widerstandsdelikte": 57,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 801
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1016,
+        "noetigung_bedrohung": 152,
+        "propagandadelikte": 11639,
+        "stoerung_der_totenruhe": 18,
+        "andere_straftaten_insbesondere_volksverhetzung": 2931,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": 15756
+      },
+      "straftaten_insgesamt": 16557
+    }
+  },
+  {
+    "jahr": 2013,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 27700,
+      "davon_gewaltorientiert": 6900,
+      "bedrohungslage_notiz": "dies ist zum einen auf eine abnahme im spektrum der gewaltbereiten linksextremisten zurueckzufuehren das im jahr 2013 leicht auf 6900 personen gesunken ist"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 3,
+        "koerperverletzungen": 606,
+        "brandstiftungen": 45,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 160,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 28,
+        "freiheitsberaubung": 2,
+        "raub": 19,
+        "erpressung": 3,
+        "widerstandsdelikte": 243,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 1110
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1864,
+        "noetigung_bedrohung": 73,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 1444,
+        "gesamt_sonstige_straftaten": 3381
+      },
+      "straftaten_insgesamt": 4491
+    }
+  },
+  {
+    "jahr": 2013,
+    "phaenomenbereich": "pmk_auslaender_ohne_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 28810,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": "das mitglieder und anhaengerpotenzial nichtislamistischer sicherheitsgefaehrdender bzw extremistischer auslaenderorganisationen ist mit 28810 personen gegenueber dem vorjahr unveraendert geblieben"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 0,
+        "koerperverletzungen": 62,
+        "brandstiftungen": 2,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 5,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 0,
+        "freiheitsberaubung": 0,
+        "raub": 2,
+        "erpressung": 3,
+        "widerstandsdelikte": 1,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 76
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 62,
+        "noetigung_bedrohung": 27,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 379,
+        "gesamt_sonstige_straftaten": 468
+      },
+      "straftaten_insgesamt": 544
+    }
+  },
+  {
+    "jahr": 2013,
+    "phaenomenbereich": "pmk_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 43190,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": "das islamistische personenpotenzial in deutschland ist von 42550 2012 auf 43190 gestiegen der anstieg beruht insbesondere auf dem stetigen zuwachs bei den mitgliedern anhaengern salafistischer bestrebungen in deutschland"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2013,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": null,
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 537
+    }
+  },
+  {
+    "jahr": 2014,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 21000,
+      "davon_gewaltorientiert": 10500,
+      "subkulturell_gepraegte_rechtsextremisten": 7200,
+      "neonazis": 5600,
+      "in_parteien": 6850,
+      "nationaldemokratische_partei_deutschlands_npd": 5200,
+      "die_rechte": 500,
+      "buergerbewegung_pro_nrw_pro_nrw": 950,
+      "der_iii_weg": 200,
+      "in_sonstigen_rechtsextremistischen_organisationen": 2500,
+      "bedrohungslage_notiz": "militanz und gewaltniveau bleiben im rechtsextremismus unveraendert hoch dies zeigt die hohe zahl der gewalttaten ebenso wie die tatsache dass mittlerweile jeder zweite rechtsextremist als gewaltorientiert einszuschaetzen ist"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 1,
+        "koerperverletzungen": 871,
+        "brandstiftungen": 21,
+        "herbeifuehren_einer_sprengstoffexplosion": 6,
+        "landfriedensbruch": 23,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 5,
+        "freiheitsberaubung": 1,
+        "raub": 8,
+        "erpressung": 7,
+        "widerstandsdelikte": 45,
+        "sexualdelikte": 2,
+        "gesamt_gewalttaten": 990
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 819,
+        "noetigung_bedrohung": 209,
+        "propagandadelikte": 11055,
+        "stoerung_der_totenruhe": 12,
+        "andere_straftaten_insbesondere_volksverhetzung": 3474,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": 15569
+      },
+      "straftaten_insgesamt": 16559
+    }
+  },
+  {
+    "jahr": 2014,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 27200,
+      "davon_gewaltorientiert": 7600,
+      "autonome": 6100,
+      "anarchisten": 800,
+      "marxisten_leninisten_und_andere_linksextremisten": 21100,
+      "bedrohungslage_notiz": "die zahl der gewaltorientierten linksextremisten ist mit 7600 unveraendert hoch die befuerwortung von gewalt ist im linksextremismus eher eine strategische als eine ideologische frage"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 7,
+        "koerperverletzungen": 633,
+        "brandstiftungen": 62,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 116,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 44,
+        "freiheitsberaubung": 1,
+        "raub": 15,
+        "erpressung": 1,
+        "widerstandsdelikte": 115,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 995
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1974,
+        "noetigung_bedrohung": 68,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 1387,
+        "gesamt_sonstige_straftaten": 3429
+      },
+      "straftaten_insgesamt": 4424
+    }
+  },
+  {
+    "jahr": 2014,
+    "phaenomenbereich": "pmk_auslaender_ohne_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 29330,
+      "davon_gewaltorientiert": null,
+      "linksextremisten": 17550,
+      "arbeiterpartei_kurdistans_pkk": 14000,
+      "revolutionaere_volksbefreiungspartei_front_dhkp_c": 650,
+      "tuerkische_kommunistische_partei_marxisten_leninisten_tkp_ml": 1300,
+      "marxistische_leninistische_kommunistische_partei_mlkp": 600,
+      "sonstige": 1000,
+      "gewaltorientierte_separatisten": 1780,
+      "liberation_tigers_of_tamil_eelam_ltte": 1000,
+      "extremistische_sikhs": 780,
+      "rechtsextremisten": 10000,
+      "bedrohungslage_notiz": "politik strategie und aktionen der nichtislamistischen extremistischen auslaenderorganisationen in deutschland werden ganz entscheidend von den entwicklungen und ereignissen in den jeweiligen herkunftslaendern und den dortigen zentralen organisationseinheiten bestimmt"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 6,
+        "koerperverletzungen": 200,
+        "brandstiftungen": 2,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 28,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 1,
+        "freiheitsberaubung": 0,
+        "raub": 4,
+        "erpressung": 1,
+        "widerstandsdelikte": 17,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 259
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 136,
+        "noetigung_bedrohung": 72,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 1547,
+        "gesamt_sonstige_straftaten": 1755
+      },
+      "straftaten_insgesamt": 2014
+    }
+  },
+  {
+    "jahr": 2014,
+    "phaenomenbereich": "pmk_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 43890,
+      "davon_gewaltorientiert": null,
+      "salafistische_bestrebungen": 7000,
+      "hizb_allah": 950,
+      "harakat_al_muqawama_al_islamiya_hamas": 300,
+      "nordkaukasische_separatistenbewegung_nksb": 220,
+      "tuerkische_hizbullah_th": 360,
+      "hizb_ut_tahrir_hut": 300,
+      "muslimbruderschaft_mb_islamische_gemeinschaft_in_deutschland_e_v_igd": 1000,
+      "tablighi_jamaat_tj": 700,
+      "sonstige": 2060,
+      "bedrohungslage_notiz": "europa liegt nach wie vor im zielspektrum des islamistischen terrorismus die anhaltend hohe gefaehrdungslage dokumentieren insbesondere der anschlag auf das juedische museum in bruessel"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2014,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 912
+    }
+  },
+  {
+    "jahr": 2015,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 22600,
+      "davon_gewaltorientiert": 11800,
+      "bedrohungslage_notiz": "der exorbitante anstieg rechtsextremistischer gewalt und die zunehmende anschlussfaehigkeit des rechtsextremismus sind zwei entwicklungen die fuer das berichtsjahr praegend sind"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 8,
+        "koerperverletzungen": 1116,
+        "brandstiftungen": 99,
+        "herbeifuehren_einer_sprengstoffexplosion": 18,
+        "landfriedensbruch": 42,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 10,
+        "freiheitsberaubung": 0,
+        "raub": 23,
+        "erpressung": 7,
+        "widerstandsdelikte": 84,
+        "sexualdelikte": 1,
+        "gesamt_gewalttaten": 1408
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1243,
+        "noetigung_bedrohung": 443,
+        "propagandadelikte": 12154,
+        "stoerung_der_totenruhe": 9,
+        "andere_straftaten_insbesondere_volksverhetzung": 6676,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": 20525
+      },
+      "straftaten_insgesamt": 21933
+    }
+  },
+  {
+    "jahr": 2015,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 26700,
+      "davon_gewaltorientiert": 7700,
+      "bedrohungslage_notiz": "die zahl der gewaltorientierten linksextremisten ist 2015 mit 7700 nach wie vor hoch akzeptanz und intensitaet von gewalt haben in der linksextremistischen szene in den letzten jahren spuerbar zugenommen"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 8,
+        "koerperverletzungen": 986,
+        "brandstiftungen": 69,
+        "herbeifuehren_einer_sprengstoffexplosion": 4,
+        "landfriedensbruch": 256,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 46,
+        "freiheitsberaubung": 0,
+        "raub": 21,
+        "erpressung": 2,
+        "widerstandsdelikte": 216,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 1608
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1731,
+        "noetigung_bedrohung": 84,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 2197,
+        "gesamt_sonstige_straftaten": 4012
+      },
+      "straftaten_insgesamt": 5620
+    }
+  },
+  {
+    "jahr": 2015,
+    "phaenomenbereich": "pmk_auslaender_ohne_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 29050,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": "agitation und militanzniveau der auslaenderextremistischen organisationen sind weit ueberwiegend von der politischen entwicklung in den heimatlaendern abhaengig"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 3,
+        "koerperverletzungen": 177,
+        "brandstiftungen": 11,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 21,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 2,
+        "freiheitsberaubung": 2,
+        "raub": 6,
+        "erpressung": 2,
+        "widerstandsdelikte": 10,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 235
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 175,
+        "noetigung_bedrohung": 97,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 1017,
+        "gesamt_sonstige_straftaten": 1289
+      },
+      "straftaten_insgesamt": 1524
+    }
+  },
+  {
+    "jahr": 2015,
+    "phaenomenbereich": "pmk_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": "zu mehreren der bundesweit aktiven islamistischen organisationen beziehungsweise gruppierungen liegen keine gesicherten anhaengerzahlen vor sodass ein umfassendes personenpotenzial der islamisten in deutschland nicht ausgewiesen werden kann"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2015,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": null,
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 604
+    }
+  },
+	{
+    "jahr": 2016,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 23100,
+      "davon_gewaltorientiert": 12100,
+      "bedrohungslage_notiz": "rechtsextremistisch motivierte gewalt in deutschland nimmt seit etwa 2014 stetig zu diese entwicklung setzt sich fort"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 1,
+        "versuchte_toetungsdelikte": 18,
+        "koerperverletzungen": 1313,
+        "brandstiftungen": 113,
+        "herbeifuehren_einer_sprengstoffexplosion": 10,
+        "landfriedensbruch": 23,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 13,
+        "freiheitsberaubung": 2,
+        "raub": 16,
+        "erpressung": 16,
+        "widerstandsdelikte": 74,
+        "sexualdelikte": 1,
+        "gesamt_gewalttaten": 1600
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1501,
+        "noetigung_bedrohung": 451,
+        "propagandadelikte": 12476,
+        "stoerung_der_totenruhe": 11,
+        "andere_straftaten_insbesondere_volksverhetzung": 6432,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": 20871
+      },
+      "straftaten_insgesamt": 22471
+    }
+  },
+  {
+    "jahr": 2016,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 28500,
+      "davon_gewaltorientiert": 8500,
+      "bedrohungslage_notiz": "das linksextremistische personenpotenzial ist 2016 nach abzug von mehrfachmitgliedschaften um knapp sieben prozent auf insgesamt 28500 personen angewachsen"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 6,
+        "koerperverletzungen": 638,
+        "brandstiftungen": 134,
+        "herbeifuehren_einer_sprengstoffexplosion": 7,
+        "landfriedensbruch": 186,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 50,
+        "freiheitsberaubung": 1,
+        "raub": 23,
+        "erpressung": 1,
+        "widerstandsdelikte": 155,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 1201
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 2233,
+        "noetigung_bedrohung": 112,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 1684,
+        "gesamt_sonstige_straftaten": 4029
+      },
+      "straftaten_insgesamt": 5230
+    }
+  },
+  {
+    "jahr": 2016,
+    "phaenomenbereich": "pmk_auslaender_ohne_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 30050,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": "das mitglieder und anhaengerpotenzial nichtislamistischer sicherheitsgefaehrdender beziehungsweise extremistischer auslaenderorganisationen stieg im jahr 2016 aufgrund des zuwachses im bereich der tuerkischstaemmigen rechtsextremisten auf nunmehr 30050 personen an"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 2,
+        "versuchte_toetungsdelikte": 13,
+        "koerperverletzungen": 322,
+        "brandstiftungen": 14,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 37,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 2,
+        "freiheitsberaubung": 0,
+        "raub": 4,
+        "erpressung": 4,
+        "widerstandsdelikte": 29,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 427
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 285,
+        "noetigung_bedrohung": 153,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": 1701,
+        "gesamt_sonstige_straftaten": 2139
+      },
+      "straftaten_insgesamt": 2566
+    }
+  },
+  {
+    "jahr": 2016,
+    "phaenomenbereich": "pmk_islamismus",
+    "personenpotenzial": {
+      "absolut_gesamt": 24400,
+      "davon_gewaltorientiert": null,
+      "salafistische_bestrebungen": 9700,
+      "islamischer_staat_is": null,
+      "kern_al_qaida": null,
+      "al_qaida_im_islamischen_maghreb_aqm": null,
+      "al_qaida_auf_der_arabischen_halbinsel_aqah": null,
+      "al_shabab": null,
+      "jabhat_fath_al_sham_jfs": null,
+      "hizb_allah": 950,
+      "harakat_al_muqawama_al_islamiya_hamas": 320,
+      "tuerkische_hizbullah_th": 400,
+      "hizb_ut_tahrir_hut": 320,
+      "muslimbruderschaft_mb_islamische_gemeinschaft_in_deutschland_e_v_igd": 1040,
+      "tablighi_jamaat_tj": 650,
+      "islamisches_zentrum_hamburg_e_v_izh": null,
+      "milli_goerues_bewegung_und_zugeordnete_vereinigungen": 10000,
+      "sonstige": 1045,
+      "bedrohungslage_notiz": "deutschland steht im fokus des islamistischen terrorismus auch zukuenftig kann es jederzeit zu einem terroristischen ereignis in deutschland kommen"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2016,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": "691 straftaten mit einem extremistischem hintergrund wurden ohne zuordnung zu einem bestimmten phaenomenbereich gemeldet"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 691
+    }
+  },
+	{
+    "jahr": 2017,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 24000,
+      "davon_gewaltorientiert": 12700,
+      "in_parteien": 6050,
+      "nationaldemokratische_partei_deutschlands_npd": 4500,
+      "die_rechte": 650,
+      "der_iii_weg": 500,
+      "sonstiges_rechtsextremistisches_personenpotenzial_in_parteien": 400,
+      "in_parteiunabhaengigen_bzw_parteiungebundenen_strukturen": 6300,
+      "weitgehend_unstrukturiertes_rechtsextremistisches_personenpotenzial": 12900,
+      "bedrohungslage_notiz": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 4,
+        "koerperverletzungen": 904,
+        "brandstiftungen": 42,
+        "herbeifuehren_einer_sprengstoffexplosion": 5,
+        "landfriedensbruch": 10,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 13,
+        "freiheitsberaubung": 2,
+        "raub": 3,
+        "erpressung": 21,
+        "widerstandsdelikte": 50,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 1054
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1317,
+        "noetigung_bedrohung": 336,
+        "propagandadelikte": 11894,
+        "stoerung_der_totenruhe": 5,
+        "andere_straftaten_insbesondere_volksverhetzung": 4861,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": 18413
+      },
+      "straftaten_insgesamt": 19467
+    }
+  },
+  {
+    "jahr": 2017,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 29500,
+      "davon_gewaltorientiert": 9000,
+      "autonome": 7000,
+      "anarchisten": 800,
+      "dogmatische_linksextremisten": null,
+      "nicht_gewaltorientierte_dogmatische_linksextremisten_und_sonstige_linksextremisten": 21400,
+      "bedrohungslage_notiz": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 3,
+        "koerperverletzungen": 499,
+        "brandstiftungen": 145,
+        "herbeifuehren_einer_sprengstoffexplosion": 5,
+        "landfriedensbruch": 784,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 63,
+        "freiheitsberaubung": 0,
+        "raub": 12,
+        "erpressung": 2,
+        "widerstandsdelikte": 135,
+        "gesamt_gewalttaten": 1648
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 3190,
+        "noetigung_bedrohung": 80,
+        "andere_straftaten": 1475,
+        "gesamt_sonstige_straftaten": 4745
+      },
+      "straftaten_insgesamt": 6393
+    }
+  },
+  {
+    "jahr": 2017,
+    "phaenomenbereich": "pmk_reichsbuerger_und_selbstverwalter",
+    "personenpotenzial": {
+      "absolut_gesamt": 16500,
+      "davon_gewaltorientiert": null,
+      "rechtsextremisten": 900,
+      "bedrohungslage_notiz": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 130
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 783
+    }
+  },
+  {
+    "jahr": 2017,
+    "phaenomenbereich": "pmk_religioese_ideologie",
+    "personenpotenzial": {
+      "absolut_gesamt": 25810,
+      "davon_gewaltorientiert": null,
+      "salafistische_bestrebungen": 10800,
+      "islamischer_staat_is": null,
+      "kern_al_qaida": null,
+      "al_qaida_im_islamischen_maghreb_aqm": null,
+      "al_qaida_auf_der_arabischen_halbinsel_aqah": null,
+      "al_shabab": null,
+      "hai_at_tahrir_al_sham_hts": null,
+      "hizb_allah": 950,
+      "harakat_al_muqawama_al_islamiya_hamas": 320,
+      "tuerkische_hizbullah_th": 400,
+      "hizb_ut_tahrir_hut": 350,
+      "muslimbruderschaft_mb_deutsche_muslimische_gemeinschaft_e_v_dmg": 1040,
+      "tablighi_jama_at_tj": 650,
+      "islamisches_zentrum_hamburg_e_v_izh": null,
+      "milli_goerues_bewegung_und_zugeordnete_vereinigungen": 10000,
+      "furkan_gemeinschaft": null,
+      "sonstige": 1300,
+      "bedrohungslage_notiz": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 2,
+        "versuchte_toetungsdelikte": 1,
+        "koerperverletzungen": 53,
+        "andere_gewalttaten": 9,
+        "gesamt_gewalttaten": 65
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 24,
+        "noetigung_bedrohung": 70,
+        "volksverhetzung": 20,
+        "vorbereitung_einer_staatsgefaehrdenden_gewalttat": 112,
+        "mitgliedschaft_bzw_unterstuetzung_einer_auslaendischen_terroristischen_vereinigung": 310,
+        "andere_straftaten": 306,
+        "gesamt_sonstige_straftaten": 842
+      },
+      "straftaten_insgesamt": 907
+    }
+  },
+  {
+    "jahr": 2017,
+    "phaenomenbereich": "pmk_auslaendische_ideologie",
+    "personenpotenzial": {
+      "absolut_gesamt": 30550,
+      "davon_gewaltorientiert": null,
+      "linksextremisten": 18050,
+      "arbeiterpartei_kurdistans_pkk": 14500,
+      "revolutionaere_volksbefreiungspartei_front_dhkp_c": 650,
+      "tuerkische_kommunistische_partei_marxisten_leninisten_tkp_ml": 1300,
+      "marxistische_leninistische_kommunistische_partei_mlkp": 600,
+      "sonstige_linksextremisten": 1000,
+      "separatisten": 1500,
+      "rechtsextremisten": 11000,
+      "bedrohungslage_notiz": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 1,
+        "koerperverletzungen": 150,
+        "brandstiftungen": 2,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 12,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 2,
+        "freiheitsberaubung": 0,
+        "raub": 2,
+        "erpressung": 3,
+        "widerstandsdelikte": 10,
+        "gesamt_gewalttaten": 182
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 112,
+        "noetigung_bedrohung": 41,
+        "verstoesse_gegen_das_versammlungsgesetz": 115,
+        "verstoesse_gegen_das_vereinsgesetz": 459,
+        "mitgliedschaft_bzw_unterstuetzung_einer_auslaendischen_terroristischen_vereinigung": 71,
+        "andere_straftaten": 207,
+        "gesamt_sonstige_straftaten": 1005
+      },
+      "straftaten_insgesamt": 1187
+    }
+  },
+  {
+    "jahr": 2017,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 1901
+    }
+  },
+	{
+    "jahr": 2018,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 24100,
+      "davon_gewaltorientiert": 12700,
+      "in_parteien": 5510,
+      "nationaldemokratische_partei_deutschlands_npd": 4000,
+      "die_rechte": 600,
+      "der_iii_weg": 530,
+      "sonstiges_rechtsextremistisches_personenpotenzial_in_parteien": 380,
+      "in_parteiunabhaengigen_bzw_parteiungebundenen_strukturen": 6600,
+      "weitgehend_unstrukturiertes_rechtsextremistisches_personenpotenzial": 13240,
+      "bedrohungslage_notiz": "insgesamt ist die zahl der gewalttaten im bereich der politisch motivierten kriminalitaet pmk rechts im berichtsjahr 2018 gestiegen"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 6,
+        "koerperverletzungen": 938,
+        "brandstiftungen": 11,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 14,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 12,
+        "freiheitsberaubung": 2,
+        "raub": 14,
+        "erpressung": 17,
+        "widerstandsdelikte": 74,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 1088
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 905,
+        "noetigung_bedrohung": 352,
+        "propagandadelikte": 12404,
+        "stoerung_der_totenruhe": 8,
+        "andere_straftaten_insbesondere_volksverhetzung": 4652,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": 18321
+      },
+      "straftaten_insgesamt": 19409
+    }
+  },
+  {
+    "jahr": 2018,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 32000,
+      "davon_gewaltorientiert": 9000,
+      "autonome": 7400,
+      "anarchisten": 800,
+      "dogmatische_linksextremisten": 800,
+      "nicht_gewaltorientierte_dogmatische_linksextremisten_und_sonstige_linksextremisten": 24000,
+      "bedrohungslage_notiz": "zwar war die zahl der linksextremistischen straf und gewalttaten im jahr 2018 insgesamt ruecklaeufig das linksextremistische personenpotenzial erhoehte sich gegenueber dem vorjahr aber weiter"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 0,
+        "koerperverletzungen": 363,
+        "brandstiftungen": 108,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 90,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 48,
+        "freiheitsberaubung": 1,
+        "raub": 19,
+        "erpressung": 4,
+        "widerstandsdelikte": 376,
+        "gesamt_gewalttaten": 1010
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 2219,
+        "noetigung_bedrohung": 71,
+        "andere_straftaten": 1322,
+        "gesamt_sonstige_straftaten": 3612
+      },
+      "straftaten_insgesamt": 4622
+    }
+  },
+  {
+    "jahr": 2018,
+    "phaenomenbereich": "pmk_reichsbuerger_und_selbstverwalter",
+    "personenpotenzial": {
+      "absolut_gesamt": 19000,
+      "davon_gewaltorientiert": null,
+      "rechtsextremisten": 950,
+      "bedrohungslage_notiz": "in ihrer gesamtheit ist die szene der reichsbuerger und selbstverwalter als staatsfeindlich einzustufen"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": 98,
+        "widerstandsdelikte": 39,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 160
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": 177,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 776
+    }
+  },
+  {
+    "jahr": 2018,
+    "phaenomenbereich": "pmk_religioese_ideologie",
+    "personenpotenzial": {
+      "absolut_gesamt": 26560,
+      "davon_gewaltorientiert": null,
+      "salafistische_bestrebungen": 11300,
+      "islamischer_staat_is": null,
+      "kern_al_qaida": null,
+      "al_qaida_im_islamischen_maghreb_aqm": null,
+      "al_qaida_auf_der_arabischen_halbinsel_aqah": null,
+      "al_shabab": null,
+      "hai_at_tahrir_al_sham_hts": null,
+      "hizb_allah": 1050,
+      "harakat_al_muqawama_al_islamiya_hamas": 320,
+      "tuerkische_hizbullah_th": 400,
+      "hizb_ut_tahrir_hut": 350,
+      "muslimbruderschaft_mb_deutsche_muslimische_gemeinschaft_e_v_dmg": 1040,
+      "tablighi_jama_at_tj": 650,
+      "islamisches_zentrum_hamburg_e_v_izh": null,
+      "milli_goerues_bewegung_und_zugeordnete_vereinigungen": 10000,
+      "furkan_gemeinschaft": 290,
+      "sonstige": 1160,
+      "bedrohungslage_notiz": "islamistisch motivierte anschlaege sind weiterhin moeglich deutschland steht unveraendert im zielspektrum von jihadistischen organisationen wie dem is oder al qaida"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 1,
+        "versuchte_toetungsdelikte": 1,
+        "koerperverletzungen": 37,
+        "andere_gewalttaten": 5,
+        "gesamt_gewalttaten": 44
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigung": 16,
+        "noetigung_bedrohung": 49,
+        "volksverhetzung": 26,
+        "vorbereitung_einer_staatsgefaehrdenden_gewalttat": 63,
+        "mitgliedschaft_bzw_unterstuetzung_einer_auslaendischen_terroristischen_vereinigung": 144,
+        "andere_straftaten": 111,
+        "gesamt_sonstige_straftaten": 409
+      },
+      "straftaten_insgesamt": 453
+    }
+  },
+  {
+    "jahr": 2018,
+    "phaenomenbereich": "pmk_auslaendische_ideologie",
+    "personenpotenzial": {
+      "absolut_gesamt": 30350,
+      "davon_gewaltorientiert": null,
+      "linksextremisten": 18050,
+      "arbeiterpartei_kurdistans_pkk": 14500,
+      "revolutionaere_volksbefreiungspartei_front_dhkp_c": 650,
+      "tuerkische_kommunistische_partei_marxisten_leninisten_tkp_ml": 1300,
+      "marxistische_leninistische_kommunistische_partei_mlkp": 600,
+      "sonstige_linksextremisten": 1000,
+      "separatisten": 1300,
+      "rechtsextremisten": 11000,
+      "bedrohungslage_notiz": "fuer die innere sicherheit in deutschland bleiben wie bereits in den vorjahren die arbeiterpartei kurdistans pkk die revolutionaere volksbefreiungspartei front dhkp c sowie die uelkuecue bewegung von herausgehobener bedeutung"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 1,
+        "versuchte_toetungsdelikte": 4,
+        "koerperverletzungen": 214,
+        "brandstiftungen": 14,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 47,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 7,
+        "freiheitsberaubung": 1,
+        "raub": 5,
+        "erpressung": 3,
+        "widerstandsdelikte": 59,
+        "gesamt_gewalttaten": 355
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 211,
+        "noetigung_bedrohung": 50,
+        "verstoesse_gegen_das_versammlungsgesetz": 134,
+        "verstoesse_gegen_das_vereinsgesetz": 841,
+        "mitgliedschaft_bzw_unterstuetzung_einer_auslaendischen_terroristischen_vereinigung": 55,
+        "andere_straftaten": 282,
+        "gesamt_sonstige_straftaten": 1573
+      },
+      "straftaten_insgesamt": 1928
+    }
+  },
+  {
+    "jahr": 2018,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": "1244 straftaten mit einem extremistischen hintergrund wurden ohne zuordnung zu einem bestimmten phaenomenbereich gemeldet"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 1244
+    }
+  },
+	{
+    "jahr": 2019,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 32080,
+      "davon_gewaltorientiert": 13000,
+      "in_parteien": 13330,
+      "nationaldemokratische_partei_deutschlands_npd": 3600,
+      "die_rechte": 550,
+      "der_iii_weg": 580,
+      "sonstiges_rechtsextremistisches_personenpotenzial_in_parteien": 8600,
+      "in_parteiunabhaengigen_bzw_parteiungebundenen_strukturen": 6600,
+      "weitgehend_unstrukturiertes_rechtsextremistisches_personenpotenzial": 13500
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 2,
+        "versuchte_toetungsdelikte": 5,
+        "koerperverletzungen": 781,
+        "brandstiftungen": 6,
+        "herbeifuehren_einer_sprengstoffexplosion": 2,
+        "landfriedensbruch": 8,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 5,
+        "freiheitsberaubung": 1,
+        "raub": 13,
+        "erpressung": 36,
+        "widerstandsdelikte": 66,
+        "sexualdelikte": 0,
+        "gesamt_gewalttaten": 925
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 923,
+        "noetigung_bedrohung": 376,
+        "propagandadelikte": 13988,
+        "stoerung_der_totenruhe": 11,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": 5067,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": 20365
+      },
+      "straftaten_insgesamt": 21290
+    }
+  },
+  {
+    "jahr": 2019,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 33500,
+      "davon_gewaltorientiert": 9200,
+      "autonome": 7400,
+      "anarchisten": 900,
+      "dogmatische_linksextremisten": 900,
+      "nicht_gewaltorientierte_dogmatische_linksextremisten_und_sonstige_linksextremisten": 25300
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 2,
+        "koerperverletzungen": 355,
+        "brandstiftungen": 164,
+        "herbeifuehren_einer_sprengstoffexplosion": 8,
+        "landfriedensbruch": 72,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 45,
+        "freiheitsberaubung": 2,
+        "raub": 16,
+        "erpressung": 3,
+        "widerstandsdelikte": 254,
+        "gesamt_gewalttaten": 921
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 3520,
+        "noetigung_bedrohung": 116,
+        "andere_straftaten": 1892,
+        "gesamt_sonstige_straftaten": 5528
+      },
+      "straftaten_insgesamt": 6449
+    }
+  },
+  {
+    "jahr": 2019,
+    "phaenomenbereich": "pmk_reichsbuerger_und_selbstverwalter",
+    "personenpotenzial": {
+      "absolut_gesamt": 19000,
+      "davon_gewaltorientiert": null,
+      "rechtsextremisten": 950
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": 81,
+        "widerstandsdelikte": 30,
+        "sexualdelikte": null,
+        "gesamt_gewalttaten": 121
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": 156,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "volksverhetzung": 17,
+        "andere_straftaten_insbesondere_volksverhetzung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": 468
+      },
+      "straftaten_insgesamt": 589
+    }
+  },
+  {
+    "jahr": 2019,
+    "phaenomenbereich": "pmk_religioese_ideologie",
+    "personenpotenzial": {
+      "absolut_gesamt": 28020,
+      "davon_gewaltorientiert": null,
+      "salafistische_bestrebungen": 12150,
+      "islamischer_staat_is": null,
+      "kern_al_qaida": null,
+      "al_qaida_im_islamischen_maghreb_aqm": null,
+      "jama_at_nasr_al_islam_wal_muslimin_jnim": null,
+      "al_qaida_auf_der_arabischen_halbinsel_aqah": null,
+      "al_shabab": null,
+      "hai_at_tahrir_al_sham_hts": null,
+      "tanzim_hurras_al_din_thd": null,
+      "hizb_allah": 1050,
+      "harakat_al_muqawama_al_islamiya_hamas": 380,
+      "tuerkische_hizbullah_th": 400,
+      "hizb_ut_tahrir_hut": 430,
+      "muslimbruderschaft_mb_deutsche_muslimische_gemeinschaft_e_v_dmg": 1350,
+      "tablighi_jama_at_tj": 650,
+      "islamisches_zentrum_hamburg_e_v_izh": null,
+      "milli_goerues_bewegung_und_zugeordnete_vereinigungen": 10000,
+      "furkan_gemeinschaft": 350,
+      "hezb_e_islami_ye_afghanistan_hia": 100,
+      "sonstige": 1160
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 1,
+        "koerperverletzungen": 32,
+        "andere_gewalttaten": 8,
+        "gesamt_gewalttaten": 41
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigung": 11,
+        "noetigung_bedrohung": 32,
+        "volksverhetzung": 16,
+        "vorbereitung_einer_staatsgefaehrdenden_gewalttat": 63,
+        "mitgliedschaft_bzw_unterstuetzung_einer_auslaendischen_terroristischen_vereinigung": 64,
+        "andere_straftaten": 135,
+        "gesamt_sonstige_straftaten": 321
+      },
+      "straftaten_insgesamt": 362
+    }
+  },
+  {
+    "jahr": 2019,
+    "phaenomenbereich": "pmk_auslaendische_ideologie",
+    "personenpotenzial": {
+      "absolut_gesamt": 28820,
+      "davon_gewaltorientiert": null,
+      "arbeiterpartei_kurdistans_pkk": 14500,
+      "tuerkische_rechtsextremisten": 11000,
+      "tuerkische_linksextremisten": 2550,
+      "sonstige": 770
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 0,
+        "koerperverletzungen": 144,
+        "brandstiftungen": 4,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 16,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 1,
+        "freiheitsberaubung": 0,
+        "raub": 1,
+        "erpressung": 2,
+        "widerstandsdelikte": 79,
+        "gesamt_gewalttaten": 248
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 164,
+        "noetigung_bedrohung": 32,
+        "verstoesse_gegen_das_versammlungsgesetz": 81,
+        "verstoesse_gegen_das_vereinsgesetz": 612,
+        "mitgliedschaft_bzw_unterstuetzung_einer_auslaendischen_terroristischen_vereinigung": 32,
+        "andere_straftaten": 185,
+        "gesamt_sonstige_straftaten": 1106
+      },
+      "straftaten_insgesamt": 1354
+    }
+  },
+  {
+    "jahr": 2019,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "andere_straftaten": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 2017
+    }
+  },
+	{
+    "jahr": 2020,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 33300,
+      "davon_gewaltorientiert": 13300,
+      "in_parteien": 13250,
+      "nationaldemokratische_partei_deutschlands_npd": 3500,
+      "die_rechte": 550,
+      "der_iii_weg": 600,
+      "sonstiges_rechtsextremistisches_personenpotenzial_in_parteien": 8600,
+      "in_parteiunabhaengigen_bzw_parteiungebundenen_strukturen": 7800,
+      "weitgehend_unstrukturiertes_rechtsextremistisches_personenpotenzial": 13700
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 1,
+        "versuchte_toetungsdelikte": 2,
+        "koerperverletzungen": 842,
+        "brandstiftungen": 25,
+        "herbeifuehren_einer_sprengstoffexplosion": 2,
+        "landfriedensbruch": 18,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 12,
+        "freiheitsberaubung": 1,
+        "raub": 7,
+        "erpressung": 12,
+        "widerstandsdelikte": 101,
+        "gesamt_gewalttaten": 1023
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 880,
+        "noetigung_bedrohung": 478,
+        "propagandadelikte": 13425,
+        "stoerung_der_totenruhe": 6,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": 6545,
+        "gesamt_sonstige_straftaten": 21334
+      },
+      "straftaten_insgesamt": 22357
+    }
+  },
+  {
+    "jahr": 2020,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 34300,
+      "davon_gewaltorientiert": 9600,
+      "davon_autonome": 7500,
+      "nicht_gewaltorientierte_dogmatische_linksextremisten_und_sonstige_linksextremisten": 25800
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 5,
+        "koerperverletzungen": 423,
+        "brandstiftungen": 173,
+        "herbeifuehren_einer_sprengstoffexplosion": 2,
+        "landfriedensbruch": 321,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 84,
+        "freiheitsberaubung": 0,
+        "raub": 15,
+        "erpressung": 1,
+        "widerstandsdelikte": 213,
+        "gesamt_gewalttaten": 1237
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 3734,
+        "noetigung_bedrohung": 143,
+        "propagandadelikte": 94,
+        "stoerung_der_totenruhe": 5,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": 1419,
+        "gesamt_sonstige_straftaten": 5395
+      },
+      "straftaten_insgesamt": 6632
+    }
+  },
+  {
+    "jahr": 2020,
+    "phaenomenbereich": "pmk_reichsbuerger_und_selbstverwalter",
+    "personenpotenzial": {
+      "absolut_gesamt": 20000,
+      "davon_gewaltorientiert": 2000,
+      "rechtsextremisten": 1000
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": 78,
+        "widerstandsdelikte": 30,
+        "gesamt_gewalttaten": 125
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "volksverhetzung": 30,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 599
+    }
+  },
+  {
+    "jahr": 2020,
+    "phaenomenbereich": "pmk_religioese_ideologie",
+    "personenpotenzial": {
+      "absolut_gesamt": 28715,
+      "davon_gewaltorientiert": null,
+      "salafistische_bestrebungen": 12150,
+      "hezb_e_islami_ye_afghanistan_hia": 160,
+      "hizb_allah": 1250,
+      "harakat_al_muqawama_al_islamiya_hamas": 450,
+      "tuerkische_hizbullah_th": 400,
+      "hizb_ut_tahrir_hut": 600,
+      "muslimbruderschaft_mb_deutsche_muslimische_gemeinschaft_e_v_dmg": 1450,
+      "tablighi_jama_at_tj": 650,
+      "islamisches_zentrum_hamburg_e_v_izh": null,
+      "milli_goerues_bewegung_und_zugeordnete_vereinigungen": 10000,
+      "furkan_gemeinschaft": 400,
+      "kalifatsstaat": null,
+      "sonstige": 1205
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 2,
+        "versuchte_toetungsdelikte": 2,
+        "koerperverletzungen": 24,
+        "andere_gewalttaten": 5,
+        "gesamt_gewalttaten": 33
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 35,
+        "noetigung_bedrohung": 59,
+        "volksverhetzung": 23,
+        "vorbereitung_einer_staatsgefaehrdenden_gewalttat": 56,
+        "mitgliedschaft_bzw_unterstuetzung_einer_auslaendischen_terroristischen_vereinigung": 34,
+        "andere_straftaten": 169,
+        "gesamt_sonstige_straftaten": 376
+      },
+      "straftaten_insgesamt": 409
+    }
+  },
+  {
+    "jahr": 2020,
+    "phaenomenbereich": "pmk_auslaendische_ideologie",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null,
+      "arbeiterpartei_kurdistans_pkk": 14500
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 1,
+        "koerperverletzungen": 59,
+        "brandstiftungen": 2,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 9,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 0,
+        "freiheitsberaubung": 0,
+        "raub": 0,
+        "erpressung": 3,
+        "widerstandsdelikte": 5,
+        "gesamt_gewalttaten": 79
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 154,
+        "noetigung_bedrohung": 43,
+        "volksverhetzung": 16,
+        "verstoesse_gegen_das_versammlungsgesetz": 21,
+        "verstoesse_gegen_das_vereinsgesetz": 169,
+        "mitgliedschaft_bzw_unterstuetzung_einer_auslaendischen_terroristischen_vereinigung": 36,
+        "andere_straftaten": 143,
+        "gesamt_sonstige_straftaten": 582
+      },
+      "straftaten_insgesamt": 661
+    }
+  },
+  {
+    "jahr": 2020,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 2865
+    }
+  },
+	{
+    "jahr": 2021,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 33900,
+      "davon_gewaltorientiert": 13500,
+      "in_parteien": 11800,
+      "nationaldemokratische_partei_deutschlands_npd": 3150,
+      "die_rechte": 500,
+      "der_iii_weg": 650,
+      "sonstiges_rechtsextremistisches_personenpotenzial_in_parteien": 7500,
+      "in_parteiunabhaengigen_bzw_parteiungebundenen_strukturen": 8500,
+      "weitgehend_unstrukturiertes_rechtsextremistisches_personenpotenzial": 15000,
+      "bedrohungslage_notiz": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 1,
+        "versuchte_toetungsdelikte": 2,
+        "koerperverletzungen": 783,
+        "brandstiftungen": 11,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 7,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 10,
+        "freiheitsberaubung": 1,
+        "raub": 3,
+        "erpressung": 7,
+        "widerstandsdelikte": 119,
+        "gesamt_gewalttaten": 945
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 923,
+        "noetigung_bedrohung": 425,
+        "propagandadelikte": 11866,
+        "stoerung_der_totenruhe": 8,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": 6034,
+        "gesamt_sonstige_straftaten": 19256
+      },
+      "straftaten_insgesamt": 20201
+    }
+  },
+  {
+    "jahr": 2021,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 34700,
+      "davon_gewaltorientiert": 10300,
+      "davon_autonome": 8000,
+      "nicht_gewaltorientierte_dogmatische_linksextremisten_und_sonstige_linksextremisten": 25500,
+      "bedrohungslage_notiz": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 1,
+        "koerperverletzungen": 362,
+        "brandstiftungen": 159,
+        "herbeifuehren_einer_sprengstoffexplosion": 7,
+        "landfriedensbruch": 147,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 47,
+        "freiheitsberaubung": 0,
+        "raub": 17,
+        "erpressung": 4,
+        "widerstandsdelikte": 243,
+        "gesamt_gewalttaten": 987
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 3419,
+        "noetigung_bedrohung": 145,
+        "propagandadelikte": 91,
+        "stoerung_der_totenruhe": 2,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": 1498,
+        "gesamt_sonstige_straftaten": 5155
+      },
+      "straftaten_insgesamt": 6142
+    }
+  },
+  {
+    "jahr": 2021,
+    "phaenomenbereich": "pmk_reichsbuerger_und_selbstverwalter",
+    "personenpotenzial": {
+      "absolut_gesamt": 21000,
+      "davon_gewaltorientiert": 2100,
+      "rechtsextremisten": 1150,
+      "bedrohungslage_notiz": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": 116,
+        "widerstandsdelikte": 44,
+        "gesamt_gewalttaten": 184
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": 341,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "volksverhetzung": 42,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 1011
+    }
+  },
+  {
+    "jahr": 2021,
+    "phaenomenbereich": "pmk_religioese_ideologie",
+    "personenpotenzial": {
+      "absolut_gesamt": 28290,
+      "davon_gewaltorientiert": null,
+      "salafistische_bestrebungen": 11900,
+      "islamischer_staat_is": null,
+      "kern_al_qaida": null,
+      "al_qaida_im_islamischen_maghreb_aqm": null,
+      "jama_at_nasr_al_islam_wal_muslimin_jnim": null,
+      "al_qaida_auf_der_arabischen_halbinsel_aqah": null,
+      "al_shabab": null,
+      "hai_at_tahrir_al_sham_hts": null,
+      "tanzim_hurras_al_din_thd": null,
+      "taleban": null,
+      "hezb_e_islami_ye_afghanistan_hia": 160,
+      "hizb_allah": 1250,
+      "harakat_al_muqawama_al_islamiya_hamas": 450,
+      "tuerkische_hizbullah_th": 400,
+      "hizb_ut_tahrir_hut": 700,
+      "muslimbruderschaft_mb_deutsche_muslimische_gemeinschaft_e_v_dmg": 1450,
+      "tablighi_jama_at_tj": 550,
+      "islamisches_zentrum_hamburg_e_v_izh_und_sonstiger_schiitischer_extremismus": null,
+      "milli_goerues_bewegung_und_zugeordnete_vereinigungen": 10000,
+      "furkan_gemeinschaft": 400,
+      "kalifatsstaat": 700,
+      "sonstige": 330,
+      "bedrohungslage_notiz": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 2,
+        "koerperverletzungen": 39,
+        "andere_gewalttaten": 8,
+        "gesamt_gewalttaten": 49
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigung": 13,
+        "noetigung_bedrohung": 42,
+        "volksverhetzung": 37,
+        "vorbereitung_einer_staatsgefaehrdenden_gewalttat": 49,
+        "mitgliedschaft_bzw_unterstuetzung_einer_auslaendischen_terroristischen_vereinigung": 43,
+        "andere_straftaten": 176,
+        "gesamt_sonstige_straftaten": 360
+      },
+      "straftaten_insgesamt": 409
+    }
+  },
+  {
+    "jahr": 2021,
+    "phaenomenbereich": "pmk_auslaendische_ideologie",
+    "personenpotenzial": {
+      "absolut_gesamt": 28650,
+      "davon_gewaltorientiert": null,
+      "arbeiterpartei_kurdistans_pkk": 14500,
+      "tuerkischer_rechtsextremismus": 11000,
+      "tuerkischer_linksextremismus": 2550,
+      "sonstige": 600,
+      "bedrohungslage_notiz": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 4,
+        "koerperverletzungen": 57,
+        "brandstiftungen": 5,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 17,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 0,
+        "freiheitsberaubung": 1,
+        "raub": 7,
+        "erpressung": 0,
+        "widerstandsdelikte": 25,
+        "gesamt_gewalttaten": 116
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 114,
+        "noetigung_bedrohung": 61,
+        "volksverhetzung": 83,
+        "verstoesse_gegen_das_versammlungsgesetz": 29,
+        "verstoesse_gegen_das_vereinsgesetz": 164,
+        "mitgliedschaft_bzw_unterstuetzung_einer_auslaendischen_terroristischen_vereinigung": 28,
+        "andere_straftaten": 181,
+        "gesamt_sonstige_straftaten": 660
+      },
+      "straftaten_insgesamt": 776
+    }
+  },
+  {
+    "jahr": 2021,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 5948
+    }
+  },
+	{
+    "jahr": 2022,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 38800,
+      "davon_gewaltorientiert": 14000,
+      "in_parteien": 15500,
+      "nationaldemokratische_partei_deutschlands_npd": 3000,
+      "die_rechte": 450,
+      "der_iii_weg": 700,
+      "alternative_fuer_deutschland_afd": 10200,
+      "sonstiges_rechtsextremistisches_personenpotenzial_in_parteien": 1150,
+      "in_parteiunabhaengigen_bzw_parteiungebundenen_strukturen": 8500,
+      "weitgehend_unstrukturiertes_rechtsextremistisches_personenpotenzial": 16000,
+      "bedrohungslage_notiz": "im jahr 2022 ist die zahl der straftaten mit rechtsextremistischem hintergrund um rund 38 prozent auf rund 21000 angestiegen zudem verbleibt das potenzial gewaltbereiter rechtsextremistischer personen mit 14000 personen auch 2022 auf unveraendert hohem niveau"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 2,
+        "koerperverletzungen": 879,
+        "brandstiftungen": 18,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 10,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 3,
+        "freiheitsberaubung": 0,
+        "raub": 7,
+        "erpressung": 6,
+        "widerstandsdelikte": 91,
+        "gesamt_gewalttaten": 1016
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 592,
+        "noetigung_bedrohung": 417,
+        "propagandadelikte": 13026,
+        "stoerung_der_totenruhe": 9,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": 5907,
+        "gesamt_sonstige_straftaten": 19951
+      },
+      "straftaten_insgesamt": 20967
+    }
+  },
+  {
+    "jahr": 2022,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 36500,
+      "davon_gewaltorientiert": 10800,
+      "davon_autonome": 8300,
+      "nicht_gewaltorientierte_dogmatische_linksextremisten_und_sonstige_linksextremisten": 27600,
+      "bedrohungslage_notiz": "zwar ging die zahl linksextremistisch motivierter straftaten 2022 um rund 374 prozent zurueck dennoch zeigen einzelne besonders erhebliche angriffe das unveraendert hohe gefahrenpotenzial"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 1,
+        "koerperverletzungen": 301,
+        "brandstiftungen": 62,
+        "herbeifuehren_einer_sprengstoffexplosion": 3,
+        "landfriedensbruch": 46,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 31,
+        "freiheitsberaubung": 1,
+        "raub": 6,
+        "erpressung": 1,
+        "widerstandsdelikte": 147,
+        "gesamt_gewalttaten": 602
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1968,
+        "noetigung_bedrohung": 124,
+        "propagandadelikte": 61,
+        "stoerung_der_totenruhe": 2,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": 1090,
+        "gesamt_sonstige_straftaten": 3245
+      },
+      "straftaten_insgesamt": 3847
+    }
+  },
+  {
+    "jahr": 2022,
+    "phaenomenbereich": "pmk_reichsbuerger_und_selbstverwalter",
+    "personenpotenzial": {
+      "absolut_gesamt": 23000,
+      "davon_gewaltorientiert": 2300,
+      "rechtsextremisten": 1250,
+      "bedrohungslage_notiz": "das hohe gewaltpotenzial in der szene der reichsbuerger und selbstverwalter zeigt sich auch haeufig durch massive widerstandshandlungen gegen staatliche massnahmen auch unter einsatz von waffen"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": null,
+        "versuchte_toetungsdelikte": 2,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": 203,
+        "widerstandsdelikte": 67,
+        "gesamt_gewalttaten": 286
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": 555,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "volksverhetzung": 40,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 1358
+    }
+  },
+  {
+    "jahr": 2022,
+    "phaenomenbereich": "pmk_religioese_ideologie",
+    "personenpotenzial": {
+      "absolut_gesamt": 27480,
+      "davon_gewaltorientiert": null,
+      "salafistische_bestrebungen": 11000,
+      "islamischer_staat_is": null,
+      "kern_al_qaida": null,
+      "al_qaida_im_islamischen_maghreb_aqm": null,
+      "jama_at_nasr_al_islam_wal_muslimin_jnim": null,
+      "al_qaida_auf_der_arabischen_halbinsel_aqah": null,
+      "al_shabab": null,
+      "hezb_e_islami_ye_afghanistan_hia": 160,
+      "hizb_allah": 1250,
+      "harakat_al_muqawama_al_islamiya_hamas": 450,
+      "tuerkische_hizbullah_th": 400,
+      "hizb_ut_tahrir_hut": 750,
+      "muslimbruderschaft_mb_deutsche_muslimische_gemeinschaft_e_v_dmg": 1450,
+      "tablighi_jama_at_tj": 550,
+      "islamisches_zentrum_hamburg_e_v_izh_und_sonstiger_schiitischer_extremismus": null,
+      "milli_goerues_bewegung_und_zugeordnete_vereinigungen": 10000,
+      "furkan_gemeinschaft": 350,
+      "kalifatsstaat": 600,
+      "sonstige": 520,
+      "bedrohungslage_notiz": "die bedrohung durch den islamistischen terrorismus ist weiterhin hoch auch wenn es im jahr 2022 in deutschland zu keinem gesichert islamistisch motivierten anschlag kam"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 1,
+        "koerperverletzungen": 39,
+        "andere_gewalttaten": 3,
+        "gesamt_gewalttaten": 43
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 10,
+        "noetigung_bedrohung": 52,
+        "volksverhetzung": 33,
+        "vorbereitung_einer_staatsgefaehrdenden_gewalttat": 39,
+        "mitgliedschaft_bzw_unterstuetzung_einer_auslaendischen_terroristischen_vereinigung": 34,
+        "andere_straftaten": 207,
+        "gesamt_sonstige_straftaten": 375
+      },
+      "straftaten_insgesamt": 418
+    }
+  },
+  {
+    "jahr": 2022,
+    "phaenomenbereich": "pmk_auslaendische_ideologie",
+    "personenpotenzial": {
+      "absolut_gesamt": 29750,
+      "davon_gewaltorientiert": null,
+      "arbeiterpartei_kurdistans_pkk": 14500,
+      "tuerkischer_rechtsextremismus": 12100,
+      "tuerkischer_linksextremismus": 2550,
+      "saekularer_palaestinensischer_extremismus": 200,
+      "sonstige": 400,
+      "bedrohungslage_notiz": "agitation und militanzniveau im auslandsbezogenen extremismus sind ueberwiegend von der politischen entwicklung in den jeweiligen heimatlaendern abhaengig der russische angriffskrieg gegen die ukraine hat zu einer deutlichen zunahme der straftaten gefuehrt"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 0,
+        "koerperverletzungen": 141,
+        "brandstiftungen": 9,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 16,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 4,
+        "freiheitsberaubung": 0,
+        "raub": 4,
+        "erpressung": 2,
+        "widerstandsdelikte": 50,
+        "gesamt_gewalttaten": 226
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 382,
+        "noetigung_bedrohung": 146,
+        "volksverhetzung": 112,
+        "verstoesse_gegen_das_versammlungsgesetz": 59,
+        "verstoesse_gegen_das_vereinsgesetz": 88,
+        "mitgliedschaft_bzw_unterstuetzung_einer_auslaendischen_terroristischen_vereinigung": 14,
+        "andere_straftaten": 947,
+        "gesamt_sonstige_straftaten": 1748
+      },
+      "straftaten_insgesamt": 1974
+    }
+  },
+  {
+    "jahr": 2022,
+    "phaenomenbereich": "verfassungsschutzrelevante_delegitimierung_des_staates",
+    "personenpotenzial": {
+      "absolut_gesamt": 1400,
+      "davon_gewaltorientiert": 280,
+      "bedrohungslage_notiz": "die akteure zeichnen sich durch eine nachhaltige agitation gegen demokratisch legitimierte repraesentantinnen und repraesentanten des staates aus"
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2022,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null,
+      "bedrohungslage_notiz": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 8246
+    }
+	},
+	{
+    "jahr": 2023,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 38800,
+      "davon_gewaltorientiert": 14500,
+      "in_parteien": 16300,
+      "die_heimat_vormals_nationaldemokratische_partei_deutschlands_npd": 2800,
+      "die_rechte": 300,
+      "der_iii_weg": 800,
+      "alternative_fuer_deutschland_afd": 11300,
+      "sonstiges_rechtsextremistisches_personenpotenzial_in_parteien": 1100,
+      "in_parteiunabhaengigen_bzw_parteiungebundenen_strukturen": 8500,
+      "weitgehend_unstrukturiertes_rechtsextremistisches_personenpotenzial": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 4,
+        "koerperverletzungen": 1016,
+        "brandstiftungen": 16,
+        "herbeifuehren_einer_sprengstoffexplosion": 2,
+        "landfriedensbruch": 2,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 14,
+        "freiheitsberaubung": 0,
+        "raub": 9,
+        "erpressung": 4,
+        "widerstandsdelikte": 81,
+        "gesamt_gewalttaten": 1148
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 781,
+        "noetigung_bedrohung": 518,
+        "propagandadelikte": 15081,
+        "stoerung_der_totenruhe": 14,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": 8118,
+        "gesamt_sonstige_straftaten": 24512
+      },
+      "straftaten_insgesamt": 25660
+    }
+  },
+  {
+    "jahr": 2023,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 37000,
+      "davon_gewaltorientiert": 11200,
+      "davon_autonome": 8300,
+      "nicht_gewaltorientierte_dogmatische_linksextremisten_und_sonstige_linksextremisten": 27800
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 3,
+        "koerperverletzungen": 317,
+        "brandstiftungen": 104,
+        "herbeifuehren_einer_sprengstoffexplosion": 2,
+        "landfriedensbruch": 71,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 46,
+        "freiheitsberaubung": 0,
+        "raub": 4,
+        "erpressung": 0,
+        "widerstandsdelikte": 180,
+        "gesamt_gewalttaten": 727
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 2301,
+        "noetigung_bedrohung": 130,
+        "propagandadelikte": 83,
+        "stoerung_der_totenruhe": 2,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": 1005,
+        "gesamt_sonstige_straftaten": 3521
+      },
+      "straftaten_insgesamt": 4248
+    }
+  },
+  {
+    "jahr": 2023,
+    "phaenomenbereich": "pmk_reichsbuerger_und_selbstverwalter",
+    "personenpotenzial": {
+      "absolut_gesamt": 25000,
+      "davon_gewaltorientiert": 2500,
+      "rechtsextremisten": 1350
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": null,
+        "versuchte_toetungsdelikte": 1,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": 85,
+        "widerstandsdelikte": 49,
+        "gesamt_gewalttaten": 149
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": 425,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "volksverhetzung": 58,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 1070
+    }
+  },
+  {
+    "jahr": 2023,
+    "phaenomenbereich": "pmk_religioese_ideologie",
+    "personenpotenzial": {
+      "absolut_gesamt": 27200,
+      "davon_gewaltorientiert": null,
+      "salafistische_bestrebungen": 10500
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 2,
+        "versuchte_toetungsdelikte": 3,
+        "koerperverletzungen": 42,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "andere_gewalttaten": 25,
+        "gesamt_gewalttaten": 72
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigung": 130,
+        "noetigung_bedrohung": 57,
+        "volksverhetzung": 241,
+        "vorbereitung_einer_staatsgefaehrdenden_gewalttat": 46,
+        "mitgliedschaft_bzw_unterstuetzung_einer_auslaendischen_terroristischen_vereinigung": 40,
+        "andere_straftaten": 664,
+        "gesamt_sonstige_straftaten": 1178
+      },
+      "straftaten_insgesamt": 1250
+    }
+  },
+  {
+    "jahr": 2023,
+    "phaenomenbereich": "pmk_auslaendische_ideologie",
+    "personenpotenzial": {
+      "absolut_gesamt": 30650,
+      "davon_gewaltorientiert": null,
+      "arbeiterpartei_kurdistans_pkk": 15000,
+      "tuerkischer_rechtsextremismus": 12500,
+      "tuerkischer_linksextremismus": 2500,
+      "saekularer_palaestinensischer_extremismus": 250,
+      "sonstige": 400
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 1,
+        "versuchte_toetungsdelikte": 2,
+        "koerperverletzungen": 219,
+        "brandstiftungen": 10,
+        "herbeifuehren_einer_sprengstoffexplosion": 1,
+        "landfriedensbruch": 23,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 4,
+        "freiheitsberaubung": 1,
+        "raub": 8,
+        "erpressung": 4,
+        "widerstandsdelikte": 56,
+        "gesamt_gewalttaten": 329
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 638,
+        "noetigung_bedrohung": 121,
+        "volksverhetzung": 665,
+        "verstoesse_gegen_das_versammlungsgesetz": 35,
+        "verstoesse_gegen_das_vereinsgesetz": 81,
+        "mitgliedschaft_bzw_unterstuetzung_einer_auslaendischen_terroristischen_vereinigung": 24,
+        "andere_straftaten": 1199,
+        "gesamt_sonstige_straftaten": 2763
+      },
+      "straftaten_insgesamt": 3092
+    }
+  },
+  {
+    "jahr": 2023,
+    "phaenomenbereich": "verfassungsschutzrelevante_delegitimierung_des_staates",
+    "personenpotenzial": {
+      "absolut_gesamt": 1600,
+      "davon_gewaltorientiert": 250
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2023,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 5183
+    }
+  },
+	{
+    "jahr": 2024,
+    "phaenomenbereich": "pmk_rechts",
+    "personenpotenzial": {
+      "absolut_gesamt": 50250,
+      "davon_gewaltorientiert": 15300,
+      "in_parteien": 25000,
+      "die_heimat_vormals_nationaldemokratische_partei_deutschlands_npd": 2500,
+      "freie_sachsen": 1200,
+      "der_iii_weg": 950,
+      "alternative_fuer_deutschland_afd": 20000,
+      "sonstiges_rechtsextremistisches_personenpotenzial_in_parteien": 350,
+      "in_parteiunabhaengigen_bzw_parteiungebundenen_strukturen": 8500,
+      "weitgehend_unstrukturiertes_rechtsextremistisches_personenpotenzial": 18000
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 6,
+        "koerperverletzungen": 1121,
+        "brandstiftungen": 23,
+        "herbeifuehren_einer_sprengstoffexplosion": 3,
+        "landfriedensbruch": 6,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 13,
+        "freiheitsberaubung": 0,
+        "raub": 18,
+        "erpressung": 12,
+        "widerstandsdelikte": 79,
+        "gesamt_gewalttaten": 1281
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 1646,
+        "noetigung_bedrohung": 687,
+        "propagandadelikte": 24177,
+        "stoerung_der_totenruhe": 8,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": 10036,
+        "gesamt_sonstige_straftaten": 36554
+      },
+      "straftaten_insgesamt": 37835
+    }
+  },
+  {
+    "jahr": 2024,
+    "phaenomenbereich": "pmk_links",
+    "personenpotenzial": {
+      "absolut_gesamt": 38000,
+      "davon_gewaltorientiert": 11200,
+      "davon_autonome": 8600,
+      "nicht_gewaltorientierte_dogmatische_linksextremisten_und_sonstige_linksextremisten": 28800
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 0,
+        "koerperverletzungen": 216,
+        "brandstiftungen": 86,
+        "herbeifuehren_einer_sprengstoffexplosion": 6,
+        "landfriedensbruch": 59,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 10,
+        "freiheitsberaubung": 0,
+        "raub": 9,
+        "erpressung": 1,
+        "widerstandsdelikte": 145,
+        "gesamt_gewalttaten": 532
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 3143,
+        "noetigung_bedrohung": 165,
+        "propagandadelikte": 140,
+        "stoerung_der_totenruhe": 0,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": 1877,
+        "gesamt_sonstige_straftaten": 5325
+      },
+      "straftaten_insgesamt": 5857
+    }
+  },
+  {
+    "jahr": 2024,
+    "phaenomenbereich": "pmk_reichsbuerger_und_selbstverwalter",
+    "personenpotenzial": {
+      "absolut_gesamt": 26000,
+      "davon_gewaltorientiert": 2600,
+      "rechtsextremisten": 1400
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": 35,
+        "widerstandsdelikte": 58,
+        "gesamt_gewalttaten": 105
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": 236,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "volksverhetzung": 49,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 774
+    }
+  },
+  {
+    "jahr": 2024,
+    "phaenomenbereich": "pmk_religioese_ideologie",
+    "personenpotenzial": {
+      "absolut_gesamt": 28280,
+      "davon_gewaltorientiert": null,
+      "salafistische_bestrebungen": 11000,
+      "islamischer_staat_is": null,
+      "kern_al_qaida": null,
+      "al_qaida_im_islamischen_maghreb_aqm": null,
+      "jama_at_nasr_al_islam_wal_muslimin_jnim": null,
+      "al_qaida_auf_der_arabischen_halbinsel_aqah": null,
+      "al_shabab": null,
+      "hezb_e_islami_ye_afghanistan_hia": 210,
+      "hizb_allah": 1250,
+      "harakat_al_muqawama_al_islamiya_hamas": 550,
+      "tuerkische_hizbullah_th": 400,
+      "hizb_ut_tahrir_hut": 850,
+      "muslimbruderschaft_mb_deutsche_muslimische_gemeinschaft_e_v_dmg": 1450,
+      "tablighi_jama_at_tj": 550,
+      "islamisches_zentrum_hamburg_e_v_izh_und_sonstiger_schiitischer_extremismus": 550,
+      "milli_goerues_bewegung_und_zugeordnete_vereinigungen": 10000,
+      "furkan_bewegung": 500,
+      "kalifatsstaat": 600,
+      "sonstige": 370
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 2,
+        "versuchte_toetungsdelikte": 3,
+        "koerperverletzungen": 53,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "andere_gewalttaten": 13,
+        "gesamt_gewalttaten": 71
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigung": 240,
+        "noetigung_bedrohung": 107,
+        "volksverhetzung": 173,
+        "vorbereitung_einer_staatsgefaehrdenden_gewalttat": 60,
+        "mitgliedschaft_bzw_unterstuetzung_einer_auslaendischen_terroristischen_vereinigung": 32,
+        "andere_straftaten": 1011,
+        "gesamt_sonstige_straftaten": 1623
+      },
+      "straftaten_insgesamt": 1694
+    }
+  },
+  {
+    "jahr": 2024,
+    "phaenomenbereich": "pmk_auslaendische_ideologie",
+    "personenpotenzial": {
+      "absolut_gesamt": 32500,
+      "davon_gewaltorientiert": null,
+      "arbeiterpartei_kurdistans_pkk": 15000,
+      "tuerkischer_rechtsextremismus": 12900,
+      "tuerkischer_linksextremismus": 2500,
+      "saekularer_palaestinensischer_extremismus": 1000,
+      "sonstige": 1100
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": 0,
+        "versuchte_toetungsdelikte": 2,
+        "koerperverletzungen": 304,
+        "brandstiftungen": 9,
+        "herbeifuehren_einer_sprengstoffexplosion": 0,
+        "landfriedensbruch": 83,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": 3,
+        "freiheitsberaubung": 0,
+        "raub": 15,
+        "erpressung": 2,
+        "widerstandsdelikte": 189,
+        "gesamt_gewalttaten": 607
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": 803,
+        "noetigung_bedrohung": 174,
+        "volksverhetzung": 841,
+        "verstoesse_gegen_das_versammlungsgesetz": 55,
+        "verstoesse_gegen_das_vereinsgesetz": 98,
+        "mitgliedschaft_bzw_unterstuetzung_einer_auslaendischen_terroristischen_vereinigung": 14,
+        "andere_straftaten": 1942,
+        "gesamt_sonstige_straftaten": 3927
+      },
+      "straftaten_insgesamt": 4534
+    }
+  },
+  {
+    "jahr": 2024,
+    "phaenomenbereich": "verfassungsschutzrelevante_delegitimierung_des_staates",
+    "personenpotenzial": {
+      "absolut_gesamt": 1500,
+      "davon_gewaltorientiert": 250
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": null
+    }
+  },
+  {
+    "jahr": 2024,
+    "phaenomenbereich": "pmk_ohne_zuordnung",
+    "personenpotenzial": {
+      "absolut_gesamt": null,
+      "davon_gewaltorientiert": null
+    },
+    "straftaten_katalog": {
+      "gewalttaten": {
+        "vollendete_toetungsdelikte": null,
+        "versuchte_toetungsdelikte": null,
+        "koerperverletzungen": null,
+        "brandstiftungen": null,
+        "herbeifuehren_einer_sprengstoffexplosion": null,
+        "landfriedensbruch": null,
+        "gefaehrliche_eingriffe_in_den_bahn_luft_schiffs_und_strassenverkehr": null,
+        "freiheitsberaubung": null,
+        "raub": null,
+        "erpressung": null,
+        "widerstandsdelikte": null,
+        "gesamt_gewalttaten": null
+      },
+      "sonstige_straftaten": {
+        "sachbeschaedigungen": null,
+        "noetigung_bedrohung": null,
+        "propagandadelikte": null,
+        "stoerung_der_totenruhe": null,
+        "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": null,
+        "gesamt_sonstige_straftaten": null
+      },
+      "straftaten_insgesamt": 7781
+    }
+  }
+]

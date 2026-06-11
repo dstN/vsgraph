@@ -1,0 +1,46 @@
+/* ═══════════════════════════════════════════════════════
+   personenpotenzial.css – Section 1 Container Styles
+   ═══════════════════════════════════════════════════════ */
+
+.ppSection {
+  padding-block: var(--space-16);
+}
+
+.ppSectionHeader {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.ppSectionTitle {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-tight);
+  margin-bottom: var(--space-3);
+}
+
+.ppSectionSubtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  max-width: 50ch;
+  margin-inline: auto;
+  line-height: var(--line-height-normal);
+}
+
+/* KPI-Cards Grid */
+.ppKpiGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-5);
+  margin-bottom: var(--space-8);
+}
+
+.ppChartSection {
+  margin-top: var(--space-4);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .ppKpiGrid {
+    grid-template-columns: 1fr;
+  }
+}
