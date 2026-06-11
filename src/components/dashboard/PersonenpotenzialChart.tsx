@@ -240,23 +240,32 @@ export default function PersonenpotenzialChart({
         ))}
       </div>
 
-      <table className="sr-only">
-        <caption>Daten für Personenpotenzial im Zeitverlauf</caption>
-        <thead>
-          <tr>
-            <th>Jahr</th>
-            {areas.map(area => <th key={area}>{getPmkLabel(area)}</th>)}
-          </tr>
-        </thead>
-        <tbody>
-          {chartData.map(row => (
-            <tr key={row.label}>
-              <td>{row.label}</td>
-              {areas.map(area => <td key={area}>{row[area] ?? "-"}</td>)}
+      {/* Screen Reader Only Table for Accessibility */}
+      <div className="sr-only">
+        <table>
+          <caption>Daten für das Personenpotenzial-Diagramm</caption>
+          <thead>
+            <tr>
+              <th scope="col">Jahr</th>
+              {areas.map((area) => (
+                <th key={area} scope="col">
+                  {getPmkLabel(area)}
+                </th>
+              ))}
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {chartData.map((row) => (
+              <tr key={row.label}>
+                <th scope="row">{row.label}</th>
+                {areas.map((area) => (
+                  <td key={area}>{row[area] ?? "–"}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
 
       {/* Kontextueller Hinweis zur Methodik */}
       <div className="ppNotesContainer" style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
