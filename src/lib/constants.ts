@@ -292,6 +292,7 @@ export const DELIKT_NOTES: Record<string, string> = {
 export const DELIKT_MERGE_MAP: Record<string, string[]> = {
   // Aktuell leer: Raub/Erpressung werden getrennt angezeigt
   // mit kontextuellem Hinweis unter dem Chart (DELIKT_NOTES)
+  toetungen: ["toetungen", "vollendete_toetungsdelikte"],
 };
 
 /**
@@ -309,6 +310,7 @@ export const DELIKT_RENAME_MAP: Record<string, string> = {
     "andere_straftaten",
   stoerung_der_totenruhe_und_andere_formen_der_schaendung_juedischer_friedhoefe_und_gedenkstaetten:
     "stoerung_der_totenruhe",
+  vollendete_toetungsdelikte: "toetungen",
 };
 
 /**

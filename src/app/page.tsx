@@ -3,7 +3,7 @@ import type { PmkDataset, Gewalttaten, SonstigeStraftaten } from '@/types/pmk';
 import { normalizePmkArea, normalizeDelikts } from '@/lib/constants';
 import Personenpotenzial from '@/components/dashboard/Personenpotenzial';
 import DeliktVergleich from '@/components/dashboard/DeliktVergleich';
-import ThemeToggle from '@/components/ThemeToggle';
+import Header from "@/components/layout/Header";
 
 /**
  * VSGraph Dashboard – Hauptseite
@@ -29,28 +29,7 @@ export default function DashboardPage() {
 	return (
 		<>
 			{/* ── Header ──────────────────────────────────── */}
-			<header className="header">
-				<div className="container headerInner">
-					<div className="headerLogo">
-						<span className="headerLogoIcon" aria-hidden="true">
-							◈
-						</span>
-						<span className="headerLogoText">VSGraph</span>
-					</div>
-					<nav className="headerNav" aria-label="Hauptnavigation">
-						<a href="#personenpotenzial" className="headerNavLink">
-							Personenpotenzial
-						</a>
-						<a href="#delikt-vergleich" className="headerNavLink">
-							Delikt-Vergleich
-						</a>
-						<a href="#about" className="headerNavLink">
-							Über
-						</a>
-						<ThemeToggle />
-					</nav>
-				</div>
-			</header>
+			<Header />
 
 			<main>
 				{/* ── Hero ──────────────────────────────────── */}

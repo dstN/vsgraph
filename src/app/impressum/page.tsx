@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import ThemeToggle from "@/components/ThemeToggle";
+import Header from "@/components/layout/Header";
 
 export default function ImpressumPage() {
   const [mounted, setMounted] = useState(false);
@@ -16,18 +16,7 @@ export default function ImpressumPage() {
 
   return (
     <>
-      <header className="header">
-        <div className="container headerInner">
-          <Link href="/" className="headerLogo" style={{ textDecoration: "none" }}>
-            <span className="headerLogoIcon" aria-hidden="true">◈</span>
-            <span className="headerLogoText">VSGraph</span>
-          </Link>
-          <nav className="headerNav" aria-label="Hauptnavigation">
-            <Link href="/" className="headerNavLink">Zurück zum Dashboard</Link>
-            <ThemeToggle />
-          </nav>
-        </div>
-      </header>
+      <Header />
       <main className="section" style={{ paddingTop: "120px", paddingBottom: "80px", minHeight: "80vh" }}>
         <div className="container" style={{ maxWidth: "800px" }}>
           <h1 className="sectionTitle">Impressum</h1>
