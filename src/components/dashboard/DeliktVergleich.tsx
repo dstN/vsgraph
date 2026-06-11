@@ -131,6 +131,10 @@ export default function DeliktVergleich({ data }: DeliktVergleichProps) {
       "propagandadelikte",
       "stoerung_der_totenruhe",
       "andere_straftaten",
+      "vorbereitung_einer_staatsgefaehrdenden_gewalttat",
+      "mitgliedschaft_bzw_unterstuetzung_einer_auslaendischen_terroristischen_vereinigung",
+      "verstoesse_gegen_das_versammlungsgesetz",
+      "verstoesse_gegen_das_vereinsgesetz",
     ];
 
     const buildOptions = (
