@@ -30,8 +30,6 @@ jobs:
           npm run build
           cp -r public .next/standalone/
           cp -r .next/static .next/standalone/.next/
-          # Das Plesk-Einstiegsskript wird zur app.js für Passenger
-          cp plesk_entry.js .next/standalone/app.js
 
       - name: Deploy via SCP (Password)
         uses: appleboy/scp-action@v0.1.7
