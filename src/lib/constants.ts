@@ -292,12 +292,13 @@ export const DELIKT_NOTES: Record<string, string> = {
 export const DELIKT_MERGE_MAP: Record<string, string[]> = {
   // Aktuell leer: Raub/Erpressung werden getrennt angezeigt
   // mit kontextuellem Hinweis unter dem Chart (DELIKT_NOTES)
-  toetungen: ["toetungen", "vollendete_toetungsdelikte"],
 };
 
 /**
  * Rename-Map: Alter Key → kanonischer Key (1:1 Umbenennung).
- * Der Wert wird unverändert übernommen.
+ * Der Wert wird unverändert übernommen. Bei Kollisionen (z.B. wenn 
+ * mehrere Quell-Keys auf denselben Ziel-Key gemappt werden) werden
+ * die Werte automatisch summiert.
  */
 export const DELIKT_RENAME_MAP: Record<string, string> = {
   sachbeschaedigung: "sachbeschaedigungen",
@@ -310,7 +311,11 @@ export const DELIKT_RENAME_MAP: Record<string, string> = {
     "andere_straftaten",
   stoerung_der_totenruhe_und_andere_formen_der_schaendung_juedischer_friedhoefe_und_gedenkstaetten:
     "stoerung_der_totenruhe",
+  
+  // Tötungsdelikte vereinheitlichen
+  toetungsdelikte: "toetungen",
   vollendete_toetungsdelikte: "toetungen",
+  versuchte_toetungsdelikte: "versuchte_toetungen",
 };
 
 /**

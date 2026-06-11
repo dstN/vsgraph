@@ -108,9 +108,8 @@ export default function DeliktVergleich({ data }: DeliktVergleichProps) {
     }
 
     const ORDER_GEWALT = [
-      "toetungsdelikte",
-      "vollendete_toetungsdelikte",
-      "versuchte_toetungsdelikte",
+      "toetungen",
+      "versuchte_toetungen",
       "koerperverletzungen",
       "brandstiftungen",
       "herbeifuehren_einer_sprengstoffexplosion",
