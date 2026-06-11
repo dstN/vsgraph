@@ -25,7 +25,7 @@ export async function POST(request: Request) {
     // Email options
     const mailOptions = {
       from: `"${name} (VSGraph Kontakt)" <${process.env.MAIL_SENDER}>`,
-      to: process.env.MAIL_USER, // Senden an sich selbst
+      to: process.env.MAIL_RECEPIENT,
       replyTo: email,
       subject: `Neue Kontaktanfrage von ${name}`,
       text: `Name: ${name}\nE-Mail: ${email}\n\nNachricht:\n${message}`,
