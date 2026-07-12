@@ -1,5 +1,3 @@
-"use client";
-
 export default function AboutSection() {
   return (
     <section className="about" id="about" aria-labelledby="about-heading" data-section-id="about" data-section-ready="true">

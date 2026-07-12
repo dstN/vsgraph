@@ -14,8 +14,8 @@ export default function Header() {
 
   const sectionDependencies: Record<string, string[]> = {
     personenpotenzial: [],
-    "delikt-vergleich": ["personenpotenzial-chart", "delikt-vergleich"],
-    about: ["personenpotenzial-chart", "delikt-vergleich", "about"],
+    "delikt-vergleich": ["personenpotenzial-chart"],
+    about: ["personenpotenzial-chart"],
   };
 
   const scrollToSection = (targetId: string, behavior: ScrollBehavior) => {
@@ -59,6 +59,7 @@ export default function Header() {
     });
   };
 
+
   // Close mobile menu when escape key is pressed
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
@@ -88,11 +89,6 @@ export default function Header() {
       return;
     }
 
-    if (!scrollToSection(targetId, "smooth")) {
-      window.location.assign(`/${hash}`);
-      return;
-    }
-
     if (window.location.hash !== hash) {
       window.history.pushState(null, "", hash);
     }
@@ -103,7 +99,9 @@ export default function Header() {
 
     await waitForSections(sectionDependencies[targetId] ?? []);
 
-    scrollToSection(targetId, "smooth");
+    if (!scrollToSection(targetId, "smooth")) {
+      window.location.assign(`/${hash}`);
+    }
   };
 
   const renderSectionLink = (

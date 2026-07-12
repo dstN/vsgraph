@@ -92,15 +92,6 @@ export default function Personenpotenzial({ data }: PersonenpotenzialProps) {
     return () => observer.disconnect();
   }, [showChart]);
 
-  useEffect(() => {
-    if (showChart) return;
-
-    const warmupId = window.setTimeout(() => {
-      setShowChart(true);
-    }, 250);
-
-    return () => window.clearTimeout(warmupId);
-  }, [showChart]);
 
   useEffect(() => {
     const handlePrepareSection = (event: Event) => {
