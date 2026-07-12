@@ -31,7 +31,7 @@ export default function DashboardPage() {
 			{/* ── Header ──────────────────────────────────── */}
 			<Header />
 
-			<main>
+			<main id="main-content">
 				{/* ── Hero ──────────────────────────────────── */}
 				<section className="hero" aria-labelledby="hero-heading">
 					<div className="container">

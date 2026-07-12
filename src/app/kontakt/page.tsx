@@ -46,7 +46,7 @@ export default function KontaktPage() {
   return (
     <>
       <Header />
-      <main className="section" style={{ paddingTop: "120px", paddingBottom: "80px", minHeight: "80vh" }}>
+      <main id="main-content" className="section" style={{ paddingTop: "120px", paddingBottom: "80px", minHeight: "80vh" }}>
         <div className="container" style={{ maxWidth: "600px" }}>
           <h1 className="sectionTitle">Kontakt</h1>
           <p style={{ color: "var(--color-text-secondary)", marginTop: "var(--space-2)", marginBottom: "var(--space-6)" }}>

@@ -17,7 +17,7 @@ export default function ImpressumPage() {
   return (
     <>
       <Header />
-      <main className="section" style={{ paddingTop: "120px", paddingBottom: "80px", minHeight: "80vh" }}>
+      <main id="main-content" className="section" style={{ paddingTop: "120px", paddingBottom: "80px", minHeight: "80vh" }}>
         <div className="container" style={{ maxWidth: "800px" }}>
           <h1 className="sectionTitle">Impressum</h1>
           <div style={{ color: "var(--color-text-secondary)", lineHeight: 1.6, marginTop: "var(--space-6)" }}>

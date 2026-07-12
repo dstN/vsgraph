@@ -39,7 +39,12 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={lexend.variable}>{children}</body>
+      <body className={lexend.variable}>
+        <a className="skip-link" href="#main-content">
+          Zum Hauptinhalt springen
+        </a>
+        {children}
+      </body>
     </html>
   );
 }

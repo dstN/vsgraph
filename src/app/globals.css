@@ -258,6 +258,30 @@
 
 /* ── Utility-Klassen ────────────────────────────────── */
 @layer utilities {
+  .skip-link {
+    position: fixed;
+    top: var(--space-2);
+    left: var(--space-2);
+    z-index: 1000;
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+    background-color: var(--color-bg-card);
+    color: var(--color-text-primary);
+    box-shadow: var(--shadow-card);
+    transform: translateY(-150%);
+    transition: transform var(--transition-fast);
+  }
+
+  .skip-link:focus,
+  .skip-link:focus-visible {
+    transform: translateY(0);
+  }
+
+  #main-content {
+    scroll-margin-top: 4rem;
+  }
+
   .container {
     width: 100%;
     max-width: var(--max-width);

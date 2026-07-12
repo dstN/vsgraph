@@ -5,7 +5,7 @@ export default function DatenschutzPage() {
   return (
     <>
       <Header />
-      <main className="section" style={{ paddingTop: "120px", paddingBottom: "80px", minHeight: "80vh" }}>
+      <main id="main-content" className="section" style={{ paddingTop: "120px", paddingBottom: "80px", minHeight: "80vh" }}>
         <div className="container" style={{ maxWidth: "800px" }}>
           <h1 className="sectionTitle">Datenschutzerklärung</h1>
           <div style={{ color: "var(--color-text-secondary)", lineHeight: 1.6, marginTop: "var(--space-6)", display: "flex", flexDirection: "column", gap: "var(--space-6)" }}>
