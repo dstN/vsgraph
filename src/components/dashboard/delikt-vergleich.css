@@ -132,6 +132,146 @@
   box-shadow: var(--shadow-card-hover);
 }
 
+.chartSkeleton {
+  position: relative;
+  overflow: hidden;
+}
+
+.chartSkeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    transparent 0%,
+    color-mix(in srgb, var(--color-text-primary) 10%, transparent) 48%,
+    transparent 100%
+  );
+  transform: translateX(-100%);
+  animation: chartSkeletonShimmer 1.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.chartSkeletonHeader,
+.chartSkeletonControls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.chartSkeletonHeader {
+  margin-bottom: var(--space-5);
+}
+
+.chartSkeletonControls {
+  margin-bottom: var(--space-6);
+}
+
+.chartSkeletonBadge,
+.chartSkeletonLine,
+.chartSkeletonPill,
+.chartSkeletonGrid,
+.chartSkeletonCurve {
+  display: block;
+  background: color-mix(in srgb, var(--color-text-primary) 10%, var(--color-bg-secondary));
+}
+
+.chartSkeletonBadge {
+  width: 8rem;
+  height: 0.95rem;
+  border-radius: var(--radius-pill);
+}
+
+.chartSkeletonLine {
+  height: 0.9rem;
+  border-radius: var(--radius-pill);
+  width: min(24rem, 100%);
+}
+
+.chartSkeletonLineShort {
+  width: min(14rem, 70%);
+}
+
+.chartSkeletonPill {
+  width: 7.5rem;
+  height: 2.25rem;
+  border-radius: var(--radius-pill);
+}
+
+.chartSkeletonPillWide {
+  width: 12rem;
+}
+
+.chartSkeletonPlot {
+  position: relative;
+  height: 420px;
+  border-radius: calc(var(--radius-xl) - 0.25rem);
+  background:
+    linear-gradient(to top, color-mix(in srgb, var(--color-border) 75%, transparent) 1px, transparent 1px) 0 0 / 100% 25%,
+    linear-gradient(to right, color-mix(in srgb, var(--color-border) 55%, transparent) 1px, transparent 1px) 0 0 / 20% 100%,
+    color-mix(in srgb, var(--color-bg-secondary) 88%, var(--color-bg-card));
+  border: 1px solid color-mix(in srgb, var(--color-border) 85%, transparent);
+  overflow: hidden;
+}
+
+.chartSkeletonGrid {
+  position: absolute;
+  left: var(--space-6);
+  right: var(--space-6);
+  height: 2px;
+  border-radius: var(--radius-pill);
+  opacity: 0.45;
+}
+
+.chartSkeletonGridOne {
+  top: 28%;
+}
+
+.chartSkeletonGridTwo {
+  top: 52%;
+}
+
+.chartSkeletonGridThree {
+  top: 76%;
+}
+
+.chartSkeletonCurve {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  height: 0.24rem;
+  border-radius: var(--radius-pill);
+  transform-origin: left center;
+}
+
+.chartSkeletonCurveOne {
+  top: 34%;
+  background: color-mix(in srgb, var(--color-pmk-rechts) 55%, var(--color-bg-card));
+  transform: rotate(-7deg);
+}
+
+.chartSkeletonCurveTwo {
+  top: 49%;
+  background: color-mix(in srgb, var(--color-pmk-links) 50%, var(--color-bg-card));
+  transform: rotate(5deg);
+}
+
+.chartSkeletonCurveThree {
+  top: 64%;
+  background: color-mix(in srgb, var(--color-pmk-religioes) 50%, var(--color-bg-card));
+  transform: rotate(-3deg);
+}
+
+@keyframes chartSkeletonShimmer {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
 .chartTitle {
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-semibold);
@@ -285,6 +425,10 @@
 }
 
 @media (max-width: 640px) {
+  .chartSkeletonPlot {
+    height: 300px;
+  }
+
   .chartWrapper {
     height: 300px;
   }
@@ -294,6 +438,12 @@
     border-radius: var(--radius-lg);
   }
 
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chartSkeleton::after {
+    animation: none;
+  }
 }
 
 /* ── Custom Tooltip ────────────────────────────────── */

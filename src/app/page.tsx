@@ -3,6 +3,7 @@ import type { PmkDataset, Gewalttaten, SonstigeStraftaten } from '@/types/pmk';
 import { normalizePmkArea, normalizeDelikts } from '@/lib/constants';
 import Personenpotenzial from '@/components/dashboard/Personenpotenzial';
 import DeliktVergleichLazy from '@/components/dashboard/DeliktVergleichLazy';
+import AboutSectionLazy from '@/components/dashboard/AboutSectionLazy';
 import Header from "@/components/layout/Header";
 
 /**
@@ -52,25 +53,7 @@ export default function DashboardPage() {
 				<DeliktVergleichLazy data={data} />
 
 				{/* ── Über / Methodik ──────────────────────── */}
-				<section className="about" id="about" aria-labelledby="about-heading">
-					<div className="container">
-						<h2 id="about-heading" className="aboutTitle">Über dieses Dashboard</h2>
-						<div className="aboutGrid">
-							<div className="aboutCard">
-								<h3>Datenquellen</h3>
-								<p>Alle Daten stammen aus den offiziellen Verfassungsschutzberichten des Bundesamtes für Verfassungsschutz (BfV) sowie den PMK-Statistiken des Bundeskriminalamts (BKA).</p>
-							</div>
-							<div className="aboutCard">
-								<h3>Methodik</h3>
-								<p>Die Daten wurden per LLM aus den Originalberichten extrahiert und manuell verifiziert. Abweichungen durch Rundungen sind möglich. Das Dashboard dient der Veranschaulichung, nicht der offiziellen Berichterstattung.</p>
-							</div>
-							<div className="aboutCard">
-								<h3>Hinweise</h3>
-								<p>Nicht jeder Delikt-Typ existiert in jedem Berichtsjahr für jeden PMK-Bereich. Fehlende Datenpunkte werden im Chart als Lücke dargestellt, nicht als Null.</p>
-							</div>
-						</div>
-					</div>
-				</section>
+				<AboutSectionLazy />
 			</main>
 
 			{/* ── Footer ──────────────────────────────────── */}

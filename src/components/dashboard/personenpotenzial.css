@@ -38,9 +38,126 @@
   margin-top: var(--space-4);
 }
 
+.ppChartSkeleton {
+  position: relative;
+  overflow: hidden;
+}
+
+.ppChartSkeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    transparent 0%,
+    color-mix(in srgb, var(--color-text-primary) 10%, transparent) 48%,
+    transparent 100%
+  );
+  transform: translateX(-100%);
+  animation: ppChartSkeletonShimmer 1.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.ppChartSkeletonLegend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.ppChartSkeletonChip,
+.ppChartSkeletonAxis,
+.ppChartSkeletonLine {
+  display: block;
+  background: color-mix(in srgb, var(--color-text-primary) 10%, var(--color-bg-secondary));
+}
+
+.ppChartSkeletonChip {
+  width: 7rem;
+  height: 2rem;
+  border-radius: var(--radius-pill);
+}
+
+.ppChartSkeletonChipWide {
+  width: 11rem;
+}
+
+.ppChartSkeletonPlot {
+  position: relative;
+  border-radius: var(--radius-lg);
+  border: 1px solid color-mix(in srgb, var(--color-border) 85%, transparent);
+  background:
+    linear-gradient(to top, color-mix(in srgb, var(--color-border) 75%, transparent) 1px, transparent 1px) 0 0 / 100% 25%,
+    linear-gradient(to right, color-mix(in srgb, var(--color-border) 55%, transparent) 1px, transparent 1px) 0 0 / 16.66% 100%,
+    color-mix(in srgb, var(--color-bg-secondary) 88%, var(--color-bg-card));
+  overflow: hidden;
+}
+
+.ppChartSkeletonAxis {
+  position: absolute;
+  border-radius: var(--radius-pill);
+  opacity: 0.55;
+}
+
+.ppChartSkeletonAxisY {
+  left: var(--space-4);
+  top: var(--space-4);
+  bottom: var(--space-6);
+  width: 2px;
+}
+
+.ppChartSkeletonAxisX {
+  left: var(--space-4);
+  right: var(--space-4);
+  bottom: var(--space-6);
+  height: 2px;
+}
+
+.ppChartSkeletonLine {
+  position: absolute;
+  left: 10%;
+  right: 8%;
+  height: 0.24rem;
+  border-radius: var(--radius-pill);
+  transform-origin: left center;
+}
+
+.ppChartSkeletonLineOne {
+  top: 33%;
+  background: color-mix(in srgb, var(--color-pmk-rechts) 55%, var(--color-bg-card));
+  transform: rotate(-6deg);
+}
+
+.ppChartSkeletonLineTwo {
+  top: 51%;
+  background: color-mix(in srgb, var(--color-pmk-links) 50%, var(--color-bg-card));
+  transform: rotate(4deg);
+}
+
+.ppChartSkeletonLineThree {
+  top: 68%;
+  background: color-mix(in srgb, var(--color-pmk-religioes) 50%, var(--color-bg-card));
+  transform: rotate(-2deg);
+}
+
+@keyframes ppChartSkeletonShimmer {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
 /* Responsive */
 @media (max-width: 480px) {
   .ppKpiGrid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ppChartSkeleton::after {
+    animation: none;
   }
 }

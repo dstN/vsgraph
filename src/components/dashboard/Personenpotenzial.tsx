@@ -19,17 +19,32 @@ import ViewSwitcher from "./ViewSwitcher";
 import KpiCard from "./KpiCard";
 import "./personenpotenzial.css";
 
-const PersonenpotenzialChart = dynamic(() => import("./PersonenpotenzialChart"), {
-  ssr: false,
-  loading: () => (
-    <div className="ppChartContainer" aria-busy="true">
+function PersonenpotenzialChartPlaceholder() {
+  return (
+    <div className="ppChartContainer ppChartSkeleton" aria-busy="true">
       <div className="ppChartHeader">
         <h3 className="ppChartTitle">Personenpotenzial im Zeitverlauf</h3>
-        <p className="ppChartSubtitle">Diagramm wird geladen.</p>
+        <p className="ppChartSubtitle">Diagramm wird vorbereitet.</p>
       </div>
-      <div className="ppChartWrapper" aria-hidden="true" />
+      <div className="ppChartSkeletonLegend" aria-hidden="true">
+        <span className="ppChartSkeletonChip" />
+        <span className="ppChartSkeletonChip" />
+        <span className="ppChartSkeletonChip ppChartSkeletonChipWide" />
+      </div>
+      <div className="ppChartWrapper ppChartSkeletonPlot" aria-hidden="true">
+        <span className="ppChartSkeletonAxis ppChartSkeletonAxisY" />
+        <span className="ppChartSkeletonAxis ppChartSkeletonAxisX" />
+        <span className="ppChartSkeletonLine ppChartSkeletonLineOne" />
+        <span className="ppChartSkeletonLine ppChartSkeletonLineTwo" />
+        <span className="ppChartSkeletonLine ppChartSkeletonLineThree" />
+      </div>
     </div>
-  ),
+  );
+}
+
+const PersonenpotenzialChart = dynamic(() => import("./PersonenpotenzialChart"), {
+  ssr: false,
+  loading: () => <PersonenpotenzialChartPlaceholder />,
 });
 
 interface PersonenpotenzialProps {
@@ -143,13 +158,7 @@ export default function Personenpotenzial({ data }: PersonenpotenzialProps) {
           {showChart ? (
             <PersonenpotenzialChart data={data} viewMode={viewMode} />
           ) : (
-            <div className="ppChartContainer" aria-busy="true">
-              <div className="ppChartHeader">
-                <h3 className="ppChartTitle">Personenpotenzial im Zeitverlauf</h3>
-                <p className="ppChartSubtitle">Diagramm wird geladen.</p>
-              </div>
-              <div className="ppChartWrapper" aria-hidden="true" />
-            </div>
+            <PersonenpotenzialChartPlaceholder />
           )}
         </div>
       </div>
