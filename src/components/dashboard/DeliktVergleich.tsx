@@ -52,6 +52,9 @@ interface DeliktVergleichProps {
   data: PmkDataset;
 }
 
+const YEAR_MIN = 1999;
+const YEAR_MAX = 2025;
+
 // ═══════════════════════════════════════════════════════
 // Tooltip-Komponente
 // ═══════════════════════════════════════════════════════
@@ -191,6 +194,9 @@ export default function DeliktVergleich({ data }: DeliktVergleichProps) {
   const [selectedDelikt, setSelectedDelikt] = useState<string>(() => {
     return deliktOptions[0]?.key ?? "straftaten_insgesamt";
   });
+  const [startYear, setStartYear] = useState<number>(YEAR_MIN);
+  const [endYear, setEndYear] = useState<number>(YEAR_MAX);
+  const [isRangeMoving, setIsRangeMoving] = useState<boolean>(false);
 
   // Aktuelles Label für Anzeige
   const selectedLabel = useMemo(
@@ -204,8 +210,11 @@ export default function DeliktVergleich({ data }: DeliktVergleichProps) {
   // Gruppiert Einträge nach Jahr, extrahiert den Wert
   // des gewählten Delikts pro PMK-Bereich.
   const chartData = useMemo<ChartDataPoint[]>(() => {
-    // Alle vorhandenen Jahre sammeln (sortiert)
-    const years = [...new Set(data.map((d) => d.jahr))].sort();
+    // Alle Jahre von 1999 bis 2025 abdecken, auch wenn Daten fehlen
+    const years = Array.from(
+      { length: YEAR_MAX - YEAR_MIN + 1 },
+      (_, index) => YEAR_MIN + index
+    );
 
     // Alle PMK-Bereiche, die im Dataset tatsächlich vorkommen
     const areas = [
@@ -251,9 +260,37 @@ export default function DeliktVergleich({ data }: DeliktVergleichProps) {
     );
   }, [data]);
 
+  const [hiddenAreas, setHiddenAreas] = useState<Set<string>>(() => new Set());
+
+  const visibleAreasList = useMemo(
+    () => activeAreas.filter((area) => !hiddenAreas.has(area)),
+    [activeAreas, hiddenAreas]
+  );
+
+  const filteredChartData = useMemo(
+    () =>
+      chartData.filter((point) => {
+        const year = Number(point.label);
+        return year >= startYear && year <= endYear;
+      }),
+    [chartData, startYear, endYear]
+  );
+
   // ── 5. Pill-Klick-Handler ────────────────────────────
   const handlePillClick = useCallback((key: string) => {
     setSelectedDelikt(key);
+  }, []);
+
+  const handleLegendClick = useCallback((area: string) => {
+    setHiddenAreas((prev) => {
+      const next = new Set(prev);
+      if (next.has(area)) {
+        next.delete(area);
+      } else {
+        next.add(area);
+      }
+      return next;
+    });
   }, []);
 
   // ── 6. Gruppierte Options für die Pills ──────────────
@@ -279,6 +316,10 @@ export default function DeliktVergleich({ data }: DeliktVergleichProps) {
     sonstige_straftaten: "Sonstige Straftaten",
     gesamt: "Gesamtwerte",
   };
+
+  const startPercent =
+    ((startYear - YEAR_MIN) / (YEAR_MAX - YEAR_MIN)) * 100;
+  const endPercent = ((endYear - YEAR_MIN) / (YEAR_MAX - YEAR_MIN)) * 100;
 
   return (
     <section className="section" id="delikt-vergleich">
@@ -336,13 +377,78 @@ export default function DeliktVergleich({ data }: DeliktVergleichProps) {
             <p className="chartSubtitle">
               Zeitliche Entwicklung nach PMK-Bereich, absolute Fallzahlen
             </p>
+            <div className="timeframeControls" aria-label="Zeitraum auswählen">
+              <div className="timeframeLabels">
+                <span>Zeitraum</span>
+                <strong>
+                  {startYear} - {endYear}
+                </strong>
+              </div>
+              <div className="timeframeDualRange" aria-label="Jahresbereich">
+                <div className="timeframeDualRangeTrack" aria-hidden="true" />
+                <div
+                  className="timeframeDualRangeFill"
+                  aria-hidden="true"
+                  style={{
+                    left: `${startPercent}%`,
+                    width: `${Math.max(endPercent - startPercent, 0)}%`,
+                  }}
+                />
+                <span
+                  className="timeframeDualRangeYear timeframeDualRangeYearStart"
+                  data-visible={isRangeMoving}
+                  style={{ left: `${startPercent}%` }}
+                >
+                  {startYear}
+                </span>
+                <span
+                  className="timeframeDualRangeYear timeframeDualRangeYearEnd"
+                  data-visible={isRangeMoving}
+                  style={{ left: `${endPercent}%` }}
+                >
+                  {endYear}
+                </span>
+                <input
+                  className="timeframeDualRangeInput timeframeDualRangeInputStart"
+                  type="range"
+                  min={YEAR_MIN}
+                  max={YEAR_MAX}
+                  step={1}
+                  value={startYear}
+                  aria-label="Startjahr"
+                  onPointerDown={() => setIsRangeMoving(true)}
+                  onPointerUp={() => setIsRangeMoving(false)}
+                  onBlur={() => setIsRangeMoving(false)}
+                  onChange={(event) => {
+                    const next = Number(event.target.value);
+                    setStartYear(Math.min(next, endYear));
+                  }}
+                />
+                <input
+                  className="timeframeDualRangeInput timeframeDualRangeInputEnd"
+                  type="range"
+                  min={YEAR_MIN}
+                  max={YEAR_MAX}
+                  step={1}
+                  value={endYear}
+                  aria-label="Endjahr"
+                  onPointerDown={() => setIsRangeMoving(true)}
+                  onPointerUp={() => setIsRangeMoving(false)}
+                  onBlur={() => setIsRangeMoving(false)}
+                  onChange={(event) => {
+                    const next = Number(event.target.value);
+                    setEndYear(Math.max(next, startYear));
+                  }}
+                />
+              </div>
+            </div>
 
-            {chartData.length > 0 ? (
+            {filteredChartData.length > 0 ? (
               <>
                 <div className="chartWrapper">
                   <ResponsiveContainer width="100%" height="100%">
                     <LineChart
-                      data={chartData}
+                      data={filteredChartData}
                       margin={{ top: 8, right: 24, left: 8, bottom: 8 }}
                     >
                       <CartesianGrid
@@ -379,7 +485,7 @@ export default function DeliktVergleich({ data }: DeliktVergleichProps) {
                           strokeWidth: 1,
                         }}
                       />
-                      {activeAreas.map((area) => (
+                      {visibleAreasList.map((area) => (
                         <Line
                           key={area}
                           type="monotone"
@@ -410,7 +516,15 @@ export default function DeliktVergleich({ data }: DeliktVergleichProps) {
                 {/* Legende */}
                 <div className="legend" aria-label="Legende">
                   {activeAreas.map((area) => (
-                    <div key={area} className="legendItem">
+                    <button
+                      key={area}
+                      type="button"
+                      className="legendItem"
+                      data-active={!hiddenAreas.has(area)}
+                      onClick={() => handleLegendClick(area)}
+                      aria-pressed={!hiddenAreas.has(area)}
+                      title={`${getPmkLabel(area)} ein-/ausblenden`}
+                    >
                       <span
                         className="legendDot"
                         style={{
@@ -418,7 +532,7 @@ export default function DeliktVergleich({ data }: DeliktVergleichProps) {
                         }}
                       />
                       {getPmkLabel(area)}
-                    </div>
+                    </button>
                   ))}
                 </div>
 

@@ -1,4 +1,5 @@
 import { ImageResponse } from 'next/og';
+import LogoMark from '@/components/layout/LogoMark';
 
 export const runtime = 'edge';
 
@@ -13,7 +14,6 @@ export default function AppleIcon() {
     (
       <div
         style={{
-          fontSize: 130,
           background: 'white', // Apple Icons benötigen meist einen soliden Hintergrund
           width: '100%',
           height: '100%',
@@ -23,7 +23,7 @@ export default function AppleIcon() {
           color: '#4361ee', // Akzentfarbe (--color-text-accent)
         }}
       >
-        ◈
+        <LogoMark size={130} />
       </div>
     ),
     {

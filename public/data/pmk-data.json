@@ -5476,7 +5476,7 @@
     "jahr": 2025,
     "phaenomenbereich": "pmk_rechts",
     "personenpotenzial": {
-      "absolut_gesamt": 59850,
+      "absolut_gesamt": 58700,
       "nach_abzug_von_mehrfachzuordnungen": 58700,
       "davon_gewaltorientiert": 15600,
       "in_parteien": 32850,
@@ -5764,7 +5764,7 @@
         "andere_straftaten_insbesondere_volksverhetzung_und_beleidigung": null,
         "gesamt_sonstige_straftaten": null
       },
-      "straftaten_insgesamt": 7462
+      "straftaten_insgesamt": null
     }
   }
 ]

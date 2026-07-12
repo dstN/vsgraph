@@ -8,7 +8,7 @@
 // PMK-Bereich.
 // ═══════════════════════════════════════════════════════
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import {
   LineChart,
   Line,
@@ -82,6 +82,9 @@ interface ChartPoint {
   [area: string]: string | number | null;
 }
 
+const YEAR_MIN = 1999;
+const YEAR_MAX = 2025;
+
 export default function PersonenpotenzialChart({
   data,
   viewMode,
@@ -95,9 +98,29 @@ export default function PersonenpotenzialChart({
     return [...set];
   }, [data]);
 
+  const [startYear, setStartYear] = useState<number>(YEAR_MIN);
+  const [endYear, setEndYear] = useState<number>(YEAR_MAX);
+  const [hiddenAreas, setHiddenAreas] = useState<Set<string>>(() => new Set());
+  const [isRangeMoving, setIsRangeMoving] = useState<boolean>(false);
+
+  const toggleAreaVisibility = (area: string) => {
+    setHiddenAreas((prev) => {
+      const next = new Set(prev);
+      if (next.has(area)) {
+        next.delete(area);
+      } else {
+        next.add(area);
+      }
+      return next;
+    });
+  };
+
   // ── Datentransformation ────────────────────────────
   const chartData = useMemo<ChartPoint[]>(() => {
-    const years = [...new Set(data.map((d) => d.jahr))].sort();
+    const years = Array.from(
+      { length: YEAR_MAX - YEAR_MIN + 1 },
+      (_, index) => YEAR_MIN + index
+    );
 
     return years.map((year) => {
       const point: ChartPoint = { label: String(year) };
@@ -140,6 +163,20 @@ export default function PersonenpotenzialChart({
     });
   }, [data, areas, viewMode]);
 
+  const filteredChartData = useMemo(
+    () =>
+      chartData.filter((point) => {
+        const year = Number(point.label);
+        return year >= startYear && year <= endYear;
+      }),
+    [chartData, startYear, endYear]
+  );
+
+  const visibleAreasList = useMemo(
+    () => areas.filter((area) => !hiddenAreas.has(area)),
+    [areas, hiddenAreas]
+  );
+
   // ── Formatter für Y-Achse ──────────────
 
   const yAxisFormatter = (v: number) => {
@@ -159,6 +196,10 @@ export default function PersonenpotenzialChart({
     threatLevel: "% gewaltorientiert",
   };
 
+  const startPercent =
+    ((startYear - YEAR_MIN) / (YEAR_MAX - YEAR_MIN)) * 100;
+  const endPercent = ((endYear - YEAR_MIN) / (YEAR_MAX - YEAR_MIN)) * 100;
+
   return (
     <div className="ppChartContainer">
       <div className="ppChartHeader">
@@ -166,12 +207,77 @@ export default function PersonenpotenzialChart({
         <p className="ppChartSubtitle">
           {yAxisLabels[viewMode]} · nach PMK-Bereich
         </p>
+        <div className="ppTimeframeControls" aria-label="Zeitraum auswählen">
+          <div className="ppTimeframeLabels">
+            <span>Zeitraum</span>
+            <strong>
+              {startYear} - {endYear}
+            </strong>
+          </div>
+          <div className="ppDualRange" aria-label="Jahresbereich">
+            <div className="ppDualRangeTrack" aria-hidden="true" />
+            <div
+              className="ppDualRangeFill"
+              aria-hidden="true"
+              style={{
+                left: `${startPercent}%`,
+                width: `${Math.max(endPercent - startPercent, 0)}%`,
+              }}
+            />
+            <span
+              className="ppDualRangeYear ppDualRangeYearStart"
+              data-visible={isRangeMoving}
+              style={{ left: `${startPercent}%` }}
+            >
+              {startYear}
+            </span>
+            <span
+              className="ppDualRangeYear ppDualRangeYearEnd"
+              data-visible={isRangeMoving}
+              style={{ left: `${endPercent}%` }}
+            >
+              {endYear}
+            </span>
+            <input
+              className="ppDualRangeInput ppDualRangeInputStart"
+              type="range"
+              min={YEAR_MIN}
+              max={YEAR_MAX}
+              step={1}
+              value={startYear}
+              aria-label="Startjahr"
+              onPointerDown={() => setIsRangeMoving(true)}
+              onPointerUp={() => setIsRangeMoving(false)}
+              onBlur={() => setIsRangeMoving(false)}
+              onChange={(event) => {
+                const next = Number(event.target.value);
+                setStartYear(Math.min(next, endYear));
+              }}
+            />
+            <input
+              className="ppDualRangeInput ppDualRangeInputEnd"
+              type="range"
+              min={YEAR_MIN}
+              max={YEAR_MAX}
+              step={1}
+              value={endYear}
+              aria-label="Endjahr"
+              onPointerDown={() => setIsRangeMoving(true)}
+              onPointerUp={() => setIsRangeMoving(false)}
+              onBlur={() => setIsRangeMoving(false)}
+              onChange={(event) => {
+                const next = Number(event.target.value);
+                setEndYear(Math.max(next, startYear));
+              }}
+            />
+          </div>
+        </div>
       </div>
 
       <div className="ppChartWrapper">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
-            data={chartData}
+            data={filteredChartData}
             margin={{ top: 8, right: 24, left: 8, bottom: 8 }}
           >
             <CartesianGrid
@@ -208,7 +314,7 @@ export default function PersonenpotenzialChart({
                 strokeDasharray: "3 3",
               }}
             />
-            {areas.map((area) => (
+            {visibleAreasList.map((area) => (
               <Line
                 key={area}
                 type="monotone"
@@ -230,13 +336,21 @@ export default function PersonenpotenzialChart({
       {/* Legende */}
       <div className="ppLegend" aria-label="Legende">
         {areas.map((area) => (
-          <div key={area} className="ppLegendItem">
+          <button
+            key={area}
+            type="button"
+            className="ppLegendItem"
+            data-active={!hiddenAreas.has(area)}
+            onClick={() => toggleAreaVisibility(area)}
+            aria-pressed={!hiddenAreas.has(area)}
+            title={`${getPmkLabel(area)} ein-/ausblenden`}
+          >
             <span
               className="ppLegendDot"
               style={{ backgroundColor: getPmkColor(area).light }}
             />
             {getPmkLabel(area)}
-          </div>
+          </button>
         ))}
       </div>
 
@@ -247,7 +361,7 @@ export default function PersonenpotenzialChart({
           <thead>
             <tr>
               <th scope="col">Jahr</th>
-              {areas.map((area) => (
+              {visibleAreasList.map((area) => (
                 <th key={area} scope="col">
                   {getPmkLabel(area)}
                 </th>
@@ -258,7 +372,7 @@ export default function PersonenpotenzialChart({
             {chartData.map((row) => (
               <tr key={row.label}>
                 <th scope="row">{row.label}</th>
-                {areas.map((area) => (
+                {visibleAreasList.map((area) => (
                   <td key={area}>{row[area] ?? "–"}</td>
                 ))}
               </tr>

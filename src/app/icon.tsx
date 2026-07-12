@@ -1,4 +1,5 @@
 import { ImageResponse } from 'next/og';
+import LogoMark from '@/components/layout/LogoMark';
 
 // Route segment config
 export const runtime = 'edge';
@@ -14,10 +15,8 @@ export const contentType = 'image/png';
 export default function Icon() {
   return new ImageResponse(
     (
-      // ImageResponse JSX element
       <div
         style={{
-          fontSize: 24,
           background: 'transparent',
           width: '100%',
           height: '100%',
@@ -27,10 +26,9 @@ export default function Icon() {
           color: '#4361ee', // Akzentfarbe (--color-text-accent)
         }}
       >
-        ◈
+        <LogoMark size={26} />
       </div>
     ),
-    // ImageResponse options
     {
       ...size,
     }

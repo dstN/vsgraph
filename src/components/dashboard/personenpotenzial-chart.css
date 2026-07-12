@@ -33,6 +33,141 @@
   color: var(--color-text-muted);
 }
 
+.ppTimeframeControls {
+  margin-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.ppTimeframeLabels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.ppTimeframeLabels strong {
+  color: var(--color-text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.ppDualRange {
+  position: relative;
+  height: 1.5rem;
+}
+
+.ppDualRangeTrack,
+.ppDualRangeFill {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 0.35rem;
+  border-radius: var(--radius-pill);
+}
+
+.ppDualRangeTrack {
+  left: 0;
+  right: 0;
+  background: var(--color-border);
+}
+
+.ppDualRangeFill {
+  background: var(--color-text-accent);
+  transition: left 160ms ease, width 160ms ease;
+}
+
+.ppDualRangeYear {
+  position: absolute;
+  top: -1.65rem;
+  transform: translateX(-50%) translateY(0.3rem) scale(0.92);
+  padding: 0.1rem 0.38rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-tooltip);
+  color: var(--color-text-tooltip);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  font-variant-numeric: tabular-nums;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 180ms ease,
+    transform 220ms cubic-bezier(0.16, 1, 0.3, 1),
+    left 160ms ease;
+  z-index: 4;
+}
+
+.ppDualRangeYear[data-visible="true"] {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0) scale(1);
+}
+
+.ppDualRangeInput {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.ppDualRangeInput::-webkit-slider-thumb {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 2px solid var(--color-text-accent);
+  background: var(--color-bg-card);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.ppDualRangeInput::-moz-range-thumb {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 2px solid var(--color-text-accent);
+  background: var(--color-bg-card);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.ppDualRangeInput:active::-webkit-slider-thumb {
+  transform: scale(1.08);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.ppDualRangeInput:active::-moz-range-thumb {
+  transform: scale(1.08);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.ppDualRangeInput::-webkit-slider-runnable-track {
+  background: transparent;
+}
+
+.ppDualRangeInput::-moz-range-track {
+  background: transparent;
+}
+
+.ppDualRangeInputStart {
+  z-index: 2;
+}
+
+.ppDualRangeInputEnd {
+  z-index: 3;
+}
+
 .ppChartWrapper {
   width: 100%;
   height: 380px;
@@ -47,6 +182,7 @@
     padding: var(--space-4);
     border-radius: var(--radius-lg);
   }
+
 }
 
 /* ── Tooltip ── */
@@ -112,6 +248,21 @@
   gap: var(--space-2);
   font-size: var(--font-size-sm);
   color: var(--color-text-secondary);
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity var(--transition-fast), filter var(--transition-fast);
+}
+
+.ppLegendItem[data-active="false"] {
+  opacity: 0.45;
+  filter: grayscale(1);
+}
+
+.ppLegendItem:focus-visible {
+  outline: 2px solid var(--color-text-accent);
+  outline-offset: 2px;
 }
 
 .ppLegendDot {
@@ -141,4 +292,3 @@
   color: var(--color-text-accent);
   flex-shrink: 0;
 }
-

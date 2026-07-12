@@ -321,7 +321,10 @@
   }
 
   .headerLogoIcon {
-    font-size: var(--font-size-xl);
+    width: 1.1rem;
+    height: 1.1rem;
+    display: block;
+    flex-shrink: 0;
     color: var(--color-text-accent);
   }
 

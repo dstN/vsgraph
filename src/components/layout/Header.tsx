@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
 import { Menu, X } from "lucide-react";
+import LogoMark from "@/components/layout/LogoMark";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -33,7 +34,7 @@ export default function Header() {
       <div className="container headerInner">
         {/* Logo */}
         <Link href="/" className="headerLogo" style={{ textDecoration: "none", color: "inherit" }} onClick={closeMenu}>
-          <span className="headerLogoIcon" aria-hidden="true">◈</span>
+          <LogoMark className="headerLogoIcon" />
           <span className="headerLogoText">VSGraph</span>
         </Link>
 
