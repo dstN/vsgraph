@@ -2,7 +2,7 @@ import pmkData from '@/../public/data/pmk-data.json';
 import type { PmkDataset, Gewalttaten, SonstigeStraftaten } from '@/types/pmk';
 import { normalizePmkArea, normalizeDelikts } from '@/lib/constants';
 import Personenpotenzial from '@/components/dashboard/Personenpotenzial';
-import DeliktVergleich from '@/components/dashboard/DeliktVergleich';
+import DeliktVergleichLazy from '@/components/dashboard/DeliktVergleichLazy';
 import Header from "@/components/layout/Header";
 
 /**
@@ -49,7 +49,7 @@ export default function DashboardPage() {
 				<Personenpotenzial data={data} />
 
 				{/* ── Section 2: Delikt-Vergleich (Highlight) ─ */}
-				<DeliktVergleich data={data} />
+				<DeliktVergleichLazy data={data} />
 
 				{/* ── Über / Methodik ──────────────────────── */}
 				<section className="about" id="about" aria-labelledby="about-heading">

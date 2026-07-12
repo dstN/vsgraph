@@ -12,13 +12,26 @@
 // als KPIs, mit Trend-Vergleich zum Vorjahr.
 // ═══════════════════════════════════════════════════════
 
+import dynamic from "next/dynamic";
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import type { PmkDataset, ViewMode } from "@/types/pmk";
 import ViewSwitcher from "./ViewSwitcher";
 import KpiCard from "./KpiCard";
-import PersonenpotenzialChart from "./PersonenpotenzialChart";
 import "./personenpotenzial.css";
+
+const PersonenpotenzialChart = dynamic(() => import("./PersonenpotenzialChart"), {
+  ssr: false,
+  loading: () => (
+    <div className="ppChartContainer" aria-busy="true">
+      <div className="ppChartHeader">
+        <h3 className="ppChartTitle">Personenpotenzial im Zeitverlauf</h3>
+        <p className="ppChartSubtitle">Diagramm wird geladen.</p>
+      </div>
+      <div className="ppChartWrapper" aria-hidden="true" />
+    </div>
+  ),
+});
 
 interface PersonenpotenzialProps {
   data: PmkDataset;

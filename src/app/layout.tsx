@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const lexend = localFont({
+  src: "../../public/fonts/lexend-400.woff2",
+  display: "swap",
+  variable: "--font-lexend",
+  fallback: ["-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"],
+});
 
 export const metadata: Metadata = {
   title: "VSGraph – Verfassungsschutzbericht interaktiv",
@@ -31,7 +39,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>{children}</body>
+      <body className={lexend.variable}>{children}</body>
     </html>
   );
 }

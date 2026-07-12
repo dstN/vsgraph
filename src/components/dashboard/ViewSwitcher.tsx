@@ -85,7 +85,7 @@ export default function ViewSwitcher({ value, onChange }: ViewSwitcherProps) {
             onClick={() => onChange(option.value)}
             role="tab"
             aria-selected={value === option.value}
-            aria-label={option.description}
+            aria-label={`${option.label} - ${option.description}`}
             title={option.description}
           >
             {option.label}
