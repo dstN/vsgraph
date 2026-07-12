@@ -16,15 +16,52 @@ function DeliktVergleichPlaceholder() {
           </p>
         </div>
 
+        <div className="filterArea filterAreaSkeleton" aria-hidden="true">
+          <div className="filterGroupSkeleton">
+            <span className="filterGroupSkeletonLabel" />
+            <div className="chartSkeletonControls chartSkeletonControlsDense">
+              <span className="chartSkeletonPill" />
+              <span className="chartSkeletonPill chartSkeletonPillWide" />
+              <span className="chartSkeletonPill" />
+            </div>
+          </div>
+          <div className="filterGroupSkeleton">
+            <span className="filterGroupSkeletonLabel" />
+            <div className="chartSkeletonControls chartSkeletonControlsDense">
+              <span className="chartSkeletonPill chartSkeletonPillWide" />
+              <span className="chartSkeletonPill chartSkeletonPillWide" />
+            </div>
+          </div>
+          <div className="filterGroupSkeleton">
+            <span className="filterGroupSkeletonLabel" />
+            <div className="chartSkeletonControls chartSkeletonControlsDense">
+              <span className="chartSkeletonPill chartSkeletonPillWide" />
+              <span className="chartSkeletonPill" />
+            </div>
+          </div>
+        </div>
+
         <div className="chartContainer chartSkeleton" aria-hidden="true">
           <div className="chartSkeletonHeader">
             <span className="chartSkeletonBadge" />
             <span className="chartSkeletonLine chartSkeletonLineShort" />
           </div>
+          <div className="chartSkeletonTimeframe">
+            <span className="chartSkeletonTimeframeLabel" />
+            <span className="chartSkeletonTimeframeRange" />
+            <div className="chartSkeletonSlider">
+              <span className="chartSkeletonSliderTrack" />
+              <span className="chartSkeletonSliderFill" />
+              <span className="chartSkeletonSliderThumb chartSkeletonSliderThumbStart" />
+              <span className="chartSkeletonSliderThumb chartSkeletonSliderThumbEnd" />
+            </div>
+          </div>
           <div className="chartSkeletonControls">
             <span className="chartSkeletonPill" />
             <span className="chartSkeletonPill" />
             <span className="chartSkeletonPill chartSkeletonPillWide" />
+            <span className="chartSkeletonPill" />
+            <span className="chartSkeletonPill" />
           </div>
           <div className="chartSkeletonPlot">
             <span className="chartSkeletonGrid chartSkeletonGridOne" />
@@ -33,6 +70,17 @@ function DeliktVergleichPlaceholder() {
             <span className="chartSkeletonCurve chartSkeletonCurveOne" />
             <span className="chartSkeletonCurve chartSkeletonCurveTwo" />
             <span className="chartSkeletonCurve chartSkeletonCurveThree" />
+          </div>
+          <div className="chartSkeletonLegend" aria-hidden="true">
+            <span className="chartSkeletonLegendItem" />
+            <span className="chartSkeletonLegendItem" />
+            <span className="chartSkeletonLegendItem" />
+            <span className="chartSkeletonLegendItem" />
+          </div>
+          <div className="chartSkeletonNotes" aria-hidden="true">
+            <span className="chartSkeletonNote chartSkeletonNoteLong" />
+            <span className="chartSkeletonNote" />
+            <span className="chartSkeletonNote chartSkeletonNoteLong" />
           </div>
         </div>
       </div>
@@ -51,7 +99,7 @@ interface DeliktVergleichLazyProps {
 
 export default function DeliktVergleichLazy({ data }: DeliktVergleichLazyProps) {
   const [showSection, setShowSection] = useState(false);
-  const mountRef = useRef<HTMLElement | null>(null);
+  const mountRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (showSection) return;
@@ -71,6 +119,28 @@ export default function DeliktVergleichLazy({ data }: DeliktVergleichLazyProps) 
     observer.observe(node);
     return () => observer.disconnect();
   }, [showSection]);
+
+  useEffect(() => {
+    if (showSection) return;
+
+    const warmupId = window.setTimeout(() => {
+      setShowSection(true);
+    }, 450);
+
+    return () => window.clearTimeout(warmupId);
+  }, [showSection]);
+
+  useEffect(() => {
+    const handlePrepareSection = (event: Event) => {
+      const { targetId } = (event as CustomEvent<{ targetId?: string }>).detail ?? {};
+      if (targetId === "delikt-vergleich" || targetId === "about") {
+        setShowSection(true);
+      }
+    };
+
+    window.addEventListener("vsgraph:prepare-section", handlePrepareSection);
+    return () => window.removeEventListener("vsgraph:prepare-section", handlePrepareSection);
+  }, []);
 
   if (showSection) {
     return <DeliktVergleich data={data} />;

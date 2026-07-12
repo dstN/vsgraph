@@ -30,6 +30,40 @@
   margin-bottom: var(--space-8);
 }
 
+.filterAreaSkeleton {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.filterGroupSkeleton {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.filterGroupSkeletonLabel,
+.chartSkeletonTimeframeLabel,
+.chartSkeletonTimeframeRange,
+.chartSkeletonSliderTrack,
+.chartSkeletonSliderFill,
+.chartSkeletonSliderThumb,
+.chartSkeletonLegendItem,
+.chartSkeletonNote {
+  display: block;
+  background: color-mix(in srgb, var(--color-text-primary) 10%, var(--color-bg-secondary));
+}
+
+.filterGroupSkeletonLabel {
+  width: 8rem;
+  height: 0.85rem;
+  border-radius: var(--radius-pill);
+}
+
+.chartSkeletonControlsDense {
+  margin-bottom: 0;
+}
+
 .filterGroupLabel {
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-semibold);
@@ -168,6 +202,67 @@
   margin-bottom: var(--space-6);
 }
 
+.chartSkeletonTimeframe {
+  margin-bottom: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.chartSkeletonTimeframeLabel {
+  width: 5rem;
+  height: 0.9rem;
+  border-radius: var(--radius-pill);
+}
+
+.chartSkeletonTimeframeRange {
+  width: 8rem;
+  height: 1rem;
+  border-radius: var(--radius-pill);
+  align-self: flex-end;
+}
+
+.chartSkeletonSlider {
+  position: relative;
+  height: 1.5rem;
+}
+
+.chartSkeletonSliderTrack,
+.chartSkeletonSliderFill {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 0.35rem;
+  border-radius: var(--radius-pill);
+}
+
+.chartSkeletonSliderFill {
+  left: 14%;
+  right: 18%;
+  background: color-mix(in srgb, var(--color-text-accent) 55%, var(--color-bg-secondary));
+}
+
+.chartSkeletonSliderThumb {
+  position: absolute;
+  top: 50%;
+  width: 1rem;
+  height: 1rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--color-bg-card);
+  border: 2px solid var(--color-text-accent);
+}
+
+.chartSkeletonSliderThumbStart {
+  left: 14%;
+}
+
+.chartSkeletonSliderThumbEnd {
+  left: 82%;
+}
+
 .chartSkeletonBadge,
 .chartSkeletonLine,
 .chartSkeletonPill,
@@ -261,6 +356,35 @@
   top: 64%;
   background: color-mix(in srgb, var(--color-pmk-religioes) 50%, var(--color-bg-card));
   transform: rotate(-3deg);
+}
+
+.chartSkeletonLegend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3) var(--space-5);
+  margin-top: var(--space-6);
+}
+
+.chartSkeletonLegendItem {
+  width: 8rem;
+  height: 1rem;
+  border-radius: var(--radius-pill);
+}
+
+.chartSkeletonNotes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: var(--space-4);
+}
+
+.chartSkeletonNote {
+  height: 4.5rem;
+  border-radius: var(--radius-md);
+}
+
+.chartSkeletonNoteLong {
+  height: 5.5rem;
 }
 
 @keyframes chartSkeletonShimmer {

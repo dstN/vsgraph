@@ -399,7 +399,7 @@ export default function DeliktVergleich({ data }: DeliktVergleichProps) {
   const endPercent = ((endYear - YEAR_MIN) / (YEAR_MAX - YEAR_MIN)) * 100;
 
   return (
-    <section className="section" id="delikt-vergleich">
+    <section className="section" id="delikt-vergleich" data-section-id="delikt-vergleich" data-section-ready="true">
       <div className="container">
         {/* Header */}
         <div className="sectionHeader">

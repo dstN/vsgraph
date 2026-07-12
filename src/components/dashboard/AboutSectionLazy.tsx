@@ -40,7 +40,7 @@ const AboutSection = dynamic(() => import("./AboutSection"), {
 
 export default function AboutSectionLazy() {
   const [showSection, setShowSection] = useState(false);
-  const mountRef = useRef<HTMLElement | null>(null);
+  const mountRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (showSection) return;
@@ -60,6 +60,28 @@ export default function AboutSectionLazy() {
     observer.observe(node);
     return () => observer.disconnect();
   }, [showSection]);
+
+  useEffect(() => {
+    if (showSection) return;
+
+    const warmupId = window.setTimeout(() => {
+      setShowSection(true);
+    }, 650);
+
+    return () => window.clearTimeout(warmupId);
+  }, [showSection]);
+
+  useEffect(() => {
+    const handlePrepareSection = (event: Event) => {
+      const { targetId } = (event as CustomEvent<{ targetId?: string }>).detail ?? {};
+      if (targetId === "about") {
+        setShowSection(true);
+      }
+    };
+
+    window.addEventListener("vsgraph:prepare-section", handlePrepareSection);
+    return () => window.removeEventListener("vsgraph:prepare-section", handlePrepareSection);
+  }, []);
 
   if (showSection) {
     return <AboutSection />;

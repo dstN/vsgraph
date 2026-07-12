@@ -167,7 +167,7 @@ export default function PersonenpotenzialChart({
   const endPercent = ((endYear - YEAR_MIN) / (YEAR_MAX - YEAR_MIN)) * 100;
 
   return (
-    <div className="ppChartContainer">
+    <div className="ppChartContainer" data-section-id="personenpotenzial-chart" data-section-ready="true">
       <div className="ppChartHeader">
         <h3 className="ppChartTitle">Personenpotenzial im Zeitverlauf</h3>
         <p className="ppChartSubtitle">

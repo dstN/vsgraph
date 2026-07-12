@@ -2,12 +2,62 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import ThemeToggle from "@/components/ThemeToggle";
 import { Menu, X } from "lucide-react";
 import LogoMark from "@/components/layout/LogoMark";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
+
+  const sectionDependencies: Record<string, string[]> = {
+    personenpotenzial: [],
+    "delikt-vergleich": ["personenpotenzial-chart", "delikt-vergleich"],
+    about: ["personenpotenzial-chart", "delikt-vergleich", "about"],
+  };
+
+  const scrollToSection = (targetId: string, behavior: ScrollBehavior) => {
+    const target = document.getElementById(targetId);
+    if (!target) return false;
+
+    const header = document.querySelector(".header") as HTMLElement | null;
+    const headerOffset = header?.offsetHeight ?? 0;
+    const top = target.getBoundingClientRect().top + window.scrollY - headerOffset - 8;
+
+    window.scrollTo({
+      top: Math.max(top, 0),
+      behavior,
+    });
+
+    return true;
+  };
+
+  const waitForSections = (sectionIds: string[], timeoutMs = 1500) => {
+    if (sectionIds.length === 0) {
+      return Promise.resolve();
+    }
+
+    const isReady = () =>
+      sectionIds.every((sectionId) =>
+        document.querySelector(`[data-section-id="${sectionId}"][data-section-ready="true"]`)
+      );
+
+    if (isReady()) {
+      return Promise.resolve();
+    }
+
+    return new Promise<void>((resolve) => {
+      const startedAt = Date.now();
+      const intervalId = window.setInterval(() => {
+        if (isReady() || Date.now() - startedAt >= timeoutMs) {
+          window.clearInterval(intervalId);
+          resolve();
+        }
+      }, 50);
+    });
+  };
 
   // Close mobile menu when escape key is pressed
   useEffect(() => {
@@ -29,6 +79,61 @@ export default function Header() {
 
   const closeMenu = () => setIsMobileMenuOpen(false);
 
+  const handleSectionNavigation = async (targetId: string) => {
+    closeMenu();
+    const hash = `#${targetId}`;
+
+    if (pathname !== "/") {
+      window.location.assign(`/${hash}`);
+      return;
+    }
+
+    if (!scrollToSection(targetId, "smooth")) {
+      window.location.assign(`/${hash}`);
+      return;
+    }
+
+    if (window.location.hash !== hash) {
+      window.history.pushState(null, "", hash);
+    }
+
+    window.dispatchEvent(
+      new CustomEvent("vsgraph:prepare-section", { detail: { targetId } })
+    );
+
+    await waitForSections(sectionDependencies[targetId] ?? []);
+
+    scrollToSection(targetId, "smooth");
+  };
+
+  const renderSectionLink = (
+    targetId: string,
+    label: string,
+    className: string
+  ) => {
+    if (isHomePage) {
+      return (
+        <Link
+          href={`/#${targetId}`}
+          scroll={false}
+          className={className}
+          onClick={(event) => {
+            event.preventDefault();
+            void handleSectionNavigation(targetId);
+          }}
+        >
+          {label}
+        </Link>
+      );
+    }
+
+    return (
+      <Link href={`/#${targetId}`} className={className} onClick={closeMenu}>
+        {label}
+      </Link>
+    );
+  };
+
   return (
     <header className="header">
       <div className="container headerInner">
@@ -40,9 +145,9 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="headerNav desktopOnly" aria-label="Hauptnavigation">
-          <Link href="/#personenpotenzial" className="headerNavLink">Personenpotenzial</Link>
-          <Link href="/#delikt-vergleich" className="headerNavLink">Delikt-Vergleich</Link>
-          <Link href="/#about" className="headerNavLink">Über</Link>
+          {renderSectionLink("personenpotenzial", "Personenpotenzial", "headerNavLink")}
+          {renderSectionLink("delikt-vergleich", "Delikt-Vergleich", "headerNavLink")}
+          {renderSectionLink("about", "Über", "headerNavLink")}
           <ThemeToggle />
         </nav>
 
@@ -87,9 +192,9 @@ export default function Header() {
           <nav className="offcanvasNav">
             <div className="offcanvasSection">
               <span className="offcanvasSectionTitle">Dashboard</span>
-              <Link href="/#personenpotenzial" className="offcanvasLink" onClick={closeMenu}>Personenpotenzial</Link>
-              <Link href="/#delikt-vergleich" className="offcanvasLink" onClick={closeMenu}>Delikt-Vergleich</Link>
-              <Link href="/#about" className="offcanvasLink" onClick={closeMenu}>Über VSGraph</Link>
+              {renderSectionLink("personenpotenzial", "Personenpotenzial", "offcanvasLink")}
+              {renderSectionLink("delikt-vergleich", "Delikt-Vergleich", "offcanvasLink")}
+              {renderSectionLink("about", "Über VSGraph", "offcanvasLink")}
             </div>
 
             <div className="offcanvasSection">

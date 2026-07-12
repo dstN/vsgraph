@@ -25,11 +25,23 @@ function PersonenpotenzialChartPlaceholder() {
       <div className="ppChartHeader">
         <h3 className="ppChartTitle">Personenpotenzial im Zeitverlauf</h3>
         <p className="ppChartSubtitle">Diagramm wird vorbereitet.</p>
+        <div className="ppChartSkeletonTimeframe" aria-hidden="true">
+          <span className="ppChartSkeletonTimeframeLabel" />
+          <span className="ppChartSkeletonTimeframeRange" />
+          <div className="ppChartSkeletonSlider">
+            <span className="ppChartSkeletonSliderTrack" />
+            <span className="ppChartSkeletonSliderFill" />
+            <span className="ppChartSkeletonSliderThumb ppChartSkeletonSliderThumbStart" />
+            <span className="ppChartSkeletonSliderThumb ppChartSkeletonSliderThumbEnd" />
+          </div>
+        </div>
       </div>
       <div className="ppChartSkeletonLegend" aria-hidden="true">
         <span className="ppChartSkeletonChip" />
         <span className="ppChartSkeletonChip" />
         <span className="ppChartSkeletonChip ppChartSkeletonChipWide" />
+        <span className="ppChartSkeletonChip" />
+        <span className="ppChartSkeletonChip" />
       </div>
       <div className="ppChartWrapper ppChartSkeletonPlot" aria-hidden="true">
         <span className="ppChartSkeletonAxis ppChartSkeletonAxisY" />
@@ -37,6 +49,11 @@ function PersonenpotenzialChartPlaceholder() {
         <span className="ppChartSkeletonLine ppChartSkeletonLineOne" />
         <span className="ppChartSkeletonLine ppChartSkeletonLineTwo" />
         <span className="ppChartSkeletonLine ppChartSkeletonLineThree" />
+      </div>
+      <div className="ppChartSkeletonNotes" aria-hidden="true">
+        <span className="ppChartSkeletonNote ppChartSkeletonNoteLong" />
+        <span className="ppChartSkeletonNote" />
+        <span className="ppChartSkeletonNote ppChartSkeletonNoteLong" />
       </div>
     </div>
   );
@@ -74,6 +91,28 @@ export default function Personenpotenzial({ data }: PersonenpotenzialProps) {
     observer.observe(node);
     return () => observer.disconnect();
   }, [showChart]);
+
+  useEffect(() => {
+    if (showChart) return;
+
+    const warmupId = window.setTimeout(() => {
+      setShowChart(true);
+    }, 250);
+
+    return () => window.clearTimeout(warmupId);
+  }, [showChart]);
+
+  useEffect(() => {
+    const handlePrepareSection = (event: Event) => {
+      const { targetId } = (event as CustomEvent<{ targetId?: string }>).detail ?? {};
+      if (targetId === "delikt-vergleich" || targetId === "about") {
+        setShowChart(true);
+      }
+    };
+
+    window.addEventListener("vsgraph:prepare-section", handlePrepareSection);
+    return () => window.removeEventListener("vsgraph:prepare-section", handlePrepareSection);
+  }, []);
 
   // ── Neuestes und Vorjahr ermitteln ──────────────────
   const { latestYear, previousYear } = useMemo(() => {

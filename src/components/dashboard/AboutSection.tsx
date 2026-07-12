@@ -2,7 +2,7 @@
 
 export default function AboutSection() {
   return (
-    <section className="about" id="about" aria-labelledby="about-heading">
+    <section className="about" id="about" aria-labelledby="about-heading" data-section-id="about" data-section-ready="true">
       <div className="container">
         <h2 id="about-heading" className="aboutTitle">Über dieses Dashboard</h2>
         <div className="aboutGrid">
