@@ -62,7 +62,9 @@ export type PmkDataset = PmkDataEntry[];
 
 // ── UI-State Typen ────────────────────────────────────
 
-export type ViewMode = "absolute" | "perCapita" | "threatLevel";
+export type ViewMode =
+  | "absolute"
+  | "violencePotential";
 
 /**
  * Da die Delikt-Keys dynamisch sind, ist DeliktKey ein string.

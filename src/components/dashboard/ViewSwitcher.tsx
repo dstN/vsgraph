@@ -20,18 +20,13 @@ interface ViewOption {
 const VIEW_OPTIONS: ViewOption[] = [
   {
     value: "absolute",
-    label: "Absolut",
-    description: "Absolute Personenzahlen",
+    label: "Personenpotenzial",
+    description: "Absolutes Personenpotenzial",
   },
   {
-    value: "perCapita",
-    label: "Pro 100k",
-    description: "Pro 100.000 Einwohner",
-  },
-  {
-    value: "threatLevel",
-    label: "Bedrohungslage",
-    description: "Anteil Gewaltorientierter",
+    value: "violencePotential",
+    label: "Gewaltpotenzial",
+    description: "Absolut gewaltorientierte Personen",
   },
 ];
 

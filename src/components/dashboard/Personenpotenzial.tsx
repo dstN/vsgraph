@@ -15,8 +15,6 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import type { PmkDataset, ViewMode } from "@/types/pmk";
-import { POPULATION_BY_YEAR } from "@/lib/constants";
-import { perCapita, violenceShare } from "@/lib/calculations";
 import ViewSwitcher from "./ViewSwitcher";
 import KpiCard from "./KpiCard";
 import PersonenpotenzialChart from "./PersonenpotenzialChart";
@@ -61,11 +59,6 @@ export default function Personenpotenzial({ data }: PersonenpotenzialProps) {
           )
         : null;
 
-      const popCurrent = POPULATION_BY_YEAR[latestYear];
-      const popPrevious = previousYear
-        ? POPULATION_BY_YEAR[previousYear]
-        : null;
-
       let value: number | null = null;
       let prevValue: number | null = null;
 
@@ -75,36 +68,9 @@ export default function Personenpotenzial({ data }: PersonenpotenzialProps) {
           prevValue = previous?.personenpotenzial?.absolut_gesamt ?? null;
           break;
 
-        case "perCapita":
-          value = current?.personenpotenzial?.absolut_gesamt != null && popCurrent != null
-            ? perCapita(
-                current.personenpotenzial.absolut_gesamt,
-                popCurrent
-              )
-            : null;
-          prevValue = previous?.personenpotenzial?.absolut_gesamt != null && popPrevious != null
-            ? perCapita(
-                previous.personenpotenzial.absolut_gesamt,
-                popPrevious
-              )
-            : null;
-          break;
-
-        case "threatLevel":
-          value =
-            current?.personenpotenzial?.davon_gewaltorientiert != null
-              ? violenceShare(
-                  current.personenpotenzial.davon_gewaltorientiert,
-                  current.personenpotenzial.absolut_gesamt ?? 1
-                )
-              : null;
-          prevValue =
-            previous?.personenpotenzial?.davon_gewaltorientiert != null
-              ? violenceShare(
-                  previous.personenpotenzial.davon_gewaltorientiert,
-                  previous.personenpotenzial.absolut_gesamt ?? 1
-                )
-              : null;
+        case "violencePotential":
+          value = current?.personenpotenzial?.davon_gewaltorientiert ?? null;
+          prevValue = previous?.personenpotenzial?.davon_gewaltorientiert ?? null;
           break;
       }
 
@@ -143,7 +109,6 @@ export default function Personenpotenzial({ data }: PersonenpotenzialProps) {
                 area={kpi.area}
                 value={kpi.value}
                 previousValue={kpi.prevValue}
-                viewMode={viewMode}
                 index={index}
               />
             ))}

@@ -6,11 +6,15 @@
   display: flex;
   justify-content: center;
   margin-bottom: var(--space-8);
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 2px;
 }
 
 .viewSwitcher {
   position: relative;
   display: inline-flex;
+  flex-shrink: 0;
   align-items: center;
   background: var(--color-bg-pill);
   border-radius: var(--radius-pill);
@@ -61,7 +65,7 @@
 
 @media (max-width: 480px) {
   .viewSwitcherButton {
-    padding: var(--space-2) var(--space-3);
+    padding: var(--space-2) var(--space-2);
     font-size: var(--font-size-xs);
   }
 }

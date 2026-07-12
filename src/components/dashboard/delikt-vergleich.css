@@ -46,6 +46,10 @@
   margin-bottom: var(--space-5);
 }
 
+.pillGroupCompact {
+  align-items: center;
+}
+
 .pill {
   display: inline-flex;
   align-items: center;
@@ -87,6 +91,26 @@
 
 .pillSummary {
   font-weight: var(--font-weight-semibold);
+}
+
+.pillSearchInput {
+  min-width: min(26rem, 100%);
+  flex: 1 1 18rem;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: inherit;
+}
+
+.pillSearchInput::placeholder {
+  color: var(--color-text-muted);
+}
+
+.pillSearchInputActive {
+  background: var(--color-bg-pill-active);
+  color: var(--color-text-pill-active);
+  border-color: transparent;
+  box-shadow: var(--shadow-sm);
 }
 
 /* ── Chart Container ───────────────────────────────── */

@@ -55,6 +55,75 @@ interface DeliktVergleichProps {
 const YEAR_MIN = 1999;
 const YEAR_MAX = 2025;
 
+function normalizeSearchTerm(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss")
+    .trim();
+}
+
+function getFuzzyScore(query: string, candidate: string): number {
+  if (!query) return -1;
+
+  const normalizedQuery = normalizeSearchTerm(query);
+  const normalizedCandidate = normalizeSearchTerm(candidate);
+
+  if (!normalizedQuery) return -1;
+
+  if (normalizedCandidate.includes(normalizedQuery)) {
+    return 1000 - (normalizedCandidate.length - normalizedQuery.length);
+  }
+
+  let queryIndex = 0;
+  let score = 0;
+  let lastMatchIndex = -2;
+
+  for (let i = 0; i < normalizedCandidate.length; i++) {
+    if (normalizedCandidate[i] === normalizedQuery[queryIndex]) {
+      score += i === lastMatchIndex + 1 ? 4 : 1;
+      lastMatchIndex = i;
+      queryIndex += 1;
+      if (queryIndex === normalizedQuery.length) {
+        break;
+      }
+    }
+  }
+
+  if (queryIndex !== normalizedQuery.length) {
+    return -1;
+  }
+
+  return score;
+}
+
+function findBestDeliktMatch(
+  query: string,
+  options: DeliktOption[]
+): DeliktOption | null {
+  const trimmedQuery = query.trim();
+  if (!trimmedQuery) return null;
+
+  let best: DeliktOption | null = null;
+  let bestScore = -1;
+
+  for (const option of options) {
+    const score = Math.max(
+      getFuzzyScore(trimmedQuery, option.label),
+      getFuzzyScore(trimmedQuery, option.key)
+    );
+
+    if (score > bestScore) {
+      bestScore = score;
+      best = option;
+    }
+  }
+
+  return bestScore >= 0 ? best : null;
+}
+
 // ═══════════════════════════════════════════════════════
 // Tooltip-Komponente
 // ═══════════════════════════════════════════════════════
@@ -194,6 +263,8 @@ export default function DeliktVergleich({ data }: DeliktVergleichProps) {
   const [selectedDelikt, setSelectedDelikt] = useState<string>(() => {
     return deliktOptions[0]?.key ?? "straftaten_insgesamt";
   });
+  const [gewaltSearch, setGewaltSearch] = useState<string>("");
+  const [sonstigeSearch, setSonstigeSearch] = useState<string>("");
   const [startYear, setStartYear] = useState<number>(YEAR_MIN);
   const [endYear, setEndYear] = useState<number>(YEAR_MAX);
   const [isRangeMoving, setIsRangeMoving] = useState<boolean>(false);
@@ -308,15 +379,22 @@ export default function DeliktVergleich({ data }: DeliktVergleichProps) {
     return groups;
   }, [deliktOptions]);
 
+  const gesamtOptions = groupedOptions.gesamt;
+  const gewaltSummary = groupedOptions.gewalttaten.find((o) => o.isSummary);
+  const gewaltDetails = groupedOptions.gewalttaten.filter((o) => !o.isSummary);
+  const sonstigeSummary = groupedOptions.sonstige_straftaten.find((o) => o.isSummary);
+  const sonstigeDetails = groupedOptions.sonstige_straftaten.filter(
+    (o) => !o.isSummary
+  );
+
+  const selectedGewaltDetail =
+    gewaltDetails.find((o) => o.key === selectedDelikt) ?? null;
+  const selectedSonstigeDetail =
+    sonstigeDetails.find((o) => o.key === selectedDelikt) ?? null;
+
   // (Tooltip wurde nach außerhalb der Komponente verschoben)
 
   // ── Render ───────────────────────────────────────────
-  const categoryLabels: Record<DeliktCategory, string> = {
-    gewalttaten: "Gewalttaten",
-    sonstige_straftaten: "Sonstige Straftaten",
-    gesamt: "Gesamtwerte",
-  };
-
   const startPercent =
     ((startYear - YEAR_MIN) / (YEAR_MAX - YEAR_MIN)) * 100;
   const endPercent = ((endYear - YEAR_MIN) / (YEAR_MAX - YEAR_MIN)) * 100;
@@ -334,33 +412,103 @@ export default function DeliktVergleich({ data }: DeliktVergleichProps) {
         </div>
 
         {/* Filter-Pills: gruppiert nach Kategorie */}
-        <div className="filterArea" role="radiogroup" aria-label="Deliktart auswählen">
-          {(
-            Object.entries(groupedOptions) as [DeliktCategory, DeliktOption[]][]
-          )
-            .filter(([, options]) => options.length > 0)
-            .map(([category, options]) => (
-              <div key={category}>
-                <div className="filterGroupLabel">
-                  {categoryLabels[category]}
-                </div>
-                <div className="pillGroup">
-                  {options.map((option) => (
-                    <button
-                      key={option.key}
-                      className={`pill ${option.isSummary ? "pillSummary" : ""}`}
-                      data-active={selectedDelikt === option.key}
-                      onClick={() => handlePillClick(option.key)}
-                      role="radio"
-                      aria-checked={selectedDelikt === option.key}
-                      title={option.label}
-                    >
-                      {option.label}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            ))}
+        <div className="filterArea" aria-label="Deliktart auswählen">
+          <div>
+            <div className="filterGroupLabel">Gesamtwerte</div>
+            <div className="pillGroup pillGroupCompact">
+              {gesamtOptions.map((option) => (
+                <button
+                  key={option.key}
+                  className="pill pillSummary"
+                  data-active={selectedDelikt === option.key}
+                  onClick={() => handlePillClick(option.key)}
+                  title={option.label}
+                >
+                  {option.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <div className="filterGroupLabel">Gewalttaten</div>
+            <div className="pillGroup pillGroupCompact">
+              {gewaltSummary && (
+                <button
+                  className="pill pillSummary"
+                  data-active={selectedDelikt === gewaltSummary.key}
+                  onClick={() => {
+                    handlePillClick(gewaltSummary.key);
+                    setGewaltSearch("");
+                  }}
+                  title={gewaltSummary.label}
+                >
+                  {gewaltSummary.label}
+                </button>
+              )}
+              <input
+                className={`pill pillSearchInput ${selectedGewaltDetail ? "pillSearchInputActive" : ""}`}
+                type="search"
+                list="gewalttaten-detail-options"
+                placeholder="Delikt suchen..."
+                value={gewaltSearch}
+                onChange={(event) => {
+                  const next = event.target.value;
+                  setGewaltSearch(next);
+                  const match = findBestDeliktMatch(next, gewaltDetails);
+                  if (match) {
+                    setSelectedDelikt(match.key);
+                  }
+                }}
+                aria-label="Gewaltdelikt suchen"
+              />
+              <datalist id="gewalttaten-detail-options">
+                {gewaltDetails.map((option) => (
+                  <option key={option.key} value={option.label} />
+                ))}
+              </datalist>
+            </div>
+          </div>
+
+          <div>
+            <div className="filterGroupLabel">Sonstige Straftaten</div>
+            <div className="pillGroup pillGroupCompact">
+              {sonstigeSummary && (
+                <button
+                  className="pill pillSummary"
+                  data-active={selectedDelikt === sonstigeSummary.key}
+                  onClick={() => {
+                    handlePillClick(sonstigeSummary.key);
+                    setSonstigeSearch("");
+                  }}
+                  title={sonstigeSummary.label}
+                >
+                  {sonstigeSummary.label}
+                </button>
+              )}
+              <input
+                className={`pill pillSearchInput ${selectedSonstigeDetail ? "pillSearchInputActive" : ""}`}
+                type="search"
+                list="sonstige-detail-options"
+                placeholder="Delikt suchen..."
+                value={sonstigeSearch}
+                onChange={(event) => {
+                  const next = event.target.value;
+                  setSonstigeSearch(next);
+                  const match = findBestDeliktMatch(next, sonstigeDetails);
+                  if (match) {
+                    setSelectedDelikt(match.key);
+                  }
+                }}
+                aria-label="Sonstige Straftat suchen"
+              />
+              <datalist id="sonstige-detail-options">
+                {sonstigeDetails.map((option) => (
+                  <option key={option.key} value={option.label} />
+                ))}
+              </datalist>
+            </div>
+          </div>
         </div>
 
         {/* Chart */}

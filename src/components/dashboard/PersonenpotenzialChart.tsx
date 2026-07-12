@@ -19,35 +19,24 @@ import {
   Tooltip,
 } from "recharts";
 import { getPmkColor, getPmkLabel } from "@/lib/constants";
-import { formatNumber, formatPerCapita, formatPercent } from "@/lib/formatters";
+import { formatNumber } from "@/lib/formatters";
 import type { PmkDataset, ViewMode } from "@/types/pmk";
-import { perCapita, violenceShare } from "@/lib/calculations";
-import { POPULATION_BY_YEAR } from "@/lib/constants";
 import "./personenpotenzial-chart.css";
 
 const CustomTooltip = ({
   active,
   payload,
   label,
-  viewMode,
 }: {
   active?: boolean;
   payload?: Array<{ dataKey: string; value: number | null; fill: string }>;
   label?: string;
-  viewMode: ViewMode;
 }) => {
   if (!active || !payload?.length) return null;
 
   const formatValue = (v: number | null) => {
     if (v === null) return "–";
-    switch (viewMode) {
-      case "perCapita":
-        return formatPerCapita(v);
-      case "threatLevel":
-        return formatPercent(v);
-      default:
-        return formatNumber(v);
-    }
+    return formatNumber(v);
   };
 
   return (
@@ -124,7 +113,6 @@ export default function PersonenpotenzialChart({
 
     return years.map((year) => {
       const point: ChartPoint = { label: String(year) };
-      const pop = POPULATION_BY_YEAR[year];
 
       for (const area of areas) {
         const entry = data.find(
@@ -140,21 +128,8 @@ export default function PersonenpotenzialChart({
           case "absolute":
             point[area] = entry.personenpotenzial?.absolut_gesamt ?? null;
             break;
-          case "perCapita":
-            point[area] =
-              pop && entry.personenpotenzial?.absolut_gesamt != null
-                ? perCapita(entry.personenpotenzial.absolut_gesamt, pop)
-                : null;
-            break;
-          case "threatLevel":
-            point[area] =
-              entry.personenpotenzial?.davon_gewaltorientiert != null &&
-              entry.personenpotenzial?.absolut_gesamt != null
-                ? violenceShare(
-                    entry.personenpotenzial.davon_gewaltorientiert,
-                    entry.personenpotenzial.absolut_gesamt
-                  )
-                : null;
+          case "violencePotential":
+            point[area] = entry.personenpotenzial?.davon_gewaltorientiert ?? null;
             break;
         }
       }
@@ -179,21 +154,12 @@ export default function PersonenpotenzialChart({
 
   // ── Formatter für Y-Achse ──────────────
 
-  const yAxisFormatter = (v: number) => {
-    switch (viewMode) {
-      case "perCapita":
-        return `${v}`;
-      case "threatLevel":
-        return `${v}%`;
-      default:
-        return v >= 1000 ? `${(v / 1000).toFixed(0)}k` : String(v);
-    }
-  };
+  const yAxisFormatter = (v: number) =>
+    v >= 1000 ? `${(v / 1000).toFixed(0)}k` : String(v);
 
   const yAxisLabels: Record<ViewMode, string> = {
-    absolute: "Personen",
-    perCapita: "pro 100.000 EW",
-    threatLevel: "% gewaltorientiert",
+    absolute: "Personenpotenzial",
+    violencePotential: "Gewaltpotenzial",
   };
 
   const startPercent =
@@ -307,7 +273,7 @@ export default function PersonenpotenzialChart({
               width={52}
             />
             <Tooltip
-              content={<CustomTooltip viewMode={viewMode} />}
+              content={<CustomTooltip />}
               cursor={{
                 stroke: "var(--color-border)",
                 strokeWidth: 1,

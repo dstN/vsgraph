@@ -178,6 +178,7 @@ const AREA_CANONICAL_MAP: Record<string, string> = {
   // Sonstige / Nicht zuzuordnen
   "PMK-sonstige Zuordnung":     "PMK - nicht zuzuordnen",
   "pmk_ohne_zuordnung":         "PMK - nicht zuzuordnen",
+  "pmk_sonstige_zuordnung":     "PMK - nicht zuzuordnen",
   "PMK-Sonstige":               "PMK - nicht zuzuordnen",
 };
 
