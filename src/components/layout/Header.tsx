@@ -66,39 +66,41 @@ export default function Header() {
       )}
 
       {/* Mobile Offcanvas Menu */}
-      <div
-        className={`offcanvasMenu ${isMobileMenuOpen ? "open" : ""}`}
-        role="dialog"
-        aria-modal="true"
-        aria-label="Mobile Navigation"
-      >
-        <div className="offcanvasHeader">
-          <span className="headerLogoText" style={{ fontSize: "var(--font-size-xl)" }}>Menü</span>
-          <button
-            className="hamburgerButton"
-            onClick={closeMenu}
-            aria-label="Menü schließen"
-          >
-            <X size={28} />
-          </button>
+      {isMobileMenuOpen && (
+        <div
+          className="offcanvasMenu open"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Mobile Navigation"
+        >
+          <div className="offcanvasHeader">
+            <span className="headerLogoText" style={{ fontSize: "var(--font-size-xl)" }}>Menü</span>
+            <button
+              className="hamburgerButton"
+              onClick={closeMenu}
+              aria-label="Menü schließen"
+            >
+              <X size={28} />
+            </button>
+          </div>
+
+          <nav className="offcanvasNav">
+            <div className="offcanvasSection">
+              <span className="offcanvasSectionTitle">Dashboard</span>
+              <Link href="/#personenpotenzial" className="offcanvasLink" onClick={closeMenu}>Personenpotenzial</Link>
+              <Link href="/#delikt-vergleich" className="offcanvasLink" onClick={closeMenu}>Delikt-Vergleich</Link>
+              <Link href="/#about" className="offcanvasLink" onClick={closeMenu}>Über VSGraph</Link>
+            </div>
+
+            <div className="offcanvasSection">
+              <span className="offcanvasSectionTitle">Rechtliches & Kontakt</span>
+              <Link href="/impressum" className="offcanvasLink" onClick={closeMenu}>Impressum</Link>
+              <Link href="/datenschutz" className="offcanvasLink" onClick={closeMenu}>Datenschutz</Link>
+              <Link href="/kontakt" className="offcanvasLink" onClick={closeMenu}>Kontakt</Link>
+            </div>
+          </nav>
         </div>
-
-        <nav className="offcanvasNav">
-          <div className="offcanvasSection">
-            <span className="offcanvasSectionTitle">Dashboard</span>
-            <Link href="/#personenpotenzial" className="offcanvasLink" onClick={closeMenu}>Personenpotenzial</Link>
-            <Link href="/#delikt-vergleich" className="offcanvasLink" onClick={closeMenu}>Delikt-Vergleich</Link>
-            <Link href="/#about" className="offcanvasLink" onClick={closeMenu}>Über VSGraph</Link>
-          </div>
-
-          <div className="offcanvasSection">
-            <span className="offcanvasSectionTitle">Rechtliches & Kontakt</span>
-            <Link href="/impressum" className="offcanvasLink" onClick={closeMenu}>Impressum</Link>
-            <Link href="/datenschutz" className="offcanvasLink" onClick={closeMenu}>Datenschutz</Link>
-            <Link href="/kontakt" className="offcanvasLink" onClick={closeMenu}>Kontakt</Link>
-          </div>
-        </nav>
-      </div>
+      )}
     </header>
   );
 }
