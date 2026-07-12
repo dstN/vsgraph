@@ -7,10 +7,8 @@
 // - Farbkodierung (PMK-Bereich)
 // - Trend-Indikator (Pfeil hoch/runter + Prozent)
 // - Subtitle/Beschreibung
-// - Motion Animationen
 // ═══════════════════════════════════════════════════════
 
-import { motion } from 'motion/react';
 import { TrendingUp, TrendingDown, Minus } from 'lucide-react';
 import { getPmkColor, getPmkLabel } from '@/lib/constants';
 import { formatNumber, formatPercent } from '@/lib/formatters';
@@ -20,10 +18,9 @@ interface KpiCardProps {
 	area: string;
 	value: number | null;
 	previousValue?: number | null;
-	index: number;
 }
 
-export default function KpiCard({ area, value, previousValue, index }: KpiCardProps) {
+export default function KpiCard({ area, value, previousValue }: KpiCardProps) {
 	// Trend berechnen
 	const trend = value != null && previousValue != null && previousValue > 0 ? Math.round(((value - previousValue) / previousValue) * 1000) / 10 : null;
 
@@ -38,7 +35,7 @@ export default function KpiCard({ area, value, previousValue, index }: KpiCardPr
 	const color = getPmkColor(area);
 
 	return (
-		<motion.article className="kpiCard" style={{ '--kpi-accent': color.light } as React.CSSProperties} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35, delay: index * 0.08, ease: 'easeOut' }}>
+		<article className="kpiCard" style={{ '--kpi-accent': color.light } as React.CSSProperties}>
 			{/* Farbbalken oben */}
 			<div className="kpiCardAccent" />
 
@@ -50,9 +47,7 @@ export default function KpiCard({ area, value, previousValue, index }: KpiCardPr
 
 			{/* KPI-Wert */}
 			<div className="kpiCardValue">
-				<motion.span key={`${area}-${value}`} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
-					{formattedValue}
-				</motion.span>
+				<span>{formattedValue}</span>
 			</div>
 
 			{/* Einheit */}
@@ -71,6 +66,6 @@ export default function KpiCard({ area, value, previousValue, index }: KpiCardPr
 					<span className="kpiCardTrendLabel">ggü. Vorjahr</span>
 				</div>
 			)}
-		</motion.article>
+		</article>
 	);
 }

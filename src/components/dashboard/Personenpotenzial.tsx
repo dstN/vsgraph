@@ -13,8 +13,7 @@
 // ═══════════════════════════════════════════════════════
 
 import dynamic from "next/dynamic";
-import { useState, useMemo } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import type { PmkDataset, ViewMode } from "@/types/pmk";
 import ViewSwitcher from "./ViewSwitcher";
 import KpiCard from "./KpiCard";
@@ -39,6 +38,27 @@ interface PersonenpotenzialProps {
 
 export default function Personenpotenzial({ data }: PersonenpotenzialProps) {
   const [viewMode, setViewMode] = useState<ViewMode>("absolute");
+  const [showChart, setShowChart] = useState(false);
+  const chartMountRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (showChart) return;
+    const node = chartMountRef.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setShowChart(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px 0px" }
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [showChart]);
 
   // ── Neuestes und Vorjahr ermitteln ──────────────────
   const { latestYear, previousYear } = useMemo(() => {
@@ -107,30 +127,30 @@ export default function Personenpotenzial({ data }: PersonenpotenzialProps) {
         <ViewSwitcher value={viewMode} onChange={setViewMode} />
 
         {/* KPI-Cards Grid */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={viewMode}
-            className="ppKpiGrid"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-          >
-            {kpiData.map((kpi, index) => (
-              <KpiCard
-                key={`${kpi.area}-${viewMode}`}
-                area={kpi.area}
-                value={kpi.value}
-                previousValue={kpi.prevValue}
-                index={index}
-              />
-            ))}
-          </motion.div>
-        </AnimatePresence>
+        <div key={viewMode} className="ppKpiGrid">
+          {kpiData.map((kpi) => (
+            <KpiCard
+              key={`${kpi.area}-${viewMode}`}
+              area={kpi.area}
+              value={kpi.value}
+              previousValue={kpi.prevValue}
+            />
+          ))}
+        </div>
 
         {/* Bar Chart */}
-        <div className="ppChartSection">
-          <PersonenpotenzialChart data={data} viewMode={viewMode} />
+        <div className="ppChartSection" ref={chartMountRef}>
+          {showChart ? (
+            <PersonenpotenzialChart data={data} viewMode={viewMode} />
+          ) : (
+            <div className="ppChartContainer" aria-busy="true">
+              <div className="ppChartHeader">
+                <h3 className="ppChartTitle">Personenpotenzial im Zeitverlauf</h3>
+                <p className="ppChartSubtitle">Diagramm wird geladen.</p>
+              </div>
+              <div className="ppChartWrapper" aria-hidden="true" />
+            </div>
+          )}
         </div>
       </div>
     </section>

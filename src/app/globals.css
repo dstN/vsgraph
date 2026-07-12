@@ -74,7 +74,7 @@
     /* ── Text ── */
     --color-text-primary: #1a1a1a;
     --color-text-secondary: #555555;
-    --color-text-muted: #6e6e73;
+    --color-text-muted: #6b6b70;
     --color-text-pill-active: #ffffff;
     --color-text-tooltip: #f5f5f5;
     --color-text-accent: #4361ee;
@@ -91,9 +91,9 @@
     --color-pmk-sonstige: #868e96;
 
     /* ── Trend-Farben ── */
-    --color-trend-up: #e63946;
+    --color-trend-up: #c62835;
     --color-trend-down: #2a9d8f;
-    --color-trend-stable: #868e96;
+    --color-trend-stable: #5f6770;
 
     /* ── Shadows ── */
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);

@@ -25,7 +25,6 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { motion, AnimatePresence } from "motion/react";
 import { BarChart3 } from "lucide-react";
 
 import type {
@@ -512,15 +511,7 @@ export default function DeliktVergleich({ data }: DeliktVergleichProps) {
         </div>
 
         {/* Chart */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={selectedDelikt}
-            className="chartContainer"
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -12 }}
-            transition={{ duration: 0.25, ease: "easeOut" }}
-          >
+        <div key={selectedDelikt} className="chartContainer">
             <h3 className="chartTitle">{selectedLabel}</h3>
             <p className="chartSubtitle">
               Zeitliche Entwicklung nach PMK-Bereich, absolute Fallzahlen
@@ -717,8 +708,7 @@ export default function DeliktVergleich({ data }: DeliktVergleichProps) {
                 <span>Keine Daten für dieses Delikt vorhanden.</span>
               </div>
             )}
-          </motion.div>
-        </AnimatePresence>
+        </div>
       </div>
     </section>
   );
