@@ -24,10 +24,10 @@ export default function DatenschutzPage() {
             <section>
               <h2 style={{ color: "var(--color-text)", fontSize: "1.25rem", marginBottom: "var(--space-2)" }}>2. Hosting und Server-Logfiles</h2>
               <p>
-                Diese Website wird über Netcup gehostet. Der Hosting-Provider erhebt automatisch Informationen in sogenannten Server-Logfiles (z.B. IP-Adresse, Browsertyp, Uhrzeit der Anfrage). Dies ist technisch erforderlich, um die Website sicher und zuverlässig bereitzustellen.
+                Diese Website wird über die netcup GmbH, Daimlerstraße 25, 76185 Karlsruhe, Deutschland gehostet; mit ihr besteht ein Auftragsverarbeitungsvertrag nach Art. 28 DSGVO. Der Hosting-Provider erhebt automatisch Informationen in sogenannten Server-Logfiles (z.B. IP-Adresse, Browsertyp, Uhrzeit der Anfrage). Dies ist technisch erforderlich, um die Website sicher und zuverlässig bereitzustellen. Die Server stehen in Deutschland; eine Übermittlung in ein Drittland findet nicht statt.
               </p>
               <p style={{ marginTop: "var(--space-2)" }}>
-                Wir haben eine tägliche Log-Rotation konfiguriert. IP-Adressen werden spätestens nach 24 Stunden automatisch gelöscht.
+                Wir haben eine tägliche Log-Rotation konfiguriert. Die Zugriffsprotokolle werden automatisch überschrieben und spätestens nach 48 Stunden gelöscht. Eine Besucherstatistik wird nicht erzeugt; die Auswertung der Protokolle ist im Hosting-Panel abgeschaltet.
               </p>
             </section>
 
