@@ -24,7 +24,7 @@ export default function DatenschutzPage() {
             <section>
               <h2 style={{ color: "var(--color-text)", fontSize: "1.25rem", marginBottom: "var(--space-2)" }}>2. Hosting und Server-Logfiles</h2>
               <p>
-                Diese Website wird über die netcup GmbH, Daimlerstraße 25, 76185 Karlsruhe, Deutschland gehostet; mit ihr besteht ein Auftragsverarbeitungsvertrag nach Art. 28 DSGVO. Der Hosting-Provider erhebt automatisch Informationen in sogenannten Server-Logfiles (z.B. IP-Adresse, Browsertyp, Uhrzeit der Anfrage). Dies ist technisch erforderlich, um die Website sicher und zuverlässig bereitzustellen. Die Server stehen in Deutschland; eine Übermittlung in ein Drittland findet nicht statt.
+                Diese Website wird über die netcup GmbH, Emmy-Noether-Straße 10, 76131 Karlsruhe, Deutschland gehostet; mit ihr besteht ein Auftragsverarbeitungsvertrag nach Art. 28 DSGVO. Der Hosting-Provider erhebt automatisch Informationen in sogenannten Server-Logfiles (z.B. IP-Adresse, Browsertyp, Uhrzeit der Anfrage). Dies ist technisch erforderlich, um die Website sicher und zuverlässig bereitzustellen. Die Server stehen in Deutschland; eine Übermittlung in ein Drittland findet nicht statt.
               </p>
               <p style={{ marginTop: "var(--space-2)" }}>
                 Die Zugriffs- und Fehlerprotokolle des Webservers werden täglich rotiert und nach höchstens 3 Tagen gelöscht. Eine Besucherstatistik wird nicht erzeugt; die Auswertung der Protokolle ist im Hosting-Panel abgeschaltet.
