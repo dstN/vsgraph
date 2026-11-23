@@ -354,8 +354,8 @@ export default function PersonenpotenzialChart({
           <span>
             <strong>Methodenbruch 2004/2005:</strong> Bis 2004 war das
             Personenpotenzial des Islamismus in der Ausländerkriminalität
-            enthalten. Ab 2005 wird es separat ausgewiesen – daher der
-            scheinbare Rückgang bei „Ausländisch&quot;.
+            enthalten. Ab 2005 wird es separat ausgewiesen, daher der
+            scheinbare Rückgang bei „Ausländisch“.
           </span>
         </div>
         <div className="ppNote" role="note" style={{ marginTop: 0 }}>

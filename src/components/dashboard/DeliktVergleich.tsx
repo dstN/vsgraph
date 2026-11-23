@@ -689,8 +689,8 @@ export default function DeliktVergleich({ data }: DeliktVergleichProps) {
                     <span>
                       <strong>Methodenbruch 2017:</strong> Der Bereich „Politisch motivierte 
                       Ausländerkriminalität“ wurde in „religiöse Ideologie“ und 
-                      „ausländische Ideologie“ ausdifferenziert. Die direkte Vergleichbarkeit 
-                      der Fallzahlen 2017 mit den Vorjahren ist daher nicht mehr gegeben.
+                      „ausländische Ideologie“ aufgeteilt. Die Fallzahlen ab 2017 lassen sich 
+                      deshalb nicht direkt mit den Vorjahren vergleichen.
                     </span>
                   </div>
 

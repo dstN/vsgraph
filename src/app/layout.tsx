@@ -10,9 +10,9 @@ const lexend = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "VSGraph – Verfassungsschutzbericht interaktiv",
+  title: "VSGraph: Verfassungsschutzbericht interaktiv",
   description:
-    "Interaktives Dashboard zur Politisch motivierten Kriminalität (PMK) in Deutschland. Daten aus dem Verfassungsschutzbericht – verständlich aufbereitet.",
+    "Interaktives Dashboard zur Politisch motivierten Kriminalität (PMK) in Deutschland. Daten aus dem Verfassungsschutzbericht, verständlich aufbereitet.",
   keywords: [
     "Verfassungsschutzbericht",
     "PMK",

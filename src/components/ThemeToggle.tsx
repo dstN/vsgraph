@@ -50,8 +50,8 @@ export default function ThemeToggle() {
     <button
       className="themeToggle"
       onClick={toggleTheme}
-      aria-label={`Wechseln zu ${theme === "light" ? "Dark" : "Light"} Mode`}
-      title={`${theme === "light" ? "Dark" : "Light"} Mode`}
+      aria-label={`Zum ${theme === "light" ? "dunklen" : "hellen"} Design wechseln`}
+      title={`${theme === "light" ? "Dunkles" : "Helles"} Design`}
       aria-pressed={theme === "dark"}
     >
       {theme === "light" ? <Moon size={18} /> : <Sun size={18} />}

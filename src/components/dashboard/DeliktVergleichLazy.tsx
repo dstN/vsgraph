@@ -12,7 +12,7 @@ function DeliktVergleichPlaceholder() {
         <div className="sectionHeader">
           <h2 className="sectionTitle">Delikt-Vergleich</h2>
           <p className="sectionSubtitle">
-            Die Vergleichsansicht wird vorbereitet und direkt nach dem Scroll-Ziel geladen.
+            Die Vergleichsansicht wird geladen.
           </p>
         </div>
 

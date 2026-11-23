@@ -42,7 +42,7 @@ export default function DashboardPage() {
 							<br />
 							<span className="heroTitleAccent">interaktiv</span>
 						</h1>
-						<p className="heroSubtitle">Politisch motivierte Kriminalität in Deutschland – verständlich aufbereitet und visuell vergleichbar.</p>
+						<p className="heroSubtitle">Politisch motivierte Kriminalität in Deutschland, verständlich aufbereitet und über die Jahre vergleichbar.</p>
 					</div>
 				</section>
 
