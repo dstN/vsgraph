@@ -34,6 +34,27 @@ jobs:
           mv .next/standalone/server.js .next/standalone/next-server.js
           cp deploy/server.js .next/standalone/server.js
 
+      - name: Prepare server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: 22
+          script: |
+            set -e
+            T="${{ secrets.SSH_TARGET_DIR }}"
+            T="${T%/}"
+            # If an earlier deploy stopped between the two renames, put the last release back first.
+            if [ ! -f "$T/server.js" ] && [ -f "$T.prev/server.js" ]; then
+              rm -rf "$T"
+              mv "$T.prev" "$T"
+              mkdir -p "$T/tmp"
+              touch "$T/tmp/restart.txt"
+              echo "Restored the previous release"
+            fi
+            mkdir -p "$T"
+
       - name: Deploy via SCP (Password)
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -59,7 +80,7 @@ jobs:
             set -e
             T="${{ secrets.SSH_TARGET_DIR }}"
             T="${T%/}"
-            NEW="$T/../vsgraph-release"
+            NEW="$(dirname "$T")/vsgraph-release"
             test -f "$NEW/server.js" && test -f "$NEW/next-server.js"
             mkdir -p "$NEW/tmp"
             rm -rf "$T.prev"
