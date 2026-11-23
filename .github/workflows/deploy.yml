@@ -30,6 +30,9 @@ jobs:
           npm run build
           cp -r public .next/standalone/
           cp -r .next/static .next/standalone/.next/
+          # Passenger starts server.js: our logging wrapper, which then loads Next's own server.
+          mv .next/standalone/server.js .next/standalone/next-server.js
+          cp deploy/server.js .next/standalone/server.js
 
       - name: Deploy via SCP (Password)
         uses: appleboy/scp-action@v0.1.7
@@ -39,7 +42,9 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           port: 22
           source: '.next/standalone/*'
-          target: ${{ secrets.SSH_TARGET_DIR }}
+          # Upload next to the live app first; the step below swaps it in. Deleting the live
+          # directory before uploading took the site down for the length of the upload.
+          target: ${{ secrets.SSH_TARGET_DIR }}/../vsgraph-release
           strip_components: 2
           rm: true
 
@@ -51,6 +56,14 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           port: 22
           script: |
-            mkdir -p ${{ secrets.SSH_TARGET_DIR }}/tmp
-            touch ${{ secrets.SSH_TARGET_DIR }}/tmp/restart.txt
-            echo "🚀 Deployment complete and restart triggered."
+            set -e
+            T="${{ secrets.SSH_TARGET_DIR }}"
+            T="${T%/}"
+            NEW="$T/../vsgraph-release"
+            test -f "$NEW/server.js" && test -f "$NEW/next-server.js"
+            mkdir -p "$NEW/tmp"
+            rm -rf "$T.prev"
+            mv "$T" "$T.prev"
+            mv "$NEW" "$T"
+            touch "$T/tmp/restart.txt"
+            echo "Deployed; the previous release is in $T.prev"

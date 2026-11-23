@@ -1,9 +1,6 @@
 import { ImageResponse } from 'next/og';
 import LogoMark from '@/components/layout/LogoMark';
 
-// Route segment config
-export const runtime = 'edge';
-
 // Image metadata
 export const size = {
   width: 32,
